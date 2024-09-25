@@ -1,0 +1,686 @@
+    1  sudo apt-get update -y && sudo apt update -y
+    2  sudo apt upgrade -y
+    3  sudo apt autoremove -y
+    4  sudo apt-get update -y && sudo apt update -y
+    5  sudo apt upgrade -y
+    6  echo "Instalando prerequisitos: Nerdfonts, lsd, git, curl"
+    7  sudo apt install curl git
+    8  echo "Descargando 'SourceCodePro (Sauce Code Pro Nerd Fonts)' de https://www.nerdfonts.com/font-downloads"
+    9  wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/SourceCodePro.zip  -P ~/Downloads
+   10  mkdir ~/.fonts
+   11  unzip ~/Downloads/SourceCodePro.zip -d ~/.fonts/SourceCodePro/
+   12  echo "Actualizando fuentes"
+   13  fc-cache -fv
+   14  fc-list | grep ".fonts"
+   15  echo "Instalando fuentes... Done!"
+   16  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+   17  source $HOME/.cargo/env
+   18  rustup override set stable
+   19  rustup update stable
+   20  echo "Instalando lsd... From source... Instalando RUST compiler (rustup)... Done!"
+   21  echo "Instalando lsd... From source... Prerequisites"
+   22  sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python3-openssl
+   23  cc -v
+   24  echo "Instalando lsd... From source... Prerequisites... Done!"
+   25  echo "Instalando lsd... From source... Using cargo..."
+   26  cargo install --git https://github.com/Peltoche/lsd.git --branch master
+   27  echo "Instalando lsd... From source... Using cargo... Done!"
+   28  lsd ~/.config/
+   29  echo "Configurando lsd... "
+   30  mkdir -p ~/.config/lsd
+   31  lsd -l ~/.config/lsd/
+   32  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/lsd/config.yaml -P ~/.config/lsd/
+   33  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/lsd/themes/terminal-colors.yaml -P ~/.config/lsd/
+   34  mv ~/.config/lsd/terminal-colors.yaml ~/.config/lsd/colors.yaml
+   35  lsd -t ~/.config/lsd/
+   36  nano ~/.config/lsd/config.yaml 
+   37  lsd -t ~/.config/lsd/
+   38  echo "Configurando lsd... Done!"
+   39  echo "Customizing terminal colors (manual)... Nord and Nord (Black BG) Themes..."
+   40  fc-list | grep "Sauce"
+   41  fc-cache -fv
+   42  fc-list | grep "Sauce"
+   43  ll
+   44  lsd
+   45  lsd -l
+   46  ll
+   47  lsd -t ~/.config/lsd/
+   48  lsd -t ~/.config/
+   49  echo "Customizing terminal colors (manual)... Nord and Nord (Black BG) Themes... Done!"
+   50  echo "Configurando git(manual)..."
+   51  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/gitconfig
+   52  mv gitconfig .gitconfig
+   53  git config --global -e
+   54  nano .gitconfig 
+   55  git config --global -e
+   56  echo "Configurando git(manual)... Done!"
+   57  echo "Copying my extra scripts..."
+   58  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/gitbash/git-completition.bash -P ~/.config/gitbash/
+   59  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/gitbash/git-prompt.sh -P ~/.config/gitbash/
+   60  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/rosmgmt/ros_mgmt.sh -P ~/.config/rosmgmt
+   61  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/rosmgmt/ros2_humble_conf.bash -P ~/.config/rosmgmt
+   62  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/rosmgmt/ros2_galactic_conf.bash -P ~/.config/rosmgmt
+   63  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/rosmgmt/ros_noetic_conf.bash -P ~/.config/rosmgmt
+   64  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/utilities/venv_prompt.sh -P ~/.config/utilities
+   65  echo "Copying my extra scripts... Validating..."
+   66  lsd -l  ~/.config/gitbash/
+   67  lsd -l  ~/.config/rosmgmt/
+   68  lsd -l  ~/.config/utilities/
+   69  echo "Copying my extra scripts... Validating... Done!"
+   70  echo "Copying my extra scripts... Done!"
+   71  echo "Updating changes to 'bashrc'..."
+   72  nano .bashrc 
+   73  echo "Updating changes to 'bashrc'... Reseting terminal..."
+   74  exec "$SHELL"
+   75  ping -c 5
+   76  ping -c 5 google.com
+   77  ping -c 100 -s.2 xe.com
+   78  ping -c 100 -s xe.com
+   79  ping -c 100 -s .2 xe.com
+   80  ping -h
+   81  ping -c 100 -s 2 xe.com
+   82  echo "Updating changes to 'bashrc'... Reseting terminal... Done!"
+   83  echo "Updating changes to 'bashrc'... Done!"
+   84  echo "Adding aliases  to 'bash_alias'... Done!"
+   85  nano .bash_aliases
+   86  echo -e ${PATH//:/\\n}
+   87  nano .bash_aliases
+   88  echo "Adding aliases  to 'bash_alias'... Done!"
+   89  echo "Instalando pyenv, from medium blog's post 'https://medium.com/@aashari/easy-to-follow-guide-of-how-to-install-pyenv-on-ubuntu-a3730af8d7f0'"
+   90  sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+   91  curl https://pyenv.run | bash
+   92  echo -e 'export PYENV_ROOT="$HOME/.pyenv"\nexport PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+   93  echo -e 'eval "$(pyenv init --path)"\neval "$(pyenv init -)"' >> ~/.bashrc
+   94  exec "$SHELL"
+   95  echo "Instalando pyenv... Validating..."
+   96  pyenv --version
+   97  pyenv install --list | more
+   98  pyenv install 3.12.4
+   99  pyenv install 3.11.9
+  100  pyenv versions
+  101  python3 -V
+  102  pyenv install 3.10.14
+  103  pyenv versions
+  104  echo "Instalando pyenv... Validating... Done!"
+  105  echo "Instalando pyenv... Testing..."
+  106  mkdir -p ~/Dev/python_dev
+  107  nano ~/Dev/python_dev/test.py
+  108  python3 ~/Dev/python_dev/test.py
+  109  nano ~/Dev/python_dev/test.py
+  110  python3 ~/Dev/python_dev/test.py
+  111  pyenv exec python3.10.14 ~/Dev/python_dev/test.py
+  112  l
+  113  cd Dev/python_dev/
+  114  l
+  115  mkdir testpy
+  116  cd testpy/
+  117  pyenv local 3.12.4
+  118  python -V
+  119  python ~/Dev/python_dev/test.py
+  120  python -m venv .venv
+  121  l
+  122  ll
+  123  rm .python-version 
+  124  . .venv/bin/activate
+  125  deactivate 
+  126  echo "Instalando pyenv... Testing... Done!"
+  127  echo "Instalando pyenv... Post-Install (bashrc, aliases, etc)..."
+  128  nano .bashrc
+  129  cd
+  130  nano .bashrc
+  131  nano .bash_aliases 
+  132  echo "Instalando pyenv... Post-Install (bashrc, aliases, etc)... Done!"
+  133  cd Dev/python_dev/testpy/
+  134  exec "$SHELL"
+  135  startvenv 
+  136  deactivate
+  137  cd
+  138  l
+  139  nano .bash_aliases 
+  140  exec "$SHELL"
+  141  echo "Installing Node.js and npm using NVM (Node Version Manager)..."
+  142  wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+  143  rsttrm 
+  144  nvm -v
+  145  nvm list --lts
+  146  nvm list-lts
+  147  nvm install --lts
+  148  node -v
+  149  echo "Installing Node.js and npm using NVM (Node Version Manager)... Testing... Done!"
+  150  echo "Installing Node.js and npm using NVM (Node Version Manager)... Done!"
+  151  nano .bashrc 
+  152  echo "Installing Nvim (Neovim)... Methode 1 from packages."
+  153  cd Downloads/
+  154  wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
+  155  chmod u+x nvim.appimage
+  156  sudo apt install libfuse2
+  157  l
+  158  sudo mv nvim.appimage /usr/bin/nvim
+  159  nvim
+  160  echo "Installing Nvim (Neovim)... Methode 1 from packages... (neovim.appimage)... Done!"
+  161  npm install -g neovim
+  162  npm install -g npm@10.8.2
+  163  npm install -g neovim
+  164  sudo apt install ripgrep -y
+  165  rg --versaion
+  166  rg --version
+  167  sudo apt install fd-find -y
+  168  fdfind -V
+  169  echo $(which fdfind)
+  170  ln -s $(which fdfind) ~/.local/bin/fd
+  171  mkdir -p ~/.local/bin/
+  172  ln -s $(which fdfind) ~/.local/bin/fd
+  173  rsttrm 
+  174  source /opt/ros/humble/setup.bash
+  175  ros2 run demo_nodes_py listener
+  176  echo $HOME
+  177  cd .config/rosmgmt/
+  178  l
+  179  pwd
+  180  rosenv 
+  181  rosnet 
+  182  fd -V
+  183  echo "Configuring Nvim (Neovim)... Installing Extras: nvm-neovim, ripgrep, fdfind(fd)... installed!"
+  184  echo $RIPGREP_VERSION
+  185  vim .bashrc
+  186  cd
+  187  nvim .bashrc
+  188  nvim .bash_aliases 
+  189  nvim .profile 
+  190  echo "Installing ROS2 Humble..."
+  191  locale
+  192  sudo apt install software-properties-common
+  193  sudo add-apt-repository universe
+  194  sudo apt update
+  195  echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+  196  echo $UBUNTU_CODENAME
+  197  sudo apt update
+  198  actapt 
+  199  sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+  200  actapt 
+  201  sudo apt upgrade 
+  202  sudo apt autoremove
+  203  sudo apt install ros-humble-desktop
+  204  sudo apt install ros-dev-tools
+  205  echo "Installing ROS2 Humble... Done!"
+  206  echo "Configuring ROS2 Humble... Environment setup..."
+  207  vim ~/.config/rosmgmt/ros2_humble_conf.bash
+  208  cat ~/.config/rosmgmt/ros2_humble_conf.bash
+  209  cp ~/.config/rosmgmt/ros2_humble_conf.bash ~/.config/rosmgmt/turtlebot3_conf.bash
+  210  vim ~/.config/rosmgmt/ros2_humble_conf.bash
+  211  vim ~/.config/rosmgmt/turtlebot3_conf.bash 
+  212  cat ~/.config/rosmgmt/ros2_humble_conf.bash
+  213  vim .bashrc 
+  214  source /opt/ros/humble/setup.bash
+  215  echo "Configuring ROS2 Humble... Environment setup... Testing..."
+  216  ros2 run demo_nodes_cpp talker
+  217  echo "Configuring ROS2 Humble... Environment setup... Testing... Done!"
+  218  printenv | grep -i ROS
+  219  vim .bashrc 
+  220  echo "Configuring ROS2 Humble... Environment setup... Done!"
+  221  echo "Configuring ROS2 Humble... Environment setup... Installing colcon..."
+  222  sudo apt install python3-colcon-common-extensions
+  223  echo "Configuring ROS2 Humble... Environment setup... Installing colcon... Done!"
+  224  echo "Configuring ROS2 Humble...  workspace..."
+  225  mkdir ~/ROS2Dev/[B
+  226  l
+  227  vim ~/.config/rosmgmt/ros2_humble_conf.bash
+  228  pip3 -v
+  229  sudo apt install python3-pip
+  230  pip3 -v
+  231  pip3 -V
+  232  pip3 install pynvim
+  233  pip3 install setuptools==58.2.0
+  234  echo "Configuring ROS2 Humble...  workspace... Done!"
+  235  vim
+  236  colcon -v
+  237  apt search jupyter
+  238  apt search jupyter | grep python3
+  239  ll
+  240  ls
+  241  ll
+  242  vim .gitconfig 
+  243  pip3 install jupyterlab
+  244  rsttrm 
+  245  ll
+  246  ls
+  247  history
+  248  fc-list | grep "Sauce" | grep mono
+  249  fc-list | grep "Sauce" | grep Mono
+  250  fc-list | grep "Sauce"
+  251  fc-list | grep "Source"
+  252  fc-list | grep "Source" | grep mono
+  253  fc-list | grep "Source" | grep Mono
+  254  rosenv 
+  255  sudo dpkg -i ~/Downloads/code_1.92.0-1722473020_amd64.deb 
+  256  cd ROS2Dev/
+  257  code .
+  258  cd ..
+  259  cd Downloads/
+  260  l
+  261  rm code_1.92.0-1722473020_amd64.deb SourceCodePro.zip 
+  262  l
+  263  jupyter notebook
+  264  pip3 install notebook
+  265  jupyter notebook
+  266  ll
+  267  lt .jupyter/
+  268  jupyter lab
+  269  cd ROS2Dev/
+  270  l
+  271  ll
+  272  jupyter lab
+  273  ll
+  274  rm -rf .ipynb_checkpoints/
+  275  l
+  276  rm Untitled.ipynb 
+  277  l
+  278  cd ..
+  279  l
+  280  ll
+  281  rm -rf .ipynb_checkpoints/
+  282  l
+  283  rm Untitled.ipynb 
+  284  l
+  285  ll
+  286  jlt .jupyter/
+  287  lt .jupyter/
+  288  jupyter notebook --generate-config
+  289  vim .jupyter/jupyter_notebook_config.py 
+  290  cd ROS2Dev/
+  291  mkdir notebooks
+  292  cd notebooks/
+  293  jupyter lab
+  294  ll
+  295  cd ..
+  296  rm -rf notebooks/
+  297  history >> roboticslab_vm_history_07082024.txt
+  298  l
+  299  cd ROS2Dev/
+  300  l
+  301  ll
+  302  jupyter lab
+  303  code .
+  304  ros2 
+  305  rosenv
+  306  cd 
+  307  vim .bash_aliases 
+  308  cat .bash_aliases 
+  309  echo -e ${AMENT_PREFIX_PATH//:/\\n}
+  310  vim ~/.config/rosmgmt/ros2_humble_conf.bash 
+  311  rsttrm 
+  312  ls
+  313  ll
+  314  vim .gitconfig 
+  315  actapt 
+  316  upgapt 
+  317  cat /etc/os-release 
+  318  echo "Installing Gazebo..."
+  319  apt search ros-humble | grep gazebo
+  320  sudo apt install ros-humble-gazebo-ros-pkgs
+  321  apt search ros-humble | grep ros
+  322  apt search ros-humble | grep ros-core
+  323  apt search ros-humble | grepgeometry2
+  324  apt search ros-humble | grep geometry2
+  325  sudo apt install ros-humble-ros-core ros-humble-geometry2
+  326  echo "Installing Gazebo... Testing..."
+  327  gazebo
+  328  l /opt/ros/humble/share/gazebo_plugins/worlds/
+  329  gazebo --verbose /opt/ros/humble/share/gazebo_plugins/worlds/gazebo_ros_diff_drive_demo.world 
+  330  echo "Installing Gazebo... Testing... Done!"
+  331  echo "Installing Gazebo... Done!"
+  332  l
+  333  history >> roboticslab_vm_history_09082024.txt 
+  334  l
+  335  ros2 topic list
+  336  ros2 topic pub /demo/cmd_demo geometry_msgs/msg/Twist 'linear: {x:1.0}}' -1
+  337  ros2 topic pub /demo/cmd_demo geometry_msgs/msg/Twist '{linear: {x:1.0}}' -1
+  338  ros2 topic pub /demo/cmd_demo geometry_msgs/msg/Twist linear:\ \ x:\ 1.0\ \ y:\ 0.0\ \ z:\ 0.0angular:\ \ x:\ 0.0\ \ y:\ 0.0\ \ z:\ 0.0\ -1
+  339  ros2 topic pub /demo/cmd_demo geometry_msgs/msg/Twist '{linear {x: 1.0}}' -1
+  340  ros2 topic pub /demo/cmd_demo geometry_msgs/msg/Twist '{linear: {x: 1.0}}' -1
+  341  gazebo --verbose /opt/ros/humble/share/gazebo_plugins/worlds/gazebo_ros_diff_drive_demo.world 
+  342  cd ROS2Dev/
+  343  l
+  344  gazebo --verbose /opt/ros/humble/share/gazebo_plugins/worlds/gazebo_ros_diff_drive_demo.world 
+  345  l
+  346  cat roboticslab_vm_history_09082024.txt | tail 20
+  347  cat roboticslab_vm_history_09082024.txt | tail 2
+  348  cat roboticslab_vm_history_09082024.txt | tail
+  349  tail -h
+  350  tail --help
+  351  cat roboticslab_vm_history_09082024.txt | tail --line 25
+  352  cat roboticslab_vm_history_07082024.txt | tail --line 25
+  353  ll
+  354  ros2 topic list
+  355  l
+  356  pyenv -V
+  357  pyenv -v
+  358  rosenv 
+  359  cd ROS2Dev/
+  360  l
+  361  ll
+  362  code .
+  363  jupyter notebook
+  364  jupyter lab
+  365  ll
+  366  rm -rf Untitled.ipynb 
+  367  rm -rf .ipynb_checkpoints/
+  368  cd
+  369  l
+  370  gazebo --verbose /opt/ros/humble/share/gazebo_plugins/worlds/gazebo_ros_diff_drive_demo.world 
+  371  history | grep talker
+  372  ros2 run demo_nodes_cpp talker
+  373  vim .config/rosmgmt/ros2_humble_conf.bash 
+  374  vim .bashrc 
+  375  vim .bash_aliases 
+  376  path
+  377  rosenv 
+  378  l
+  379  ll
+  380  git config --global -e
+  381  cd ROS2Dev/
+  382  mkdir dltme
+  383  cd dltme/
+  384  touch dltme_file.txt
+  385  g init
+  386  vim dltme_file.txt 
+  387  git add .
+  388  git commit -m "initial commit"
+  389  git config --global user.email "you@example.com"
+  390  git config --global user.name "Your Name"
+  391  git commit -m "initial commit"
+  392  git lg
+  393  git lg2
+  394  git lg3
+  395  git log
+  396  ros2path 
+  397  vim .gitconfig 
+  398  l
+  399  l
+  400  git
+  401  cd ROS2Dev/
+  402  l
+  403  cd dltme/
+  404  vim ~/.gitconfig 
+  405  git config --global -e
+  406  git config --global -l
+  407  cd ..
+  408  rm -rf dltme/
+  409  l
+  410  cd ..
+  411  l
+  412  cat roboticslab_vm_history_07082024.txt 
+  413  history
+  414  git config --global -l
+  415  vim .gitconfig 
+  416  cd..
+  417  cd ..
+  418  l
+  419  ll
+  420  mkdir -p dev_ws/src 
+  421  lt dev_ws/
+  422  cd dev_ws/
+  423  colcon build
+  424  lt ../dev_ws/
+  425  source install/setup.bash
+  426  history | tail
+  427  cd ..
+  428  lt dev_ws/
+  429  l
+  430  ls 
+  431  ll
+  432  cd ..
+  433  pwd
+  434  cd ROS2Dev/
+  435  pwd
+  436  ll
+  437  cd dev_ws/
+  438  source install/setup.bash
+  439  rosenv
+  440  lt src/
+  441  lt .
+  442  cd src
+  443  code .
+  444  touch README.md
+  445  cat README.md 
+  446  touch .gitignore
+  447  git init
+  448  ll
+  449  git status
+  450  gst
+  451  git add README.md .gitignore 
+  452  git status
+  453  git rm .gitignore 
+  454  git status
+  455  git rm --cached .gitignore 
+  456  git status
+  457  gst
+  458  git add .gitignore 
+  459  gst
+  460  git commit -m "Initial commit"
+  461  gst
+  462  git log
+  463  git lg
+  464  git lg2
+  465  git lg3
+  466  cat ~/.bash_aliases 
+  467  cat ~/.gitconfig 
+  468  cls
+  469  clear
+  470  ll
+  471  git config --local -l
+  472  git remote add origin https://github.com/mrg-mex/tsr-2025-1.git
+  473  git config --local -l
+  474  git push -u origin main
+  475  git pull origin
+  476  l
+  477  cd ..
+  478  l
+  479  history | tail -line 50
+  480  history | tail --line 50
+  481  history | tail --line 70
+  482  git config --global -l
+  483  cd ..
+  484  ll
+  485  vim .gitconfig 
+  486  cd ROS2Dev/dev_ws/
+  487  cd src/
+  488  ros2
+  489  ros2 pkg
+  490  ros2 pkg create demo_pkg --build-type ament_cmake 
+  491  ros2 pkg create demo_pkg_py --build-type ament_python 
+  492  l
+  493  lt demo_pkg
+  494  lt demo_pkg_py/
+  495  cd ..
+  496  colcon build
+  497  source install/setup.bash
+  498  ros2path 
+  499  rosenv
+  500  cd src/
+  501  gst
+  502  echo hola
+  503  echo $HOME
+  504  echo "demo_pkg/"
+  505  echo "demo_pkg/" >> .gitignore 
+  506  gst
+  507  echo "demo_pkg_py/" >> .gitignore 
+  508  gst
+  509  git add .
+  510  gst
+  511  git commit -m "Updated .gitignore policies"
+  512  gst
+  513  git lg
+  514  git lg2
+  515  git lg3
+  516  git push -u origin main
+  517  git pull origin main
+  518  cd ..
+  519  l
+  520  ll
+  521  cd ROS2Dev/
+  522  l
+  523  cd dev_ws/
+  524  l
+  525  cd src/
+  526  l
+  527  ll
+  528  lt .
+  529  cd ROS2Dev/dev_ws/src/
+  530  l
+  531  lt demo_pkg
+  532  lt demo_pkg_py/
+  533  cat .bash_aliases 
+  534  vim .bash_aliases 
+  535  rsttrm 
+  536  fastping google.com
+  537  ping -h
+  538  vim .bash_aliases 
+  539  rsttrm 
+  540  fastping google.com
+  541  ping google.com
+  542  ports
+  543  sudo apt install net-tools
+  544  ports
+  545  jobs -l
+  546  jobs
+  547  jobs -h
+  548  code ROS2Dev/dev_ws/src/
+  549  jobs -l
+  550  actapt
+  551  upgapt 
+  552  sudo apt autoremove
+  553  cd ROS2Dev/
+  554  l
+  555  cd ..
+  556  cd ROS2Dev/
+  557  cd robotics_ws/src/
+  558  l
+  559  cd
+  560  lt ROS2Dev/robotics_ws/src/
+  561  lt ROS2Dev/tsr_ws/src/
+  562  vim .bash_aliases 
+  563  rsttrm 
+  564  cd ROS2Dev/robotics_ws/
+  565  srcthis 
+  566  l
+  567  colcon build
+  568  l
+  569  srcthis 
+  570  cd .. 
+  571  cd tsr_ws/
+  572  srcthis 
+  573  ros2path 
+  574  cd ROS2Dev/tsr_ws/src/notebooks/
+  575  jpl
+  576  l
+  577  ll
+  578  l
+  579  cd ..
+  580  gst
+  581  ll
+  582  cd
+  583  cd .jupyter/
+  584  l
+  585  lt .
+  586  pip3 install sphinx-design
+  587  ll
+  588  cd .jupyter/
+  589  l
+  590  vim jupyter_notebook_config.py 
+  591  cd ../ROS2Dev/tsr_ws/src/notebooks/
+  592  jlb
+  593  jpl
+  594  sphinx-quickstart 
+  595  jupyter notebook --generate-config
+  596  vim .jupyter/jupyter_notebook_config.py 
+  597  cd ROS2Dev/tsr_ws/src/notebooks/
+  598  jpl
+  599  l
+  600  cd ..
+  601  git pull origin main
+  602  cd .
+  603  cd ..
+  604  l
+  605  ros2 node list
+  606  ros2 run demo_nodes_py  listener
+  607  l /usr/bin/
+  608  ros2 run demo_nodes_cpp talker
+  609  gst
+  610  gir add .gitignore README.md 
+  611  git add .gitignore README.md 
+  612  gst
+  613  git commit -m "Actualizados README y gitignore"
+  614  gst
+  615  git add demo_pkg/
+  616  gst
+  617  git commit -m "Agregue el paquete demo_pkg"
+  618  git push -u origin main
+  619  git config --local -l
+  620  git config --local -e
+  621  ll
+  622  cd ROS2Dev/
+  623  l
+  624  cd tsr_ws/
+  625  cd src
+  626  l
+  627  git pull origin main
+  628  l
+  629  cat README.md 
+  630  vim README.md 
+  631  cd ..
+  632  l
+  633  source install/setup.bash
+  634  cd src
+  635  l
+  636  code .
+  637  ros2
+  638  ros2 pkg
+  639  ros2 pkg list
+  640  ros2 pkg list | grep msgs
+  641  ros2 interface list
+  642  ros2 run demo_nodes_cpp talker
+  643  ros2 pkg create --build-type ament_python --description "Paquete de ejemplo de ROS2" --maintainer-email rivascf@gmail.com --maintainer-name "Felipe Rivas"
+  644  ros2 pkg create demo_pkg --build-type ament_python --description "Paquete de ejemplo de ROS2" --maintainer-email rivascf@gmail.com --maintainer-name "Felipe Rivas"
+  645  l
+  646  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/deactivate/bash/envVars.txt
+  647  ll | grep .
+  648  ll 
+  649  cp .bash_aliases bash_aliases_bk_220825.txt
+  650  cp .bashrc bashrc_bk_220825.txt
+  651  l
+  652  cd ROS2Dev/
+  653  l
+  654  lt robotics_ws/src/
+  655  lt tsr_ws/src/
+  656  cd tsr_ws/src/
+  657  gst
+  658  cd notebooks/
+  659  l
+  660  rm Template.ipynb 
+  661  cd images/
+  662  l
+  663  rm 20210210-thrones-drogon.png 
+  664  cd ..
+  665  gst
+  666  ll
+  667  cat .gitignore 
+  668  vim .gitignore 
+  669  gst
+  670  actapt 
+  671  upgapt 
+  672  sudo apt autoremove
+  673  ros2path 
+  674  ros2path | xargs wc -l
+  675  ros2path | wc -l
+  676  ros2path | tee >(wc -l)
+  677  cat .bash_aliases 
+  678  echo ${!PATH}
+  679  echo ${!path}
+  680  cat .config/rosmgmt/ros2_humble_conf.bash 
+  681  echo ${!ros2path}
+  682  echo ${!AMENT_PREFIX_PATH//:/\\n}
+  683  echo ${!AMENT_PREFIX_PATH}
+  684  rosenv 
+  685  ll
+  686  history > roboticslab_vm_history_21082025.txt 

@@ -1,0 +1,1000 @@
+  425  source install/setup.bash
+  426  history | tail
+  427  cd ..
+  428  lt dev_ws/
+  429  l
+  430  ls 
+  431  ll
+  432  cd ..
+  433  pwd
+  434  cd ROS2Dev/
+  435  pwd
+  436  ll
+  437  cd dev_ws/
+  438  source install/setup.bash
+  439  rosenv
+  440  lt src/
+  441  lt .
+  442  cd src
+  443  code .
+  444  touch README.md
+  445  cat README.md 
+  446  touch .gitignore
+  447  git init
+  448  ll
+  449  git status
+  450  gst
+  451  git add README.md .gitignore 
+  452  git status
+  453  git rm .gitignore 
+  454  git status
+  455  git rm --cached .gitignore 
+  456  git status
+  457  gst
+  458  git add .gitignore 
+  459  gst
+  460  git commit -m "Initial commit"
+  461  gst
+  462  git log
+  463  git lg
+  464  git lg2
+  465  git lg3
+  466  cat ~/.bash_aliases 
+  467  cat ~/.gitconfig 
+  468  cls
+  469  clear
+  470  ll
+  471  git config --local -l
+  472  git remote add origin https://github.com/mrg-mex/tsr-2025-1.git
+  473  git config --local -l
+  474  git push -u origin main
+  475  git pull origin
+  476  l
+  477  cd ..
+  478  l
+  479  history | tail -line 50
+  480  history | tail --line 50
+  481  history | tail --line 70
+  482  git config --global -l
+  483  cd ..
+  484  ll
+  485  vim .gitconfig 
+  486  cd ROS2Dev/dev_ws/
+  487  cd src/
+  488  ros2
+  489  ros2 pkg
+  490  ros2 pkg create demo_pkg --build-type ament_cmake 
+  491  ros2 pkg create demo_pkg_py --build-type ament_python 
+  492  l
+  493  lt demo_pkg
+  494  lt demo_pkg_py/
+  495  cd ..
+  496  colcon build
+  497  source install/setup.bash
+  498  ros2path 
+  499  rosenv
+  500  cd src/
+  501  gst
+  502  echo hola
+  503  echo $HOME
+  504  echo "demo_pkg/"
+  505  echo "demo_pkg/" >> .gitignore 
+  506  gst
+  507  echo "demo_pkg_py/" >> .gitignore 
+  508  gst
+  509  git add .
+  510  gst
+  511  git commit -m "Updated .gitignore policies"
+  512  gst
+  513  git lg
+  514  git lg2
+  515  git lg3
+  516  git push -u origin main
+  517  git pull origin main
+  518  cd ..
+  519  l
+  520  ll
+  521  cd ROS2Dev/
+  522  l
+  523  cd dev_ws/
+  524  l
+  525  cd src/
+  526  l
+  527  ll
+  528  lt .
+  529  cd ROS2Dev/dev_ws/src/
+  530  l
+  531  lt demo_pkg
+  532  lt demo_pkg_py/
+  533  cat .bash_aliases 
+  534  vim .bash_aliases 
+  535  rsttrm 
+  536  fastping google.com
+  537  ping -h
+  538  vim .bash_aliases 
+  539  rsttrm 
+  540  fastping google.com
+  541  ping google.com
+  542  ports
+  543  sudo apt install net-tools
+  544  ports
+  545  jobs -l
+  546  jobs
+  547  jobs -h
+  548  code ROS2Dev/dev_ws/src/
+  549  jobs -l
+  550  actapt
+  551  upgapt 
+  552  sudo apt autoremove
+  553  cd ROS2Dev/
+  554  l
+  555  cd ..
+  556  cd ROS2Dev/
+  557  cd robotics_ws/src/
+  558  l
+  559  cd
+  560  lt ROS2Dev/robotics_ws/src/
+  561  lt ROS2Dev/tsr_ws/src/
+  562  vim .bash_aliases 
+  563  rsttrm 
+  564  cd ROS2Dev/robotics_ws/
+  565  srcthis 
+  566  l
+  567  colcon build
+  568  l
+  569  srcthis 
+  570  cd .. 
+  571  cd tsr_ws/
+  572  srcthis 
+  573  ros2path 
+  574  cd ROS2Dev/tsr_ws/src/notebooks/
+  575  jpl
+  576  l
+  577  ll
+  578  l
+  579  cd ..
+  580  gst
+  581  ll
+  582  cd
+  583  cd .jupyter/
+  584  l
+  585  lt .
+  586  pip3 install sphinx-design
+  587  ll
+  588  cd .jupyter/
+  589  l
+  590  vim jupyter_notebook_config.py 
+  591  cd ../ROS2Dev/tsr_ws/src/notebooks/
+  592  jlb
+  593  jpl
+  594  sphinx-quickstart 
+  595  jupyter notebook --generate-config
+  596  vim .jupyter/jupyter_notebook_config.py 
+  597  cd ROS2Dev/tsr_ws/src/notebooks/
+  598  jpl
+  599  l
+  600  cd ..
+  601  git pull origin main
+  602  cd .
+  603  cd ..
+  604  l
+  605  ros2 node list
+  606  ros2 run demo_nodes_py  listener
+  607  l /usr/bin/
+  608  ros2 run demo_nodes_cpp talker
+  609  gst
+  610  gir add .gitignore README.md 
+  611  git add .gitignore README.md 
+  612  gst
+  613  git commit -m "Actualizados README y gitignore"
+  614  gst
+  615  git add demo_pkg/
+  616  gst
+  617  git commit -m "Agregue el paquete demo_pkg"
+  618  git push -u origin main
+  619  git config --local -l
+  620  git config --local -e
+  621  ll
+  622  cd ROS2Dev/
+  623  l
+  624  cd tsr_ws/
+  625  cd src
+  626  l
+  627  git pull origin main
+  628  l
+  629  cat README.md 
+  630  vim README.md 
+  631  cd ..
+  632  l
+  633  source install/setup.bash
+  634  cd src
+  635  l
+  636  code .
+  637  ros2
+  638  ros2 pkg
+  639  ros2 pkg list
+  640  ros2 pkg list | grep msgs
+  641  ros2 interface list
+  642  ros2 run demo_nodes_cpp talker
+  643  ros2 pkg create --build-type ament_python --description "Paquete de ejemplo de ROS2" --maintainer-email rivascf@gmail.com --maintainer-name "Felipe Rivas"
+  644  ros2 pkg create demo_pkg --build-type ament_python --description "Paquete de ejemplo de ROS2" --maintainer-email rivascf@gmail.com --maintainer-name "Felipe Rivas"
+  645  l
+  646  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/deactivate/bash/envVars.txt
+  647  ll | grep .
+  648  ll 
+  649  cp .bash_aliases bash_aliases_bk_220825.txt
+  650  cp .bashrc bashrc_bk_220825.txt
+  651  l
+  652  cd ROS2Dev/
+  653  l
+  654  lt robotics_ws/src/
+  655  lt tsr_ws/src/
+  656  cd tsr_ws/src/
+  657  gst
+  658  cd notebooks/
+  659  l
+  660  rm Template.ipynb 
+  661  cd images/
+  662  l
+  663  rm 20210210-thrones-drogon.png 
+  664  cd ..
+  665  gst
+  666  ll
+  667  cat .gitignore 
+  668  vim .gitignore 
+  669  gst
+  670  actapt 
+  671  upgapt 
+  672  sudo apt autoremove
+  673  ros2path 
+  674  ros2path | xargs wc -l
+  675  ros2path | wc -l
+  676  ros2path | tee >(wc -l)
+  677  cat .bash_aliases 
+  678  echo ${!PATH}
+  679  echo ${!path}
+  680  cat .config/rosmgmt/ros2_humble_conf.bash 
+  681  echo ${!ros2path}
+  682  echo ${!AMENT_PREFIX_PATH//:/\\n}
+  683  echo ${!AMENT_PREFIX_PATH}
+  684  rosenv 
+  685  ll
+  686  history > roboticslab_vm_history_21082025.txt 
+  687  ports
+  688  printenv 
+  689  printenv | grep IP
+  690  ifconfig
+  691  sed 's/:/\n/g' <<< "$PATH"
+  692  tr ':' '\n' <<< "$PATH"
+  693  unique
+  694  tr ':' '\n' <<< "$PATH" | uniq
+  695  sed 's/:/\n/g' <<< "$PATH" | uniq
+  696  sed 's/:/\n/g' <<< "$PATH" | sort | uniq
+  697  vim .config/rosmgmt/ros2_humble_conf.bash 
+  698  rsttrm 
+  699  ros2path 
+  700  cd ROS2Dev/
+  701  l
+  702  cd robotics_ws/
+  703  l
+  704  srcthis 
+  705  ros2path 
+  706  cd ..
+  707  cd tsr_ws/
+  708  l
+  709  srcthis 
+  710  ros2path 
+  711  vim .config/rosmgmt/ros2_humble_conf.bash 
+  712  vim ~/.config/rosmgmt/ros2_humble_conf.bash 
+  713  rsttrm 
+  714  srcthis 
+  715  ros2path 
+  716  cd
+  717  vim ~/.config/rosmgmt/ros2_humble_conf.bash 
+  718  rsttrm 
+  719  rospath 
+  720  vim ~/.config/rosmgmt/ros2_humble_conf.bash 
+  721  rsttrm 
+  722  rospath 
+  723  path
+  724  vim ~/.bash_aliases 
+  725  rsttrm 
+  726  ip addr show eth0 | grep -o 'inet [0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+' | grep -o [0-9].*
+  727  ifconfig
+  728  ip addr show eth0 | grep -o 'inet [0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+'
+  729  ip addr show eth0 | grep -o 'inet
+  730  '
+  731  ip addr show mtu | grep -o 'inet [0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+'
+  732  ip addr show
+  733  ip addr show ens33 | grep -o 'inet [0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+'
+  734  ip addr show ens33 | grep -o 'inet [0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+' | grep -o [0-9].*
+  735  vim .bashrc 
+  736  rsttrm 
+  737  echo $MY_IP
+  738  vim .bashrc 
+  739  rsttrm 
+  740  echo $MY_IP
+  741  ip addr show eth0 | grep -o 'inet [0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+' >> /dev/null 
+  742  ip addr show eth0 | grep -o 'inet [0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+' > /dev/null 
+  743  ip addr show
+  744  vim .bashrc 
+  745  rsttrm 
+  746  ip addr show
+  747  echo $MY_IP
+  748  echo $MY_IP_TYPE
+  749  ip addr show eth0 | grep -o 'inet [0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+' > /dev/null 2>&1
+  750  echo $1
+  751  ip addr show eth0 | grep -o 'inet [0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+' > /dev/null 2>&1 &
+  752  /sbin/ip -o -4 addr list eth0 | awk '{print $4}' | cut -d/ -f1
+  753  netstat -rn
+  754  hostname -I
+  755  hostname
+  756  hostname -h
+  757  hostname -i
+  758  hostname -I
+  759  firefox
+  760  ip route get 1.1.1.1 
+  761  ip route get 1.1.1.1 | awk -F"src " '"'"'NR == 1{ split($2, a," ");print a[1]}'"'"')'
+  762  ip route get 1.1.1.1 | awk -F"src " '"'"'NR == 1{ split($2, a," ");print a[1]}'"'"'
+  763  ip route get 1.1.1.1 | awk -F"src " '"'"'NR == 1{ split($2, a," "
+  764  actapt 
+  765  upgapt 
+  766  sudo apt autoremove
+  767  cd ROS2Dev/robotics_ws/src/
+  768  gst
+  769  l
+  770  cd ..
+  771  .
+  772  cd ..
+  773  l
+  774  cd tsr_ws/
+  775  cd src/
+  776  l
+  777  lt notebooks/
+  778  gst
+  779  cat .gitignore 
+  780  ll
+  781  git add .gitignore 
+  782  gst
+  783  git commit -m "Updated gitignore exclusions"
+  784  git push -u origin main
+  785  cd
+  786  vim .bash_aliases 
+  787  vim .bashrc 
+  788  rsttrm 
+  789  vim .bashrc 
+  790  rsttrm 
+  791  vim .bashrc 
+  792  rsttrm 
+  793  echo $MY_T
+  794  rsttrm 
+  795  vim .bashrc 
+  796  echo $MY_IP_TYPE
+  797  rsttrm 
+  798  ip -h
+  799  ip -d
+  800  ip address -d
+  801  ip address -f
+  802  ip address help
+  803  ip address type
+  804  ip address show 
+  805  ip address show type
+  806  ip address show 2
+  807  ip address show inet
+  808  ip address show ens33
+  809  ip address show eth0
+  810  ip address show eth0 1>2 /dev/null
+  811  ip address show eth0 | grep inet
+  812  ip address show eth0 | grep -o 'inet'
+  813  nmcli -p device show
+  814  netstat -tn 2>/dev/null | grep :80 | awk '{print $5}' | cut -d: -f1 | sort | uniq -c | sort -nr | head
+  815  ip address show eth0 2>/dev/null
+  816  ip address show ens33 2>/dev/null 
+  817  ip address show eth0 2>/dev/null | grep -o 'inet'
+  818  ip address show ens33 2>/dev/null | grep -o 'inet'
+  819  ip address show
+  820  ip address show | grep -o '2:'
+  821  ip address show | grep -o '2:*'
+  822  ip address show | grep -o '2: '
+  823  ip address show | grep -o '2: [a-zA-Z][0-9]'
+  824  ip address show | grep '2:'
+  825  ip address show | grep '2: '
+  826  ip address show | grep '2: ' | awk {print $2}
+  827  ip address show | grep '2: ' | awk '{print $2}'
+  828  ip address show | grep '2: ' | awk '{gsub(/.*:/,"",$2);print $2}'
+  829  ip address show | grep '2: ' | awk -F':' '{print $2}'
+  830  echo $MY_IP
+  831  echo $MY_IP_TYPE
+  832  ip adresses show
+  833  ip adress show
+  834  ip address show
+  835  rsttrm 
+  836  echo $PS1
+  837  echo $PROMP_COMMAND
+  838  echo $PROMPT_COMMAND
+  839  echo $PS1_CMD4
+  840  vim .bashrc 
+  841  rsttrm 
+  842  echo $IP
+  843  echo $IPTYPW
+  844  echo $IPTYPE
+  845  printenv | grep IP
+  846  vim .bashrc 
+  847  printenv | grep IP
+  848  ip address show | grep '2: ' | awk -F': ' '{print $2}'
+  849  ip address show | grep '2: ' | awk -F':' '{print $2}'
+  850  vim .bashrc 
+  851  rsttrm 
+  852  printenv | grep IP
+  853  l
+  854  history >> roboticslab_vm_history_05092024.txt
+  855  mv roboticslab_vm_history_21082025.txt roboticslab_vm_history_21082024.txt 
+  856  l
+  857  rm 2 
+  858  l
+  859  actapt 
+  860  upgapt
+  861  cat .bash_aliases 
+  862  vim .bash_aliases 
+  863  rsttrm 
+  864  greetings 
+  865  vim .bash_aliases 
+  866  rsttrm 
+  867  greetings 
+  868  vim .bash_aliases 
+  869  rsttrm 
+  870  exit
+  871  greetings 
+  872  vim .bashrc
+  873  vim .profile 
+  874  vim .bash_aliases 
+  875  sc ROS2Dev/
+  876  l
+  877  cd ROS2Dev/
+  878  l
+  879  cd tsr_ws/
+  880  srcthis 
+  881  cd src/
+  882  l
+  883  apt search ros-humble | grep joint
+  884  apt search ros-humble | grep joint-state
+  885  sudo apt install ros-humble-joint-state-publisher
+  886  sudo apt install ros-humble-joint-state-publisher-gui
+  887  sudo apt install ros-humble-joint-state-publisher-*
+  888  code .
+  889  git config --local -l
+  890  cd ..
+  891  cd install/
+  892  l
+  893  cd demo_pkg_py/
+  894  l
+  895  cd ..
+  896  colcon build --symlink-install 
+  897  colcon build
+  898  colcon build --symlink-install 
+  899  source install/setup.bash 
+  900  ros2 run demo_pkg_py mynodo
+  901  ros2 run demo_pkg mynodo 
+  902  ros2 interface list
+  903  ros2 interface list | grep mgsg
+  904  ros2 interface list | grep mgs
+  905  ros2 interface list | grep msgs
+  906  ros2 interface list | grep std_msgs
+  907  ros2 interface show std_msgs/msg/String 
+  908  ros2 run demo_pkg mynodo 
+  909  colcon build --symlink-install 
+  910  srcthis 
+  911  ros2 run demo_pkg mynodo 
+  912  rsttrm
+  913  srcthis 
+  914  ros2 node list
+  915  ros2 node info 
+  916  ros2 node info /my_node 
+  917  ros2 topic list
+  918  ros2 topic info /mensaje 
+  919  ros2 topic echo /mensaje 
+  920  source install/setup.bash
+  921  srcthis 
+  922  vim ~/.bash_aliases 
+  923  echo $IP
+  924  echo $IPTYPE
+  925  vim ~/.bashrc
+  926  ros2 run demo_pkg mynodo 
+  927  cd src/
+  928  gst
+  929  git add demo_pkg/demo_pkg/MyNodo.py demo_pkg/demo_pkg/MySubscriptor.py 
+  930  gst
+  931  git add demo_pkg/package.xml demo_pkg/setup.py 
+  932  gst
+  933  git commit -m "Ejemplo 1 Publicadores y subscriptores"
+  934  git lg
+  935  git push -u origin main
+  936  exit
+  937  srcthis 
+  938  os2 topic  pub /mensaje  std_msgs/msg/String  "{}"
+  939  ros2 topic  pub /mensaje  std_msgs/msg/String  "{}"[A
+  940  rqt_graph 
+  941  srcthis 
+  942  rqt_graph 
+  943  source install/setup.bash 
+  944  rqt_graph 
+  945  rqt_graph 
+  946  srcthis 
+  947  rqt_graph 
+  948  ros2 node list
+  949  ros2 node info /my_node -
+  950  ros2 node info /my_node
+  951  rqt_graph 
+  952  srcthis 
+  953  ros2 run demo_pkg mysegnodo 
+  954  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.14.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.14.0-linux-x64/python_files/deactivate/bash/envVars.txt
+  955  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/deactivate/bash/envVars.txt
+  956  ping 192.168.50.199
+  957  ssh arrusr@192.168.50.199
+  958  ping 192.168.50.199
+  959  ssh arrusr@192.168.50.199
+  960  ping 192.168.50.199
+  961  ssh arrusr@192.168.50.199
+  962  exit
+  963  cat .bashrc
+  964  cat .bash_aliases 
+  965  echo $IP
+  966  l
+  967  cat roboticslab_vm_history_05092024.txt 
+  968  rosenv 
+  969  ping 198.168.50.199
+  970  history 
+  971  ssh arrusr@192.168.50.199
+  972  ping 192.168.50.199
+  973  ssh arrusr@192.168.50.199
+  974  ping 192.168.50.199
+  975  ssh arrusr@192.168.50.199
+  976  actapt 
+  977  ls /sys/class/net/
+  978  ls -l /sys/class/net/
+  979  cat .bash_aliases 
+  980  ls -l /sys/class/net/ | echo -e ${1//:/\\n}
+  981  ls  /sys/class/net/ | echo -e ${1//:/\\n}
+  982  lshw -C network
+  983  sudo lshw -C network
+  984  ifconfig
+  985  cd ROS2Dev/
+  986  l
+  987  cd tsr_ws/ -
+  988  cd tsr_ws/src/
+  989  l
+  990  gst
+  991  echo "**/__pycache__" >> .gitignore 
+  992  gst
+  993  git add .gitignore 
+  994  git commit -m "Updated gitignore exclusions."
+  995  git push -u origin main
+  996  gst
+  997  ls
+  998  cat ~/.bashrc
+  999  ls -1d */
+ 1000  ls -a
+ 1001  ls -l
+ 1002  ls -1 /sys/class/net/ | echo $(awk '{print $1}')
+ 1003  ls -1 /sys/class/net/
+ 1004  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.14.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.14.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1005  cd ROS2Dev/
+ 1006  srcthis 
+ 1007  cd tsr_ws/
+ 1008  srcthis 
+ 1009  cd src/
+ 1010  code .
+ 1011  cd ..
+ 1012  cat ~/.bash_aliases 
+ 1013  ros2 interface 
+ 1014  ros2 interface list
+ 1015  ros2 interface show std_msgs/msg/String 
+ 1016  ros2 interface show geometry_msgs/msg/Point
+ 1017  ros2 interface show geometry_msgs/msg/Point32 
+ 1018  ros2 interface show geometry_msgs/msg/PointStamped 
+ 1019  ros2 interface show geometry_msgs/msg/Twist
+ 1020  ros2 interface show nav_msgs/msg/Odometry 
+ 1021  ros2 interface list | grep sensor
+ 1022  ros2 interface show sensor_msgs/msg/imu
+ 1023  ros2 interface show sensor_msgs/msg/Imu
+ 1024  ros2 interface show sensor_msgs/msg/LaserScan 
+ 1025  ros2 interface show sensor_msgs/msg/Image 
+ 1026  cd src/ 
+ 1027  l
+ 1028  ros2 pkg create my_interface
+ 1029  ros2 interface list | grep Header
+ 1030  cd ..
+ 1031  l
+ 1032  lt install
+ 1033  cd build
+ 1034  l
+ 1035  cd demo_pkg
+ 1036  l
+ 1037  cd ..
+ 1038  colcon build
+ 1039  srcthis 
+ 1040  cd build/
+ 1041  l
+ 1042  cd my_interface/
+ 1043  ll
+ 1044  cd ..
+ 1045  cd install/
+ 1046  ll
+ 1047  cd my_interface/
+ 1048  l
+ 1049  cd share/
+ 1050  l
+ 1051  cd my_interface/
+ 1052  l
+ 1053  cd ..
+ 1054  find .py
+ 1055  find *.py
+ 1056  cd ..
+ 1057  colcon build
+ 1058  ros2 interface list | grep my_*
+ 1059  ros2 interface show my_interface/msg/MyPosition 
+ 1060  ros2 interface list | grep *gps*
+ 1061  ros2 interface list | grep *int*
+ 1062  ros2 interface list | grep int
+ 1063  ros2 interface show my_interface/msg/MyPosition 
+ 1064  cd src
+ 1065  code .
+ 1066  cd ..
+ 1067  source install/setup.bash
+ 1068  cd src/
+ 1069  code .
+ 1070  gst
+ 1071  ros2 interface list | grep my_
+ 1072  git add demo_pkg/demo_pkg/MyNodo.py 
+ 1073  git commit -m "Updated MyNodo with My custom message"
+ 1074  git add my_interface/
+ 1075  git commit -m "Agregue my_interface, paquete de interfaces personalizadas"
+ 1076  git push -u origin main
+ 1077  gst
+ 1078  cd ROS2Dev/tsr_ws/
+ 1079  srcthis 
+ 1080  l
+ 1081  cd src/
+ 1082  ros2path 
+ 1083  actapt 
+ 1084  upgapt 
+ 1085  sudo apt autoremove
+ 1086  ls
+ 1087  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.14.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.14.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1088  rsttrm 
+ 1089  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1090  actapt
+ 1091  upgapt
+ 1092  sudo apt autoremove 
+ 1093  cd ROS2Dev/tsr_ws
+ 1094  srcthis
+ 1095  ros2path 
+ 1096  cd build/
+ 1097  find . -name "*.msg"
+ 1098  find . -iname "*.msg"
+ 1099  find . -iname *.msg
+ 1100  cd ..
+ 1101  find . -iname *.msg
+ 1102  lt install/my_interface/share/
+ 1103  lt install/my_interface/share/my_interface/
+ 1104  lt install/my_interface/share/my_interface/msg/
+ 1105  cat install/my_interface/share/my_interface/msg/MyPosition.idl 
+ 1106  cd src/
+ 1107  code .
+ 1108  history | grep fc
+ 1109  fc-list | grep "Sauce" | grep mono
+ 1110  fc-list | grep "Sauce" 
+ 1111  fc-list | grep "Sauce" | grep Mono
+ 1112  gst
+ 1113  code .
+ 1114  cd Downloads/
+ 1115  l
+ 1116  rm vscode-linux-deb.arm64.deb 
+ 1117  l
+ 1118  rm EmdpQyka.html 
+ 1119  cd 
+ 1120  lsb_release -a
+ 1121  docker
+ 1122  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1123  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1124  srcthis 
+ 1125  ros2 topic echo /mensaje 
+ 1126  rqt_graph 
+ 1127  srcthis 
+ 1128  ros2 topic list
+ 1129  ros2 topic info /mensaje 
+ 1130  ros2 topic echo /mensaje 
+ 1131  srcthis 
+ 1132  ros2 topic list
+ 1133  ros2 topic info /target_pos 
+ 1134  ros2 topic echo /target_pos 
+ 1135  rqt_graph 
+ 1136  rqt_graph  &
+ 1137  ros2 topic echo /target_pos 
+ 1138  ros2 run demo_pkg mysegnodo 
+ 1139  cd ROS2Dev/tsr_ws/
+ 1140  srcthis 
+ 1141  ros2path 
+ 1142  cd src
+ 1143  code .
+ 1144  cd ..
+ 1145  colcon build --packages-select demo_pkg --symlink-install 
+ 1146  srcthis 
+ 1147  ros2 run demo_pkg mynodo 
+ 1148  ros2 interface list | grep geometry_msgs
+ 1149  ros2 interface show geometry_msgs/msg/PointStamped 
+ 1150  colcon build --packages-select my_interface 
+ 1151  srcthis 
+ 1152  ros2 interface list | grep my_interface
+ 1153  ros2 interface show my_interface/msg/TargetPosition 
+ 1154  python3
+ 1155  ros2 run demo_pkg mynodo 
+ 1156  cd src/
+ 1157  gst
+ 1158  git add my_interface/
+ 1159  gst
+ 1160  git commit -m "Agregue ejemplo de mensaje compuesto: TargetPosition"
+ 1161  gst
+ 1162  git add demo_pkg/
+ 1163  gst
+ 1164  git commit -m "Modificado para pub/sub a un mensaje compuesto TargetPosition"
+ 1165  g lg2
+ 1166  g lg
+ 1167  git push -u origin main
+ 1168  actapt 
+ 1169  upgapt 
+ 1170  sudo apt autoremove
+ 1171  l
+ 1172  cd Dev/
+ 1173  l
+ 1174  cd python_dev/
+ 1175  l
+ 1176  rm -rf testpy/
+ 1177  rm test.py 
+ 1178  l
+ 1179  mkdir RosBoard
+ 1180  cd RosBoard/
+ 1181  python3 -m venv .venv
+ 1182  pyenv versions
+ 1183  pyenv local 3.10.14 
+ 1184  python -m venv .venv
+ 1185  initvenv 
+ 1186  pyenv local 3.11.9 
+ 1187  initvenv 
+ 1188  sudo apt install python3.10-venv
+ 1189  ll
+ 1190  rm .python-version 
+ 1191  python3 -m venv .venv
+ 1192  startvenv 
+ 1193  l
+ 1194  ll
+ 1195  pip install pyserial
+ 1196  ll
+ 1197  actapt 
+ 1198  upgapt 
+ 1199  sudo apt autoremove
+ 1200  cd Dev/python_dev/
+ 1201  l
+ 1202  cd RosBoard/
+ 1203  l
+ 1204  ll
+ 1205  mkdir docs
+ 1206  mkdir src
+ 1207  mkdir src/rosboard_lib/
+ 1208  mkdir robocar_pkg
+ 1209  touch src/rosboard_lib/__init__.py
+ 1210  touch src/rosboard_lib/rosboard.py
+ 1211  touch src/rosboard_lib/sensors.py
+ 1212  touch src/rosboard_lib/actuators.py
+ 1213  touch src/rosboard_lib/utils.py
+ 1214  touch src/rosboard_lib/constants.py
+ 1215  touch 
+ 1216  lt src/
+ 1217  touch robocar_pkg/__init__.py
+ 1218  touch robocar_pkg/robocar.py
+ 1219  lt .
+ 1220  vim src/rosboard_lib/rosboard.py 
+ 1221  l ~/.config/
+ 1222  mkdir ~/.config/nvim
+ 1223  sudo apt-get install ripgrep
+ 1224  npm --version
+ 1225  git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+ 1226  l ~/.config/nvim
+ 1227  nvim
+ 1228  vim ~/.config/nvim/init.lua 
+ 1229  vim src/rosboard_lib/rosboard.py 
+ 1230  vim src/rosboard_lib/exceptions.py 
+ 1231  vim src/rosboard_lib/__init__.py 
+ 1232  cd Dev/python_dev/
+ 1233  l
+ 1234  cd RosBoard/
+ 1235  l
+ 1236  vim src/rosboard_lib/__init__.py 
+ 1237  vim ~/.config/nvim/init.lua 
+ 1238  l
+ 1239  vim robocar_pkg/__init__.py 
+ 1240  vim robocar_pkg/robocar.py 
+ 1241  lt .
+ 1242  vim src/rosboard_lib/rosboard.py 
+ 1243  initvenv 
+ 1244  ll
+ 1245  startvenv 
+ 1246  vim src/rosboard_lib/rosboard.py 
+ 1247  nano ~/.config/lsd/config.yaml
+ 1248  l
+ 1249  cat roboticslab_vm_history_07082024.txt 
+ 1250  cd ..
+ 1251  srcthis 
+ 1252  rosparam list
+ 1253  ros2  param list
+ 1254  ros2 param set /my_node kp 0.001
+ 1255  ros2 param get /my_node use_sim_time 
+ 1256  srcthis
+ 1257  ros2 param list
+ 1258  ros2 para list
+ 1259  ros2 node list
+ 1260  ros2 topic list
+ 1261  ros2 para list
+ 1262  ros2 param list
+ 1263  ros2 param get /myparams timer_period 
+ 1264  ros2 param set /myparams timer_period 0.15
+ 1265  ros2 param get /myparams timer_period 
+ 1266  ros2 param list
+ 1267  ros2 param get /myparams param_int 
+ 1268  ros2 param set /myparams param_int 10.0
+ 1269  ros2 param set /myparams param_int 10
+ 1270  ros2 param get /myparams param_int 
+ 1271  ros2 param get /myparams controller 
+ 1272  ros2 param get /myparams timer_period 
+ 1273  ros2 param list
+ 1274  ros2 param
+ 1275  ros2 param describe /myparams timer_period 
+ 1276  ros2 param list
+ 1277  ros2 param set /myparams ang_vel 0.1789
+ 1278  ros2 param set /myparams timer_period -0.123
+ 1279  ros2 param list
+ 1280  ros2 param set /myparams param_int 7
+ 1281  ros2 param set /myparams label_str 'Hola mundo'
+ 1282  cd src/
+ 1283  l demo_pkg/
+ 1284  mkdir -p ./demo_pkg/config
+ 1285  l demo_pkg/
+ 1286  ros2 param dump /myparams 
+ 1287  ros2 param dump /myparams >> demo_pkg/config/params.yaml
+ 1288  ros2 param dump /myparams 
+ 1289  ros2 param load ./demo_pkg/config/params_2.yaml 
+ 1290  ros2 param load /myparams ./demo_pkg/config/params_2.yaml 
+ 1291  cd ROS2Dev/tsr_ws/
+ 1292  srcthis 
+ 1293  cd src/
+ 1294  code .
+ 1295  ros2 param list
+ 1296  ros2 run demo_pkg mynodo 
+ 1297  cd ..
+ 1298  colcon build --packages-select demo_pkg --symlink-install 
+ 1299  srcthis 
+ 1300  ros2 run demo_pkg paramsrv 
+ 1301  ros2 run demo_pkg paramsrv --ros-args -p timer_period:=0.15
+ 1302  ros2 run demo_pkg paramsrv
+ 1303  ros2 run demo_pkg paramsrv --ros-args --params-file ./src/demo_pkg/config/params.yaml 
+ 1304  cd src/
+ 1305  gst
+ 1306  git add demo_pkg/demo_pkg/MyParameters.py 
+ 1307  git add demo_pkg/setup.py 
+ 1308  gst
+ 1309  git add demo_pkg/config/
+ 1310  gst
+ 1311  git commit -m "Agregue ejemplo de ros2 parametros"
+ 1312  git push -u origin main 
+ 1313  gst
+ 1314  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1315  cd Dev/python_dev/
+ 1316  l
+ 1317  cd RosBoard/
+ 1318  l
+ 1319  vim src/rosboard_lib/rosboard.py 
+ 1320  initvenv 
+ 1321  l
+ 1322  ll
+ 1323  startvenv 
+ 1324  vim src/rosboard_lib/rosboard.py 
+ 1325  l
+ 1326  lt .
+ 1327  deactivate
+ 1328  rm src/rosboard_lib/*
+ 1329  rm robocar_pkg/*
+ 1330  l
+ 1331  lt .
+ 1332  touch robocar_pkg/__init__.py
+ 1333  touch src/rosboard_lib/__init__.py
+ 1334  lt .
+ 1335  touch src/rosboard_lib/rosboard_lib.py
+ 1336  touch src/rosboard_lib/actuator.py
+ 1337  touch src/rosboard_lib/sensor.py
+ 1338  touch src/rosboard_lib/constants.py
+ 1339  lt .
+ 1340  touch robocar_pkg/robocar.py
+ 1341  lt .
+ 1342  lt ~/.config/nvim/
+ 1343  cd ~/.config/nvim/
+ 1344  l
+ 1345  ll
+ 1346  rm -rf .git/ 
+ 1347  rm -rf .github/ 
+ 1348  rm LICENSE.md README.md 
+ 1349  rm .gitignore 
+ 1350  ll
+ 1351  l
+ 1352  ll
+ 1353  rm -rf doc/ lua/
+ 1354  rm *
+ 1355  ll
+ 1356  rm .stylua.toml 
+ 1357  l
+ 1358  vim
+ 1359  ll
+ 1360  touch init.lua
+ 1361  vim init.lua 
+ 1362  mkdir lua
+ 1363  touch lua/lazy.lua
+ 1364  vim lua/lazy.lua 
+ 1365  cd lua
+ 1366  l
+ 1367  mkdir config
+ 1368  mv lazy.lua config/
+ 1369  cd ..
+ 1370  lt .
+ 1371  mkdir -p lua/config/core
+ 1372  mkdir -p lua/config/plugins
+ 1373  lt .
+ 1374  touch lua/config/core/init.lua
+ 1375  touch lua/config/plugins/init.lua
+ 1376  lt .
+ 1377  vim lua/config/core/options.lua
+ 1378  vim lua/config/core/init.lua 
+ 1379  vim init.lua 
+ 1380  vim
+ 1381  vim lua/config/core/options.lua
+ 1382  vim lua/config/lazy.lua 
+ 1383  vim init.lua 
+ 1384  vim lua/config/plugins/init.lua 
+ 1385  vim init.lua 
+ 1386  l
+ 1387  rm -rf lua/
+ 1388  rm init.lua 
+ 1389  ll
+ 1390  lt ~/.config/nvim/
+ 1391  actapt
+ 1392  upgapt
+ 1393  nvim --version
+ 1394  nvim --V1 -v
+ 1395  nvim -V1 -v
+ 1396  cd ~/.config/nvim/
+ 1397  touch init.lua
+ 1398  l
+ 1399  mkdir -p lua/frivas/core
+ 1400  mkdir -p lua/frivas/plugins
+ 1401  touch lua/frivas/lazy.lua
+ 1402  lt .
+ 1403  nvim .
+ 1404  nvim 
+ 1405  nvim .
+ 1406  nvim 
+ 1407  nvim .
+ 1408  nvim 
+ 1409  nvim .
+ 1410  nvim 
+ 1411  nvim .
+ 1412  nvim 
+ 1413  cd ~/Dev/python_dev/RosBoard/
+ 1414  nvim .
+ 1415  nvim ~/.config/nvim/
+ 1416  nvim .
+ 1417  startvenv 
+ 1418  nvim .
+ 1419  deactivate 
+ 1420  l
+ 1421  cd 
+ 1422  l
+ 1423  history roboticslab_vm_history_20092024.txt
+ 1424  history >> roboticslab_vm_history_20092024.txt
