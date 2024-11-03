@@ -1,0 +1,184 @@
+    1  lsb_release -a
+    2  ls
+    3  sudo apt install curl git
+    4  sudo apt-get update -y && sudo apt update -y
+    5  sudo apt upgrade -y
+    6  sudo apt install curl git
+    7  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    8  source $HOME/.cargo/env
+    9  rustup override set stable
+   10  rustup update stable
+   11  sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python3-openssl
+   12  cc -v
+   13  cargo install --git https://github.com/Peltoche/lsd.git --branch master
+   14  l
+   15  lsd
+   16  ll
+   17  lsd .rustup/
+   18  mkdir -p ~/.config/lsd
+   19  lsd -l ~/.config/lsd/
+   20  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/lsd/config.yaml -P ~/.config/lsd/
+   21  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/lsd/themes/terminal-colors.yaml -P ~/.config/lsd/
+   22  mv ~/.config/lsd/terminal-colors.yaml ~/.config/lsd/colors.yaml
+   23  lsd -l ~/.config/lsd/
+   24  nano ~/.config/lsd/config.yaml
+   25  lsd -l ~/.config/lsd/
+   26  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/gitconfig
+   27  mv gitconfig .gitconfig
+   28  l
+   29  ll
+   30  nano .gitconfig 
+   31  echo "Copying my extra scripts..."
+   32  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/gitbash/git-completition.bash -P ~/.config/gitbash/
+   33  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/gitbash/git-prompt.sh -P ~/.config/gitbash/
+   34  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/rosmgmt/ros_mgmt.sh -P ~/.config/rosmgmt
+   35  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/rosmgmt/ros2_humble_conf.bash -P ~/.config/rosmgmt
+   36  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/rosmgmt/ros2_galactic_conf.bash -P ~/.config/rosmgmt
+   37  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/rosmgmt/ros_noetic_conf.bash -P ~/.config/rosmgmt
+   38  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/utilities/venv_prompt.sh -P ~/.config/utilities
+   39  lsd -l  ~/.config/gitbash/
+   40  lsd -l  ~/.config/rosmgmt/
+   41  lsd -l  ~/.config/utilities/
+   42  nano .bashrc 
+   43  exec $SHELL
+   44  ll
+   45  touch .bash_aliases
+   46  nano .bash_aliases 
+   47  exec $SHELL
+   48  echo "Instalando pyenv, from medium blog's post 'https://medium.com/@aashari/easy-to-follow-guide-of-how-to-install-pyenv-on-ubuntu-a3730af8d7f0'"
+   49  sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+   50  curl https://pyenv.run | bash
+   51  nano .bashrc 
+   52  rsttrm 
+   53  pyenv --version
+   54  python -V
+   55  pyenv install --list | grep 3.10
+   56  pyenv install 3.10.15
+   57  pyenv install --list | grep 3.12
+   58  pyenv install 3.12.6
+   59  pyenv versions
+   60  sudo apt install python3
+   61  python3 -V
+   62  sudo apt install python3-pip
+   63  ls 
+   64  l
+   65  ll
+   66  ls .local/
+   67  mkdir -p $HOME/.local/bin
+   68  ls .local/
+   69  mkdir -p ~/Dev/pydev
+   70  l
+   71  lt Dev/
+   72  cd Dev/pydev/
+   73  mkdir test
+   74  cd test
+   75  pyenv local 3.12 
+   76  python -V
+   77  nano ~/.bash_aliases 
+   78  rsttrm 
+   79  initvenv 
+   80  startvenv 
+   81  ll
+   82  rm .python-version 
+   83  deactivate 
+   84  cd
+   85  echo "Installing Node.js and npm using NVM (Node Version Manager)..."
+   86  wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+   87  nano ~/.bashrc 
+   88  rsttrm 
+   89  nvm -v
+   90  nvm list --lts
+   91  nvm list-lts
+   92  nvm install --lts
+   93  node -v
+   94  echo "Installing Nvim (Neovim)... from binaries."
+   95  wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
+   96  chmod u+x nvim.appimage
+   97  sudo apt install libfuse2
+   98  sudo mv nvim.appimage /usr/bin/nvim
+   99  ll
+  100  ll /usr/bin/nvim
+  101  nvim
+  102  npm install -g neovim
+  103  nvim .gitconfig 
+  104  sudo apt install ripgrep -y
+  105  rg --version
+  106  sudo apt install fd-find -y
+  107  fdfind -V
+  108  echo $(which fdfind)
+  109  ln -s $(which fdfind) ~/.local/bin/fd
+  110  fd -V
+  111  ln -s $(which fdfind) ~/.local/bin/fd
+  112  echo $UBUNTU_CODENAME
+  113  ll
+  114  nvidia-smi
+  115  ll
+  116  watch -n 0.5 nvidia-smi
+  117  curl -fsSL https://ollama.com/install.sh | sh
+  118  ollama pull llama2
+  119  ollama run llama2
+  120  ollama stop llama2
+  121  ollama show llama2
+  122  ollama stop "llama2"
+  123  ollama show llama2
+  124  ollama llama2 stop
+  125  ollama show llama2 stop
+  126  ollama  /?
+  127  ollama 
+  128  ollama stop
+  129  ollama show
+  130  ollama show llama2
+  131  ollama run llama2
+  132  ollama pull llama3.1
+  133  history | tail 100
+  134  history | tail -n 10
+  135  history | tail -n 25
+  136  ollama run llama2
+  137  ll
+  138  ollama run llama2
+  139  ls oll
+  140  ll .ollama/
+  141  cat .ollama/history 
+  142  cd ..
+  143  cd
+  144  ll
+  145  # Add Docker's official GPG key:
+  146  sudo apt-get update
+  147  sudo apt-get install ca-certificates curl
+  148  sudo install -m 0755 -d /etc/apt/keyrings
+  149  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+  150  sudo chmod a+r /etc/apt/keyrings/docker.asc
+  151  # Add the repository to Apt sources:
+  152  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  153    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  154  sudo apt-get update
+  155  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+  156  history | grep ollama
+  157  ollama pull llama3.1:70b
+  158  ollama pull llava
+  159  docker run -d -p 3000:8080 --gpus all --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:cuda
+  160  sudo docker run -d -p 3000:8080 --gpus all --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:cuda
+  161  sudo docker ps
+  162  sudo docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:cuda
+  163  sudo docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+  164  docker run --help
+  165  docker run --device list
+  166  docker stop "/open-webui"
+  167  sudo docker stop "/open-webui"
+  168  sudo docker stop /open-webui
+  169  sudo docker rm /open-webui
+  170  docker ps -a
+  171  sudo docker ps -a
+  172  docker stop open-webui
+  173  sudo docker stop open-webui
+  174  sudo docker rm open-webui
+  175  sudo docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+  176  sudo docker ps -a
+  177  watch -n 0.5 nvidia-smi
+  178  ollama --list
+  179  ollama list
+  180  ollama pull gemma2
+  181  ollama pull codegemma
+  182  l
+  183  ll
+  184  history >> wsl_history_180924.txt

@@ -1,0 +1,446 @@
+    1  lsb_release -a
+    2  ls
+    3  sudo apt install curl git
+    4  sudo apt-get update -y && sudo apt update -y
+    5  sudo apt upgrade -y
+    6  sudo apt install curl git
+    7  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    8  source $HOME/.cargo/env
+    9  rustup override set stable
+   10  rustup update stable
+   11  sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python3-openssl
+   12  cc -v
+   13  cargo install --git https://github.com/Peltoche/lsd.git --branch master
+   14  l
+   15  lsd
+   16  ll
+   17  lsd .rustup/
+   18  mkdir -p ~/.config/lsd
+   19  lsd -l ~/.config/lsd/
+   20  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/lsd/config.yaml -P ~/.config/lsd/
+   21  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/lsd/themes/terminal-colors.yaml -P ~/.config/lsd/
+   22  mv ~/.config/lsd/terminal-colors.yaml ~/.config/lsd/colors.yaml
+   23  lsd -l ~/.config/lsd/
+   24  nano ~/.config/lsd/config.yaml
+   25  lsd -l ~/.config/lsd/
+   26  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/gitconfig
+   27  mv gitconfig .gitconfig
+   28  l
+   29  ll
+   30  nano .gitconfig 
+   31  echo "Copying my extra scripts..."
+   32  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/gitbash/git-completition.bash -P ~/.config/gitbash/
+   33  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/gitbash/git-prompt.sh -P ~/.config/gitbash/
+   34  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/rosmgmt/ros_mgmt.sh -P ~/.config/rosmgmt
+   35  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/rosmgmt/ros2_humble_conf.bash -P ~/.config/rosmgmt
+   36  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/rosmgmt/ros2_galactic_conf.bash -P ~/.config/rosmgmt
+   37  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/rosmgmt/ros_noetic_conf.bash -P ~/.config/rosmgmt
+   38  wget https://raw.githubusercontent.com/rivascf/dotfiles-m-temp/main/config/utilities/venv_prompt.sh -P ~/.config/utilities
+   39  lsd -l  ~/.config/gitbash/
+   40  lsd -l  ~/.config/rosmgmt/
+   41  lsd -l  ~/.config/utilities/
+   42  nano .bashrc 
+   43  exec $SHELL
+   44  ll
+   45  touch .bash_aliases
+   46  nano .bash_aliases 
+   47  exec $SHELL
+   48  echo "Instalando pyenv, from medium blog's post 'https://medium.com/@aashari/easy-to-follow-guide-of-how-to-install-pyenv-on-ubuntu-a3730af8d7f0'"
+   49  sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+   50  curl https://pyenv.run | bash
+   51  nano .bashrc 
+   52  rsttrm 
+   53  pyenv --version
+   54  python -V
+   55  pyenv install --list | grep 3.10
+   56  pyenv install 3.10.15
+   57  pyenv install --list | grep 3.12
+   58  pyenv install 3.12.6
+   59  pyenv versions
+   60  sudo apt install python3
+   61  python3 -V
+   62  sudo apt install python3-pip
+   63  ls 
+   64  l
+   65  ll
+   66  ls .local/
+   67  mkdir -p $HOME/.local/bin
+   68  ls .local/
+   69  mkdir -p ~/Dev/pydev
+   70  l
+   71  lt Dev/
+   72  cd Dev/pydev/
+   73  mkdir test
+   74  cd test
+   75  pyenv local 3.12 
+   76  python -V
+   77  nano ~/.bash_aliases 
+   78  rsttrm 
+   79  initvenv 
+   80  startvenv 
+   81  ll
+   82  rm .python-version 
+   83  deactivate 
+   84  cd
+   85  echo "Installing Node.js and npm using NVM (Node Version Manager)..."
+   86  wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+   87  nano ~/.bashrc 
+   88  rsttrm 
+   89  nvm -v
+   90  nvm list --lts
+   91  nvm list-lts
+   92  nvm install --lts
+   93  node -v
+   94  echo "Installing Nvim (Neovim)... from binaries."
+   95  wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
+   96  chmod u+x nvim.appimage
+   97  sudo apt install libfuse2
+   98  sudo mv nvim.appimage /usr/bin/nvim
+   99  ll
+  100  ll /usr/bin/nvim
+  101  nvim
+  102  npm install -g neovim
+  103  nvim .gitconfig 
+  104  sudo apt install ripgrep -y
+  105  rg --version
+  106  sudo apt install fd-find -y
+  107  fdfind -V
+  108  echo $(which fdfind)
+  109  ln -s $(which fdfind) ~/.local/bin/fd
+  110  fd -V
+  111  ln -s $(which fdfind) ~/.local/bin/fd
+  112  echo $UBUNTU_CODENAME
+  113  ll
+  114  nvidia-smi
+  115  ll
+  116  watch -n 0.5 nvidia-smi
+  117  curl -fsSL https://ollama.com/install.sh | sh
+  118  ollama pull llama2
+  119  ollama run llama2
+  120  ollama stop llama2
+  121  ollama show llama2
+  122  ollama stop "llama2"
+  123  ollama show llama2
+  124  ollama llama2 stop
+  125  ollama show llama2 stop
+  126  ollama  /?
+  127  ollama 
+  128  ollama stop
+  129  ollama show
+  130  ollama show llama2
+  131  ollama run llama2
+  132  ollama pull llama3.1
+  133  history | tail 100
+  134  history | tail -n 10
+  135  history | tail -n 25
+  136  ollama run llama2
+  137  ll
+  138  ollama run llama2
+  139  ls oll
+  140  ll .ollama/
+  141  cat .ollama/history 
+  142  cd ..
+  143  cd
+  144  ll
+  145  # Add Docker's official GPG key:
+  146  sudo apt-get update
+  147  sudo apt-get install ca-certificates curl
+  148  sudo install -m 0755 -d /etc/apt/keyrings
+  149  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+  150  sudo chmod a+r /etc/apt/keyrings/docker.asc
+  151  # Add the repository to Apt sources:
+  152  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  153    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  154  sudo apt-get update
+  155  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+  156  history | grep ollama
+  157  ollama pull llama3.1:70b
+  158  ollama pull llava
+  159  docker run -d -p 3000:8080 --gpus all --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:cuda
+  160  sudo docker run -d -p 3000:8080 --gpus all --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:cuda
+  161  sudo docker ps
+  162  sudo docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:cuda
+  163  sudo docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+  164  docker run --help
+  165  docker run --device list
+  166  docker stop "/open-webui"
+  167  sudo docker stop "/open-webui"
+  168  sudo docker stop /open-webui
+  169  sudo docker rm /open-webui
+  170  docker ps -a
+  171  sudo docker ps -a
+  172  docker stop open-webui
+  173  sudo docker stop open-webui
+  174  sudo docker rm open-webui
+  175  sudo docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+  176  sudo docker ps -a
+  177  watch -n 0.5 nvidia-smi
+  178  ollama --list
+  179  ollama list
+  180  ollama pull gemma2
+  181  ollama pull codegemma
+  182  htop
+  183  ollama list
+  184  ollama run llama2
+  185  htop
+  186  ollama pull deepseek-coder:6.7b
+  187  ollama
+  188  ollama list
+  189  ollama rm llama3.1:70b
+  190  ollama list
+  191  ollama ps
+  192  l
+  193  ll
+  194  history >> wsl_history_180924.txt
+  195  history
+  196  sudo docker ps
+  197  ollama list
+  198  vim .bashrc 
+  199  vim .profile
+  200  cat .bash_aliases 
+  201  ports
+  202  sudo apt install net-tools
+  203  ports
+  204  ifconfig
+  205  docker
+  206  sudo apt install htop
+  207  htop
+  208  watch -n 0.5 nvidia-smi
+  209  ollama run llama2
+  210  curl http://localhost:11434/api/generate -d {
+  211  }
+  212  curl http://localhost:11434/api/generate -d '{
+  213    "model": "llama2",
+  214    "prompt": "Why is the sky blue?"
+  215  }'
+  216  curl http://localhost:11434/api/generate -d '{
+  217    "model": "codegema",
+  218    "prompt": "Why is the sky blue?"
+  219  }'
+  220  ollama list
+  221  curl http://localhost:11434/api/generate -d '{
+  222    "model": "codegemma",
+  223    "prompt": "Why is the sky blue?"
+  224  }'
+  225  curl http://localhost:11434/api/generate -d '{
+  226    "model": "llama2",
+  227    "prompt": "Why is the sky blue?"
+  228  }'
+  229  ollama list
+  230  curl http://localhost:11434/api/generate -d '{
+  231    "model": "deepseek-coder",
+  232    "prompt": "Why is the sky blue?"
+  233  }'
+  234  curl http://localhost:11434/api/generate -d '{
+  235    "model": "deepseek-coder",
+  236    "prompt": "Why is the sky blue?"
+  237  }'
+  238  curl http://localhost:11434/api/generate -d '{
+  239    "model": "codegemma",
+  240    "prompt": "Why is the sky blue?"
+  241  }'
+  242  ollama list
+  243  curl http://localhost:11434/api/generate -d '{
+  244    "model": "gemma2",
+  245    "prompt": "Why is the sky blue?"
+  246  }'
+  247  curl http://localhost:11434/api/generate -d '{
+  248    "model": "llama2",
+  249    "prompt": "Why is the sky blue?"
+  250  }'
+  251  ollama list
+  252  actapt 
+  253  upgapt 
+  254  sudo atp autoremove
+  255  sudo apt autoremove
+  256  sudo apt reboot
+  257  vim
+  258  ll
+  259  curl http://localhost:11434/api/generate -d '{
+  260    "model": "llama2",
+  261    "prompt": "Why is the sky blue?"
+  262  }'
+  263  ollama list
+  264  df -h --total
+  265  pwd
+  266  ollama list
+  267  ollama 
+  268  ollama show PaLI
+  269  ollama list
+  270  ollama show gema2
+  271  ollama show gema2:latest
+  272  ollama ps
+  273  ollama show 
+  274  ollama show --help
+  275  python
+  276  python3
+  277  pyenv -V
+  278  pyenv --version
+  279  l
+  280  cd Dev
+  281  l
+  282  mkdir rt-2
+  283  cd rt-2/
+  284  git clone https://github.com/kyegomez/RT-2.git
+  285  l
+  286  rm -rf RT-2/
+  287  cd ..
+  288  rm -rf rt-2/
+  289  git clone https://github.com/kyegomez/RT-2.git
+  290  cd RT-2
+  291  l
+  292  pyenv versions
+  293  pyenv local 3.10.15 
+  294  python -m venv .venv
+  295  l
+  296  ll
+  297  rm .python-version 
+  298  source .venv/bin/activate
+  299  pip install -r requirements.txt 
+  300  pip install -r requirements.txt --use-pep517
+  301  l
+  302  vim example.py 
+  303  python example.py 
+  304  python
+  305  deactivate 
+  306  cd ..
+  307  rm -rf RT-2/
+  308  mkdir rt-2
+  309  cd rt-2/
+  310  pyenv local 3.10.15 
+  311  python -m venv .venv
+  312  rm .python-version 
+  313  source .venv/bin/activate
+  314  pip install --upgrade pip
+  315  pip install rt2
+  316  vim test.py
+  317  python test.py 
+  318  l
+  319  ll
+  320  cd .venv/
+  321  l
+  322  find . -name 'model.py'
+  323  vim lib/python3.10/site-packages/rt2/model.py 
+  324  python test.py 
+  325  cd ..
+  326  python test.py 
+  327  vim .venv/lib/python3.10/site-packages/zeta/structs/__init__.py 
+  328  l .venv/lib/python3.10/site-packages/zeta/structs/
+  329  vim .venv/lib/python3.10/site-packages/zeta/structs/auto_regressive_wrapper.py 
+  330  python test.py 
+  331  vim .venv/lib/python3.10/site-packages/rt2/model.py 
+  332  python test.py 
+  333  mv test.py test_rt_model.py
+  334  l
+  335  mv test_rt_model.py test_rt2_model.py
+  336  l
+  337  deactivate
+  338  cd ..
+  339  mkdir PaLI
+  340  cd PaLI/
+  341  pyenv local 3.10.15 
+  342  python -m venv .venv
+  343  rm .python-version 
+  344  source .venv/bin/activate
+  345  pip install --upgrade pip
+  346  pip install pali-torch
+  347  vim test_pali_model.py
+  348  python test_pali_model.py 
+  349  vim test_pali_VitImageEnbedder.py 
+  350  python test_pali_VitImageEnbedder.py 
+  351  git clone https://github.com/kyegomez/PALI.git
+  352  cp PALI/pali.png .
+  353  cp PALI/img_embeds.py .
+  354  l
+  355  python img_embeds.py 
+  356  vim img_embeds.py 
+  357  python img_embeds.py 
+  358  vim PALI/pali/model.py 
+  359  vim img_embeds.py 
+  360  vim PALI/pali/model.py 
+  361  deactivate 
+  362  watch -n 0.5 nvidia-smi
+  363  ll
+  364  cd .config/
+  365  l
+  366  git clone mkdir dltme
+  367  mkdir dltme
+  368  cd dltme/
+  369  git clone https://github.com/rivascf/dotfiles_2024.git
+  370  cd ..
+  371  mv dltme/dotfiles_2024/config/nvim/ .
+  372  ll
+  373  rm -rf dltme/
+  374  cd nvim/
+  375  vim .
+  376  unzip -v
+  377  sudo apt install unzip
+  378  unzip -v
+  379  vim .
+  380  sudo apt install python3-nvim
+  381  apt show python3 | grep nvim
+  382  apt search python3 | grep nvim
+  383  sudo apt install python3-pynvim
+  384  nvim .
+  385  cd ..
+  386  rm -rf nvim/
+  387  mkdir dltme
+  388  cd dltme/
+  389  git clone https://github.com/rivascf/dotfiles_2024.git
+  390  cd ..
+  391  mv dltme/dotfiles_2024/config/nvim/ .
+  392  rm -rf dltme/
+  393  nvim .
+  394  sudo apt remove python3-pynvim
+  395  sudo apt aoturemove
+  396  sudo apt autoremove
+  397  nvim .
+  398  history
+  399  cd
+  400  wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
+  401  chmod u+x nvim.appimage
+  402  sudo mv nvim.appimage /usr/bin/nvim
+  403  cd .config/nvim/
+  404  nvim .
+  405  python3
+  406  nvim .
+  407  pip3 install neovim
+  408  nvim .
+  409  sudo apt install python3-venv
+  410  nvim .
+  411  cd
+  412  cd Dev/PaLI/
+  413  l
+  414  vim .
+  415  startvenv 
+  416  vim .
+  417  deactivate 
+  418  ollama list
+  419  ll
+  420  dcd Dev/rt-2/
+  421  ll
+  422  cd Dev/rt-2/
+  423  ll
+  424  startvenv 
+  425  python3 test_rt2_model.py 
+  426  vim test_rt2_model.py 
+  427  ls
+  428  ll
+  429  lt Dev/
+  430  cd Dev/PaLI/
+  431  l
+  432  ll
+  433  startvenv 
+  434  python test_pali_model.py 
+  435  python test_pali_VitImageEnbedder.py 
+  436  vim .
+  437  python img_embeds.py 
+  438  ll
+  439  ollama -v
+  440  ollama update
+  441  ollama
+  442  ollama show llama2
+  443  docker ps
+  444  sudo docker ps
+  445  cat wsl_history_180924.txt 
+  446  history >> wsl_history_290924.txt
