@@ -38,6 +38,8 @@ Anulando el registro.
 La operación se completó correctamente.
 ```
 
+To Disable `hyper-v` See refs...
+
 ## In WSL Ubuntu
 
 Command `lsb_release -a` output:
