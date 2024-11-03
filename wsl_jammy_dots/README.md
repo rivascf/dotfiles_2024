@@ -30,6 +30,14 @@ Exportación en curso. Esta operación puede tardar unos minutos....: ./home/arr
 La operación se completó correctamente.
 ```
 
+Command `wsl --unregister <DistroName>` to remove wsl-ubuntu distro.
+
+```console
+wsl --unregister Ubuntu
+Anulando el registro.
+La operación se completó correctamente.
+```
+
 ## In WSL Ubuntu
 
 Command `lsb_release -a` output:
