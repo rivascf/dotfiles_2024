@@ -21,9 +21,13 @@ Command `wsl -l -v` output:
 Command `wsl --export <distro> <filename.tar>` to export wsl-ubuntu distro backup.
 
 ```console
-$ wsl --export Ubuntu wsl-ubuntu22_04_ai.tar>
+$ wsl --export Ubuntu wsl-ubuntu22_04_ai.tar
+Exportación en curso. Esta operación puede tardar unos minutos...
 
+⁞ (Varios minutos depués)
 
+Exportación en curso. Esta operación puede tardar unos minutos....: ./home/arrusr/.cache/git/credential/socket: pax format cannot archive sock
+La operación se completó correctamente.
 ```
 
 ## In WSL Ubuntu
