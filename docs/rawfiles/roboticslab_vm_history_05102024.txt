@@ -1,0 +1,1000 @@
+ 1006  code .
+ 1007  cd ..
+ 1008  cat ~/.bash_aliases 
+ 1009  ros2 interface 
+ 1010  ros2 interface list
+ 1011  ros2 interface show std_msgs/msg/String 
+ 1012  ros2 interface show geometry_msgs/msg/Point
+ 1013  ros2 interface show geometry_msgs/msg/Point32 
+ 1014  ros2 interface show geometry_msgs/msg/PointStamped 
+ 1015  ros2 interface show geometry_msgs/msg/Twist
+ 1016  ros2 interface show nav_msgs/msg/Odometry 
+ 1017  ros2 interface list | grep sensor
+ 1018  ros2 interface show sensor_msgs/msg/imu
+ 1019  ros2 interface show sensor_msgs/msg/Imu
+ 1020  ros2 interface show sensor_msgs/msg/LaserScan 
+ 1021  ros2 interface show sensor_msgs/msg/Image 
+ 1022  cd src/ 
+ 1023  l
+ 1024  ros2 pkg create my_interface
+ 1025  ros2 interface list | grep Header
+ 1026  cd ..
+ 1027  l
+ 1028  lt install
+ 1029  cd build
+ 1030  l
+ 1031  cd demo_pkg
+ 1032  l
+ 1033  cd ..
+ 1034  colcon build
+ 1035  srcthis 
+ 1036  cd build/
+ 1037  l
+ 1038  cd my_interface/
+ 1039  ll
+ 1040  cd ..
+ 1041  cd install/
+ 1042  ll
+ 1043  cd my_interface/
+ 1044  l
+ 1045  cd share/
+ 1046  l
+ 1047  cd my_interface/
+ 1048  l
+ 1049  cd ..
+ 1050  find .py
+ 1051  find *.py
+ 1052  cd ..
+ 1053  colcon build
+ 1054  ros2 interface list | grep my_*
+ 1055  ros2 interface show my_interface/msg/MyPosition 
+ 1056  ros2 interface list | grep *gps*
+ 1057  ros2 interface list | grep *int*
+ 1058  ros2 interface list | grep int
+ 1059  ros2 interface show my_interface/msg/MyPosition 
+ 1060  cd src
+ 1061  code .
+ 1062  cd ..
+ 1063  source install/setup.bash
+ 1064  cd src/
+ 1065  code .
+ 1066  gst
+ 1067  ros2 interface list | grep my_
+ 1068  git add demo_pkg/demo_pkg/MyNodo.py 
+ 1069  git commit -m "Updated MyNodo with My custom message"
+ 1070  git add my_interface/
+ 1071  git commit -m "Agregue my_interface, paquete de interfaces personalizadas"
+ 1072  git push -u origin main
+ 1073  gst
+ 1074  cd ROS2Dev/tsr_ws/
+ 1075  srcthis 
+ 1076  l
+ 1077  cd src/
+ 1078  ros2path 
+ 1079  actapt 
+ 1080  upgapt 
+ 1081  sudo apt autoremove
+ 1082  ls
+ 1083  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.14.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.14.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1084  rsttrm 
+ 1085  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1086  actapt
+ 1087  upgapt
+ 1088  sudo apt autoremove 
+ 1089  cd ROS2Dev/tsr_ws
+ 1090  srcthis
+ 1091  ros2path 
+ 1092  cd build/
+ 1093  find . -name "*.msg"
+ 1094  find . -iname "*.msg"
+ 1095  find . -iname *.msg
+ 1096  cd ..
+ 1097  find . -iname *.msg
+ 1098  lt install/my_interface/share/
+ 1099  lt install/my_interface/share/my_interface/
+ 1100  lt install/my_interface/share/my_interface/msg/
+ 1101  cat install/my_interface/share/my_interface/msg/MyPosition.idl 
+ 1102  cd src/
+ 1103  code .
+ 1104  history | grep fc
+ 1105  fc-list | grep "Sauce" | grep mono
+ 1106  fc-list | grep "Sauce" 
+ 1107  fc-list | grep "Sauce" | grep Mono
+ 1108  gst
+ 1109  code .
+ 1110  cd Downloads/
+ 1111  l
+ 1112  rm vscode-linux-deb.arm64.deb 
+ 1113  l
+ 1114  rm EmdpQyka.html 
+ 1115  cd 
+ 1116  lsb_release -a
+ 1117  docker
+ 1118  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1119  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1120  srcthis 
+ 1121  ros2 topic echo /mensaje 
+ 1122  rqt_graph 
+ 1123  srcthis 
+ 1124  ros2 topic list
+ 1125  ros2 topic info /mensaje 
+ 1126  ros2 topic echo /mensaje 
+ 1127  srcthis 
+ 1128  ros2 topic list
+ 1129  ros2 topic info /target_pos 
+ 1130  ros2 topic echo /target_pos 
+ 1131  rqt_graph 
+ 1132  rqt_graph  &
+ 1133  ros2 topic echo /target_pos 
+ 1134  ros2 run demo_pkg mysegnodo 
+ 1135  cd ROS2Dev/tsr_ws/
+ 1136  srcthis 
+ 1137  ros2path 
+ 1138  cd src
+ 1139  code .
+ 1140  cd ..
+ 1141  colcon build --packages-select demo_pkg --symlink-install 
+ 1142  srcthis 
+ 1143  ros2 run demo_pkg mynodo 
+ 1144  ros2 interface list | grep geometry_msgs
+ 1145  ros2 interface show geometry_msgs/msg/PointStamped 
+ 1146  colcon build --packages-select my_interface 
+ 1147  srcthis 
+ 1148  ros2 interface list | grep my_interface
+ 1149  ros2 interface show my_interface/msg/TargetPosition 
+ 1150  python3
+ 1151  ros2 run demo_pkg mynodo 
+ 1152  cd src/
+ 1153  gst
+ 1154  git add my_interface/
+ 1155  gst
+ 1156  git commit -m "Agregue ejemplo de mensaje compuesto: TargetPosition"
+ 1157  gst
+ 1158  git add demo_pkg/
+ 1159  gst
+ 1160  git commit -m "Modificado para pub/sub a un mensaje compuesto TargetPosition"
+ 1161  g lg2
+ 1162  g lg
+ 1163  git push -u origin main
+ 1164  actapt 
+ 1165  upgapt 
+ 1166  sudo apt autoremove
+ 1167  l
+ 1168  cd Dev/
+ 1169  l
+ 1170  cd python_dev/
+ 1171  l
+ 1172  rm -rf testpy/
+ 1173  rm test.py 
+ 1174  l
+ 1175  mkdir RosBoard
+ 1176  cd RosBoard/
+ 1177  python3 -m venv .venv
+ 1178  pyenv versions
+ 1179  pyenv local 3.10.14 
+ 1180  python -m venv .venv
+ 1181  initvenv 
+ 1182  pyenv local 3.11.9 
+ 1183  initvenv 
+ 1184  sudo apt install python3.10-venv
+ 1185  ll
+ 1186  rm .python-version 
+ 1187  python3 -m venv .venv
+ 1188  startvenv 
+ 1189  l
+ 1190  ll
+ 1191  pip install pyserial
+ 1192  ll
+ 1193  actapt 
+ 1194  upgapt 
+ 1195  sudo apt autoremove
+ 1196  cd Dev/python_dev/
+ 1197  l
+ 1198  cd RosBoard/
+ 1199  l
+ 1200  ll
+ 1201  mkdir docs
+ 1202  mkdir src
+ 1203  mkdir src/rosboard_lib/
+ 1204  mkdir robocar_pkg
+ 1205  touch src/rosboard_lib/__init__.py
+ 1206  touch src/rosboard_lib/rosboard.py
+ 1207  touch src/rosboard_lib/sensors.py
+ 1208  touch src/rosboard_lib/actuators.py
+ 1209  touch src/rosboard_lib/utils.py
+ 1210  touch src/rosboard_lib/constants.py
+ 1211  touch 
+ 1212  lt src/
+ 1213  touch robocar_pkg/__init__.py
+ 1214  touch robocar_pkg/robocar.py
+ 1215  lt .
+ 1216  vim src/rosboard_lib/rosboard.py 
+ 1217  l ~/.config/
+ 1218  mkdir ~/.config/nvim
+ 1219  sudo apt-get install ripgrep
+ 1220  npm --version
+ 1221  git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+ 1222  l ~/.config/nvim
+ 1223  nvim
+ 1224  vim ~/.config/nvim/init.lua 
+ 1225  vim src/rosboard_lib/rosboard.py 
+ 1226  vim src/rosboard_lib/exceptions.py 
+ 1227  vim src/rosboard_lib/__init__.py 
+ 1228  cd Dev/python_dev/
+ 1229  l
+ 1230  cd RosBoard/
+ 1231  l
+ 1232  vim src/rosboard_lib/__init__.py 
+ 1233  vim ~/.config/nvim/init.lua 
+ 1234  l
+ 1235  vim robocar_pkg/__init__.py 
+ 1236  vim robocar_pkg/robocar.py 
+ 1237  lt .
+ 1238  vim src/rosboard_lib/rosboard.py 
+ 1239  initvenv 
+ 1240  ll
+ 1241  startvenv 
+ 1242  vim src/rosboard_lib/rosboard.py 
+ 1243  nano ~/.config/lsd/config.yaml
+ 1244  l
+ 1245  cat roboticslab_vm_history_07082024.txt 
+ 1246  cd ..
+ 1247  srcthis 
+ 1248  rosparam list
+ 1249  ros2  param list
+ 1250  ros2 param set /my_node kp 0.001
+ 1251  ros2 param get /my_node use_sim_time 
+ 1252  srcthis
+ 1253  ros2 param list
+ 1254  ros2 para list
+ 1255  ros2 node list
+ 1256  ros2 topic list
+ 1257  ros2 para list
+ 1258  ros2 param list
+ 1259  ros2 param get /myparams timer_period 
+ 1260  ros2 param set /myparams timer_period 0.15
+ 1261  ros2 param get /myparams timer_period 
+ 1262  ros2 param list
+ 1263  ros2 param get /myparams param_int 
+ 1264  ros2 param set /myparams param_int 10.0
+ 1265  ros2 param set /myparams param_int 10
+ 1266  ros2 param get /myparams param_int 
+ 1267  ros2 param get /myparams controller 
+ 1268  ros2 param get /myparams timer_period 
+ 1269  ros2 param list
+ 1270  ros2 param
+ 1271  ros2 param describe /myparams timer_period 
+ 1272  ros2 param list
+ 1273  ros2 param set /myparams ang_vel 0.1789
+ 1274  ros2 param set /myparams timer_period -0.123
+ 1275  ros2 param list
+ 1276  ros2 param set /myparams param_int 7
+ 1277  ros2 param set /myparams label_str 'Hola mundo'
+ 1278  cd src/
+ 1279  l demo_pkg/
+ 1280  mkdir -p ./demo_pkg/config
+ 1281  l demo_pkg/
+ 1282  ros2 param dump /myparams 
+ 1283  ros2 param dump /myparams >> demo_pkg/config/params.yaml
+ 1284  ros2 param dump /myparams 
+ 1285  ros2 param load ./demo_pkg/config/params_2.yaml 
+ 1286  ros2 param load /myparams ./demo_pkg/config/params_2.yaml 
+ 1287  cd ROS2Dev/tsr_ws/
+ 1288  srcthis 
+ 1289  cd src/
+ 1290  code .
+ 1291  ros2 param list
+ 1292  ros2 run demo_pkg mynodo 
+ 1293  cd ..
+ 1294  colcon build --packages-select demo_pkg --symlink-install 
+ 1295  srcthis 
+ 1296  ros2 run demo_pkg paramsrv 
+ 1297  ros2 run demo_pkg paramsrv --ros-args -p timer_period:=0.15
+ 1298  ros2 run demo_pkg paramsrv
+ 1299  ros2 run demo_pkg paramsrv --ros-args --params-file ./src/demo_pkg/config/params.yaml 
+ 1300  cd src/
+ 1301  gst
+ 1302  git add demo_pkg/demo_pkg/MyParameters.py 
+ 1303  git add demo_pkg/setup.py 
+ 1304  gst
+ 1305  git add demo_pkg/config/
+ 1306  gst
+ 1307  git commit -m "Agregue ejemplo de ros2 parametros"
+ 1308  git push -u origin main 
+ 1309  gst
+ 1310  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1311  cd Dev/python_dev/
+ 1312  l
+ 1313  cd RosBoard/
+ 1314  l
+ 1315  vim src/rosboard_lib/rosboard.py 
+ 1316  initvenv 
+ 1317  l
+ 1318  ll
+ 1319  startvenv 
+ 1320  vim src/rosboard_lib/rosboard.py 
+ 1321  l
+ 1322  lt .
+ 1323  deactivate
+ 1324  rm src/rosboard_lib/*
+ 1325  rm robocar_pkg/*
+ 1326  l
+ 1327  lt .
+ 1328  touch robocar_pkg/__init__.py
+ 1329  touch src/rosboard_lib/__init__.py
+ 1330  lt .
+ 1331  touch src/rosboard_lib/rosboard_lib.py
+ 1332  touch src/rosboard_lib/actuator.py
+ 1333  touch src/rosboard_lib/sensor.py
+ 1334  touch src/rosboard_lib/constants.py
+ 1335  lt .
+ 1336  touch robocar_pkg/robocar.py
+ 1337  lt .
+ 1338  lt ~/.config/nvim/
+ 1339  cd ~/.config/nvim/
+ 1340  l
+ 1341  ll
+ 1342  rm -rf .git/ 
+ 1343  rm -rf .github/ 
+ 1344  rm LICENSE.md README.md 
+ 1345  rm .gitignore 
+ 1346  ll
+ 1347  l
+ 1348  ll
+ 1349  rm -rf doc/ lua/
+ 1350  rm *
+ 1351  ll
+ 1352  rm .stylua.toml 
+ 1353  l
+ 1354  vim
+ 1355  ll
+ 1356  touch init.lua
+ 1357  vim init.lua 
+ 1358  mkdir lua
+ 1359  touch lua/lazy.lua
+ 1360  vim lua/lazy.lua 
+ 1361  cd lua
+ 1362  l
+ 1363  mkdir config
+ 1364  mv lazy.lua config/
+ 1365  cd ..
+ 1366  lt .
+ 1367  mkdir -p lua/config/core
+ 1368  mkdir -p lua/config/plugins
+ 1369  lt .
+ 1370  touch lua/config/core/init.lua
+ 1371  touch lua/config/plugins/init.lua
+ 1372  lt .
+ 1373  vim lua/config/core/options.lua
+ 1374  vim lua/config/core/init.lua 
+ 1375  vim init.lua 
+ 1376  vim
+ 1377  vim lua/config/core/options.lua
+ 1378  vim lua/config/lazy.lua 
+ 1379  vim init.lua 
+ 1380  vim lua/config/plugins/init.lua 
+ 1381  vim init.lua 
+ 1382  l
+ 1383  rm -rf lua/
+ 1384  rm init.lua 
+ 1385  ll
+ 1386  lt ~/.config/nvim/
+ 1387  actapt
+ 1388  upgapt
+ 1389  nvim --version
+ 1390  nvim --V1 -v
+ 1391  nvim -V1 -v
+ 1392  cd ~/.config/nvim/
+ 1393  touch init.lua
+ 1394  l
+ 1395  mkdir -p lua/frivas/core
+ 1396  mkdir -p lua/frivas/plugins
+ 1397  touch lua/frivas/lazy.lua
+ 1398  lt .
+ 1399  nvim .
+ 1400  nvim 
+ 1401  nvim .
+ 1402  nvim 
+ 1403  nvim .
+ 1404  nvim 
+ 1405  nvim .
+ 1406  nvim 
+ 1407  nvim .
+ 1408  nvim 
+ 1409  cd ~/Dev/python_dev/RosBoard/
+ 1410  nvim .
+ 1411  nvim ~/.config/nvim/
+ 1412  nvim .
+ 1413  startvenv 
+ 1414  nvim .
+ 1415  deactivate 
+ 1416  l
+ 1417  cd 
+ 1418  l
+ 1419  history roboticslab_vm_history_20092024.txt
+ 1420  history >> roboticslab_vm_history_20092024.txt
+ 1421  l
+ 1422  actapt
+ 1423  upgapt 
+ 1424  sudo apt autoremove
+ 1425  d Dev/python_dev/RosBoard/
+ 1426  startvenv 
+ 1427  l
+ 1428  cd Dev/python_dev/RosBoard/
+ 1429  startvenv 
+ 1430  pip list
+ 1431  pip list | grep serial
+ 1432  vim .
+ 1433  cd 
+ 1434  cd .config/nvim/
+ 1435  deactivate 
+ 1436  nvim .
+ 1437  cd
+ 1438  cd Dev/python_dev/RosBoard/
+ 1439  nvim .
+ 1440  nvim src/rosboard_lib/rosboard_lib.py 
+ 1441  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1442  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1443  actapt
+ 1444  upgapt 
+ 1445  sudo apt autoremove
+ 1446  cd Dev/python_dev/RosBoard/
+ 1447  startvenv 
+ 1448  code .
+ 1449  deactivate
+ 1450  cd ~/.config/nvim/
+ 1451  nvim .
+ 1452  cd
+ 1453  cd ROS2Dev/tsr_ws/
+ 1454  srcthis 
+ 1455  vim src/
+ 1456  rm src/my_interface/msg/Dltme.msg 
+ 1457  cd ~/.config/nvim/
+ 1458  nvim .
+ 1459  cd ~/Dev/python_dev/RosBoard/
+ 1460  vim .
+ 1461  startvenv 
+ 1462  cd ~/Dev/python_dev/RosBoard/
+ 1463  nvim .
+ 1464  deactivate 
+ 1465  cd ~/.config/nvim/
+ 1466  nvim .
+ 1467  actapt 
+ 1468  upgapt 
+ 1469  cd Dev/python_dev/
+ 1470  l
+ 1471  mkdir NetScanner
+ 1472  cd NetScanner/
+ 1473  python3 -m venv .venv
+ 1474  startvenv 
+ 1475  pip install scapy
+ 1476  pip install argparse
+ 1477  vim .
+ 1478  ifconfig
+ 1479  python network_scanner.py -t 192.168.1.103
+ 1480  sudo python network_scanner.py -t 192.168.1.103
+ 1481  sudo python3 network_scanner.py -t 192.168.1.103
+ 1482  deactivate
+ 1483  actapt
+ 1484  upgapt
+ 1485  sudo apt autoremove
+ 1486  cd ~/.config/nvim/
+ 1487  nvim .
+ 1488  cd
+ 1489  cd ROS2Dev/tsr_ws/
+ 1490  nvim src/
+ 1491  cd Documents/
+ 1492  l
+ 1493  mkdir dotfiles_2024
+ 1494  cd dotfiles_2024/
+ 1495  echo "# My Dotfiles - updated, 2024" >> README.md
+ 1496  touch .gitignore
+ 1497  gst
+ 1498  git init
+ 1499  gst
+ 1500  git add .
+ 1501  git commit -m "Initial commit."
+ 1502  git remote add origin https://github.com/rivascf/dotfiles_2024.git
+ 1503  git push -u origin main
+ 1504  mkdir config
+ 1505  cp ~/.config/nvim/ ./config/
+ 1506  cp -r ~/.config/nvim/ ./config/
+ 1507  gst
+ 1508  git add .
+ 1509  git commit -m "Added config folder and nvim configuration."
+ 1510  cd Documents/dotfiles_2024/
+ 1511  git push -u origin main
+ 1512  cd Dev/python_dev/
+ 1513  l
+ 1514  cd RosBoard/
+ 1515  startvenv 
+ 1516  l
+ 1517  vim .
+ 1518  deactivate 
+ 1519  cd 
+ 1520  cd .config/
+ 1521  l
+ 1522  cd .config/nvim/
+ 1523  nvim .
+ 1524  nvim
+ 1525  cd
+ 1526  cd Dev/python_dev/RosBoard/
+ 1527  nvim
+ 1528  cd
+ 1529  cd ROS2Dev/tsr_ws/
+ 1530  srcthis 
+ 1531  vim src/
+ 1532  cd 
+ 1533  l
+ 1534  history >> roboticslab_vm_history_25092024.txt
+ 1535  l
+ 1536  rosenv
+ 1537  cd Doc
+ 1538  cd Documents/dotfiles_2024/
+ 1539  l
+ 1540  cp ~/.bashrc .
+ 1541  cp ~/.bash_aliases .
+ 1542  l
+ 1543  ll
+ 1544  mv .bashrc bashrc
+ 1545  mv .bash_aliases bash_aliases
+ 1546  l
+ 1547  cp ~/.profile ./profile
+ 1548  gst
+ 1549  git add .
+ 1550  git commit -m "Added bashrc, bash_aliases and profile files"
+ 1551  git push -u origin main
+ 1552  l
+ 1553  mkdir -p docs/rawfiles
+ 1554  l
+ 1555  cp ~/roboticslab_vm_history_* ./docs/rawfiles/
+ 1556  lt .
+ 1557  gst
+ 1558  git add docs/
+ 1559  git commit -m "Added docs and rawfiles folders with histories backups"
+ 1560  git push -u origin main
+ 1561  gst
+ 1562  actapt 
+ 1563  upgapt 
+ 1564  sudo apt autoremove
+ 1565  cd Dev/
+ 1566  l
+ 1567  cd 
+ 1568  cd ROS2Dev/tsr_ws/
+ 1569  cd src/
+ 1570  cat .gitignore 
+ 1571  vim .gitignore 
+ 1572  ll
+ 1573  cd 
+ 1574  cd Dev/python_dev/
+ 1575  ll
+ 1576  cd ..
+ 1577  git clone https://github.com/arrg-mx/ros2-rosboard.git
+ 1578  l
+ 1579  cd ros2-rosboard/
+ 1580  l
+ 1581  git pull -u origin rosboard
+ 1582  git pull origin --all
+ 1583  git branch -l
+ 1584  git fetch --all
+ 1585  git branch -l
+ 1586  git fetch config
+ 1587  git fetch origin  rosboard
+ 1588  git fetch origin config
+ 1589  git pull origin --all
+ 1590  git pull origin config
+ 1591  git pull origin rosboard
+ 1592  git checkout rosboard
+ 1593  git lg
+ 1594  git branch -l
+ 1595  git checkout config
+ 1596  git checkout rosboard
+ 1597  git pull origin 
+ 1598  l
+ 1599  cd RosBoard/
+ 1600  l
+ 1601  lt ~/Dev/python_dev/RosBoard/
+ 1602  l
+ 1603  mv ~/Dev/python_dev/RosBoard .
+ 1604  ll
+ 1605  cd RosBoard/
+ 1606  ll
+ 1607  cd ..
+ 1608  gst
+ 1609  git add RosBoard/RosBoard/
+ 1610  gst
+ 1611  git commit -m "Added RosBoard Library folder custom version."
+ 1612  gst
+ 1613  git push -u origin rosboard 
+ 1614  gst
+ 1615  cd RosBoard/
+ 1616  startvenv 
+ 1617  ll
+ 1618  cd RosBoard/
+ 1619  startvenv 
+ 1620  deactivate 
+ 1621  pyenv -V
+ 1622  pyenv -v
+ 1623  ll
+ 1624  pyenv versions
+ 1625  pyenv local 3.10.14 
+ 1626  rm -rf .venv/
+ 1627  python -m venv .venv
+ 1628  ll
+ 1629  rm .python-version 
+ 1630  startvenv 
+ 1631  pip 
+ 1632  pip pyserial
+ 1633  pip install pyserial
+ 1634  pip install --upgrade pip
+ 1635  l
+ 1636  vim .
+ 1637  actapt 
+ 1638  upgapt 
+ 1639  sudo apt autoremove
+ 1640  cd
+ 1641  deactivate 
+ 1642  sudo reboot now
+ 1643  cd ROS2Dev/
+ 1644  l
+ 1645  cd ..
+ 1646  cd Dev/
+ 1647  l
+ 1648  cd python_dev/
+ 1649  l
+ 1650  cd ..
+ 1651  lt ros2-rosboard/
+ 1652  cd ros2-rosboard/RosBoard/
+ 1653  startvenv 
+ 1654  ll
+ 1655  cd RosBoard/
+ 1656  startvenv 
+ 1657  vim .
+ 1658  gst
+ 1659  git add .
+ 1660  gst
+ 1661  git commit -m "Updated init and exceptions scripts."
+ 1662  gst
+ 1663  cd  ..
+ 1664  lt .
+ 1665  vim
+ 1666  vim .
+ 1667  deactivate 
+ 1668  gst
+ 1669  git push -u origin rosboard 
+ 1670  g lg
+ 1671  cd
+ 1672  vim .config/rosmgmt/
+ 1673  l
+ 1674  cd ROS2Dev/
+ 1675  l
+ 1676  cd robotics_ws/src/
+ 1677  git fetch all
+ 1678  git config --local -l
+ 1679  l
+ 1680  git fetch --all
+ 1681  git pull origin main
+ 1682  gst
+ 1683  l
+ 1684  cd Dev/python_dev/
+ 1685  l
+ 1686  mkdir temp
+ 1687  cd temp/
+ 1688  git flow init
+ 1689  git flow
+ 1690  cd Dev/python_dev/temp/
+ 1691  code .
+ 1692  fc-list | grep Sauce | grep Mono
+ 1693  fc-list | grep "Nerd Font" | grep Mono
+ 1694  cd ..
+ 1695  cd NetScanner/
+ 1696  ll
+ 1697  cd ROS2Dev/tsr_ws/src/
+ 1698  git tree
+ 1699  cd
+ 1700  l
+ 1701  ll
+ 1702  cd ssh
+ 1703  cd .ssh
+ 1704  ll
+ 1705  cat known_hosts
+ 1706  cat known_hosts.old 
+ 1707  vim known_hosts
+ 1708  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1709  ll
+ 1710  git
+ 1711  sudo apt install git
+ 1712  ll
+ 1713  vim .gitconfig 
+ 1714  git config --global alias.lolg log --oneline --graph --all --decorate
+ 1715  git config --global alias.lolg log --oneline --graph -all --decorate
+ 1716  git config --global alias lolg log --oneline --graph -all --decorate
+ 1717  git config --global alias
+ 1718  git config --global
+ 1719  git config --global -l
+ 1720  git config --global -e
+ 1721  git lolg
+ 1722  git config --global -l
+ 1723  git config --global --unset alias.lolg
+ 1724  git config --global -l
+ 1725  git config --global alias.lolg=log --oneline --graph --all --decorate
+ 1726  git config --global alias.lolg log --oneline --graph --all --decorate
+ 1727  git config --global --set alias.lolg log --oneline --graph --all --decorate
+ 1728  git config --global -h
+ 1729  git config --global --add alias.lolg log --oneline --graph --all --decorate
+ 1730  git config --global --add alias.lolg
+ 1731  cd ROS2Dev/
+ 1732  l
+ 1733  mkdir -p ros2exp_ws/src
+ 1734  cd ros2exp_ws/
+ 1735  ll
+ 1736  colcon build
+ 1737  ll
+ 1738  source install/setup.bash
+ 1739  cd src
+ 1740  git init
+ 1741  ll
+ 1742  lt .git
+ 1743  rm -rf .git/
+ 1744  ll
+ 1745  git init
+ 1746  mkdir testpy
+ 1747  cd testpy/
+ 1748  pyenv versions
+ 1749  python3
+ 1750  pyenv versions
+ 1751  pyenv local 3.12.4 
+ 1752  python -
+ 1753  python -m venv .venv
+ 1754  ll
+ 1755  rm .python-version 
+ 1756  source .venv/bin/activate
+ 1757  l
+ 1758  ll
+ 1759  touch test.py
+ 1760  ll
+ 1761  vim test.py
+ 1762  ll
+ 1763  git add test.py
+ 1764  git status
+ 1765  git rm --cached test.py
+ 1766  git status
+ 1767  ll
+ 1768  pwd
+ 1769  cd ..
+ 1770  cd testpy/
+ 1771  git status
+ 1772  git add test.py
+ 1773  git status
+ 1774  git commit -m "Agregue el script test.py con la funcionalidad básica"
+ 1775  vim test.py
+ 1776  git log
+ 1777  python test.py
+ 1778  vim test.py
+ 1779  git status
+ 1780  git add test.py 
+ 1781  git commit -m "Agregue funcionalidad basica print msg."
+ 1782  git status
+ 1783  git log
+ 1784  python test.py
+ 1785  vim test.py
+ 1786  python test.py
+ 1787  git status
+ 1788  git diff test.py
+ 1789  git add test.py 
+ 1790  git status
+ 1791  git diff --staged
+ 1792  vim test.py
+ 1793  git diff --staged
+ 1794  git add test.py 
+ 1795  git status
+ 1796  git restore --staged test.py
+ 1797  git diff --staged
+ 1798  vim test.py
+ 1799  git add test.py 
+ 1800  git diff --staged
+ 1801  vim test.py
+ 1802  git diff test.py
+ 1803  git restore --stagged test.py
+ 1804  git restore --staged test.py
+ 1805  git diff test.py
+ 1806  git add test.py
+ 1807  git commit -m "Modifique funcionalidad"
+ 1808  git log
+ 1809  vim test.py
+ 1810  python test.py
+ 1811  git diff test.py
+ 1812  git rm test.py
+ 1813  git rm --cached test.py
+ 1814  ll
+ 1815  git diff test.py
+ 1816  git status
+ 1817  git commit -m "Borre el archivo test.py"
+ 1818  ll
+ 1819  git status
+ 1820  git diff test.py
+ 1821  git add test.py
+ 1822  git status
+ 1823  git commit -m "Agregue nuevamente el script test.py"
+ 1824  git mv test.py prueba.py
+ 1825  git status
+ 1826  git commit -m "Renombre el archivo test.py a prueba.py"
+ 1827  ll
+ 1828  git log
+ 1829  cat ~/.gitconfig 
+ 1830  git lg
+ 1831  git lg2
+ 1832  git lg3
+ 1833  cat test.py
+ 1834  l
+ 1835  cat prueba
+ 1836  cat prueba.py 
+ 1837  git lg 
+ 1838  git checkout 5622002
+ 1839  git lg 
+ 1840  ll
+ 1841  cat test.py
+ 1842  git checkout 47135df
+ 1843  cat test.py
+ 1844  cat prueba.py 
+ 1845  git lg 
+ 1846  git checkout 5622002
+ 1847  git diff master
+ 1848  git diff 47135df
+ 1849  git checkout 471
+ 1850  git diff 5622002
+ 1851  git diff a20759d
+ 1852  git lg
+ 1853  vim prueba.py 
+ 1854  git status
+ 1855  git lg
+ 1856  git status
+ 1857  git commit -m "Cambie algo"
+ 1858  git lg
+ 1859  git checkout main
+ 1860  git status
+ 1861  git lg
+ 1862  git add prueba.py 
+ 1863  git commit -m "Cambie algo"
+ 1864  git status
+ 1865  git lg2
+ 1866  git diff prueba.py
+ 1867  vim prueba.py 
+ 1868  git status
+ 1869  git commit -m "Cambie algo"
+ 1870  git add prueba.py 
+ 1871  git commit -m "Cambie algo"
+ 1872  git lg
+ 1873  git commit --amend -m "Agregue segundo print"
+ 1874  git lg
+ 1875  git ls-tree HEAD
+ 1876  git branch -l
+ 1877  git branch develop
+ 1878  git branch -l
+ 1879  git lg
+ 1880  git checkout develop
+ 1881  git branch -l
+ 1882  vim prueba.py 
+ 1883  git status
+ 1884  git add prueba.py 
+ 1885  git commit -m "Elimine print innecesario"
+ 1886  git lg
+ 1887  cat prueba.py 
+ 1888  git checkout main
+ 1889  cat prueba.py 
+ 1890  git diff main develop
+ 1891  git merge develop
+ 1892  cat prueba.py
+ 1893  git lg2
+ 1894  git lg3
+ 1895  git lg
+ 1896  vim prueba.py
+ 1897  git checkout -b dev02
+ 1898  vim prueba.py 
+ 1899  git add prueba.py 
+ 1900  git lg
+ 1901  git commit -m "Modif prueba.py"
+ 1902  git lg
+ 1903  git checkout main
+ 1904  vim prueba.py
+ 1905  git add prueba.py 
+ 1906  git commit -m "Modifique print en prueba.py"
+ 1907  git lg
+ 1908  git merge dev02
+ 1909  git merge --abort
+ 1910  git rm aa52f1b
+ 1911  git rm prueba.py
+ 1912  git status
+ 1913  git commit -m "Borre prueba.py"
+ 1914  git lg
+ 1915  git merge dev02
+ 1916  git checkout dev02
+ 1917  git merge main
+ 1918  git merge main --force
+ 1919  git merge --abort
+ 1920  git checkout main
+ 1921  git merge dev02 
+ 1922  git status
+ 1923  git merge --abort
+ 1924  git status
+ 1925  l
+ 1926  ll
+ 1927  git add prueba.py
+ 1928  git checkout dev02 
+ 1929  l
+ 1930  git add prueba.py 
+ 1931  git merge main
+ 1932  cd ..
+ 1933  git merge --abort
+ 1934  git checkout main
+ 1935  code .
+ 1936  git status 
+ 1937  cd testpy/
+ 1938  git status 
+ 1939  ll
+ 1940  cd ..
+ 1941  echo "Hola a todos"
+ 1942  echo $ROS_VERSION
+ 1943  echo "**.venv/" >> .gitignore
+ 1944  git status
+ 1945  git add .gitignore 
+ 1946  git commit -m "Agregue el archivo gitignore"
+ 1947  git status
+ 1948  ll
+ 1949  ros2 pkg create testpk_py --build-type ament_python --description "Paquete de prueba ROS2" --license MIT --maintainer-name "Felipe Rivas" --maintainer-email rivascf@gmail.com 
+ 1950  deactivate 
+ 1951  cd ..
+ 1952  colcon build
+ 1953  source install/setup.bash
+ 1954  ros2 run testpk_py testnode 
+ 1955  git lg
+ 1956  cd src/
+ 1957  git lg
+ 1958  cd ~/Downloads/
+ 1959  sudo apt install build-essential libreadline-dev unzip
+ 1960  curl -R -O http://www.lua.org/ftp/lua-5.3.5.tar.gz
+ 1961  tar -zxf lua-5.3.5.tar.gz
+ 1962  l
+ 1963  tar -zxf lua-5.3.5.tar.gz 
+ 1964  curl -R -O http://www.lua.org/ftp/lua-5.3.5.tar.gz
+ 1965  l
+ 1966  tar -zxf lua-5.3.5.tar.gz 
+ 1967  curl -R -O https://lua.org/ftp/lua-5.3.6.tar.gz
+ 1968  tar -zxf lua-5.3.6.tar.gz 
+ 1969  l
+ 1970  cd lua-5.3.6/
+ 1971  make linux test
+ 1972  sudo make install
+ 1973  cd ..
+ 1974  l
+ 1975  curl -R -O http://luarocks.github.io/luarocks/releases/luarocks-3.11.1.tar.gz
+ 1976  l
+ 1977  tar -zxf luarocks-3.11.1.tar.gz 
+ 1978  l
+ 1979  cd luarocks-3.11.1/
+ 1980  l
+ 1981  . configure --with-lua-include=/usr/local/include
+ 1982  make
+ 1983  make install
+ 1984  sudo make install
+ 1985  npm -V
+ 1986  npm install -g neovim
+ 1987  actapt 
+ 1988  upgapt 
+ 1989  sudo apt autoremove
+ 1990  cd ~/.config/nvim/
+ 1991  vim .
+ 1992  pyenv
+ 1993  pyenv versions
+ 1994  pip3 -V
+ 1995  pip3 install ruff
+ 1996  vim .
+ 1997  cd ~/Dev/ros2-rosboard/
+ 1998  l
+ 1999  vim .
+ 2000  l
+ 2001  actapt 
+ 2002  upgapt 
+ 2003  sudo apt autoremove
+ 2004  l
+ 2005  history >> roboticslab_vm_history_05102024.txt
