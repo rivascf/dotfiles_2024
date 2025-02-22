@@ -1,0 +1,1000 @@
+ 1001  rm -rf test/
+ 1002  l
+ 1003  python test_lib.py 
+ 1004  gst
+ 1005  git add test_lib.py 
+ 1006  git commit -m "Added simple test script for sysinfo module."
+ 1007  g lg
+ 1008  git remote add origin https://github.com/arrg-mx/arrg_utils.git
+ 1009  git push -u origin main 
+ 1010  git pull origin main 
+ 1011  l
+ 1012  vim .
+ 1013  python test_lib.py 
+ 1014  gst
+ 1015  git add .
+ 1016  git commit -m "Updated files with docstring for documentation purposes."
+ 1017  git push -u origin main 
+ 1018  vim README.md 
+ 1019  gst
+ 1020  git add .
+ 1021  git commit -m "Updated READMe file contents."
+ 1022  git push -u origin main 
+ 1023  vim README.md 
+ 1024  git add .
+ 1025  git commit -m "Added README_SP file for Spanish users."
+ 1026  git push -u origin main 
+ 1027  cd Dev/
+ 1028  l
+ 1029  mkdir dofbot_ros2
+ 1030  pyenv local 3.10.14
+ 1031  rm .python-version 
+ 1032  cd dofbot_ros2/
+ 1033  pyenv local 3.10.14
+ 1034  initvenv 
+ 1035  rm .python-version 
+ 1036  startvenv 
+ 1037  vim dofbotx_oled.py
+ 1038  ll
+ 1039  deactivate
+ 1040  rm -rf .venv/
+ 1041  cd ..
+ 1042  mv dofbot_ros2/ dofbot-x/
+ 1043  ll
+ 1044  cd dofbot-x/
+ 1045  l
+ 1046  mkdir service
+ 1047  cd service 
+ 1048  vim dobotx_oled.service
+ 1049  cd ..
+ 1050  l
+ 1051  echo "# Dofbot X" >> README.md
+ 1052  l
+ 1053  touch .gitignore
+ 1054  mkdir utilities
+ 1055  mv dofbotx_oled.py utilities/
+ 1056  lt .
+ 1057  mv service/ services/
+ 1058  lt .
+ 1059  git init
+ 1060  git add README.md .gitignore 
+ 1061  git commit -m "Initial commit."
+ 1062  gst
+ 1063  git add utilities/
+ 1064  git commit -m "Added utilities folders with dofbotx_oled.py script."
+ 1065  git add services/
+ 1066  git commit -m "Added services folder with dofbotx_oled.service file."
+ 1067  git lg
+ 1068  git remote add origin https://github.com/arrg-mx/dofbot-x.git
+ 1069  git push -u origin main
+ 1070  ls
+ 1071  git pull origin main
+ 1072  l
+ 1073  cd 
+ 1074  python3
+ 1075  cd Dev/arrg_utils/
+ 1076  startvenv 
+ 1077  git pull origin main
+ 1078  mkdir samples
+ 1079  mv output_samples.md samples/
+ 1080  lt .
+ 1081  gst
+ 1082  git add .
+ 1083  git commit -m "samples folder created, output_samples.md moved to samples folder."
+ 1084  gst
+ 1085  lt
+ 1086  vim .
+ 1087  python test_lib.py 
+ 1088  cp samples/output_samples.md samples/vmachine_sample.py
+ 1089  vim .
+ 1090  mv samples/vmachine_sample.py samples/vmachine_sample.md
+ 1091  vim .
+ 1092  gst 
+ 1093  vim setup.py 
+ 1094  git add .
+ 1095  git commit -m "Added platform info to system report, updated sysinfo script and, added linux_machine_sample file to samples folder."
+ 1096  g lg
+ 1097  git tag -a v0.1.0 -m "Version 0.1.0 for arrg_utils package: includes sysinfo script."
+ 1098  git tag -l
+ 1099  git tag -h
+ 1100  git tag -m v0.1.0
+ 1101  git l
+ 1102  git tag -l
+ 1103  git lg
+ 1104  git push --tag -u origin main
+ 1105  vim .
+ 1106  gst
+ 1107  git add .
+ 1108  git commit -m "Updated samples md files. Note: Edited sensitive information for public share."
+ 1109  git push -u origin main
+ 1110  deactivate
+ 1111  git lg
+ 1112  git checkout b8adc44
+ 1113  git checkout b8adc
+ 1114  git checkout v0.1.0
+ 1115  git checkout HEAD
+ 1116  git lg
+ 1117  git checkout afad267
+ 1118  git lg
+ 1119  git checkout b8abc44
+ 1120  git lg
+ 1121  git tag -d v0.1.0
+ 1122  git lg
+ 1123  git checkout afad267
+ 1124  git lg
+ 1125  git tag -a v0.1.0 -m "Version 0.1.0 for arrg_utils package: includes sysinfo script."
+ 1126  git lg
+ 1127  git push --tag -u origin main
+ 1128  git lg
+ 1129  exit
+ 1130  cd Dev
+ 1131  cd arrg_utils/
+ 1132  startvenv 
+ 1133  vim .
+ 1134  python test_lib.py 
+ 1135  vim .
+ 1136  gst
+ 1137  git lg
+ 1138  git checkou afad267
+ 1139  git checkout afad267
+ 1140  git checkout main
+ 1141  gst
+ 1142  git add arrg_utils/sysinfo.py 
+ 1143  git commit -e 
+ 1144  git commit -a
+ 1145  git lg
+ 1146  gst
+ 1147  git add .
+ 1148  git commit -m "Added ubuntu_snapshot_info.json and ubuntu_sys_info.json files to samples folder"
+ 1149  git push -u origin main
+ 1150  lt
+ 1151  git checkout -b docs
+ 1152  mkdir -p doc/references
+ 1153  vim .
+ 1154  gst
+ 1155  git add doc/
+ 1156  gst
+ 1157  git commit -m "Added doc and references folders, added myrefs.md file."
+ 1158  gst
+ 1159  git lg
+ 1160  git push -u origin docs
+ 1161  deactivate
+ 1162  git checkout main
+ 1163  git lg
+ 1164  python3
+ 1165  cd Dev
+ 1166  l
+ 1167  lt gral_utils/
+ 1168  cd gral_utils/
+ 1169  vim sys_board.py 
+ 1170  cd ../dofbot-x/
+ 1171  l
+ 1172  lt
+ 1173  cd 
+ 1174  l
+ 1175  history >> roboticslab_vm_history_011124.txt
+ 1176  cd Dev/
+ 1177  l
+ 1178  lt ros2-rosboard/
+ 1179  mkdir -p dofbot-x/dofbot_arm/src/dofbot_arm_lib
+ 1180  cd dofbot-x/
+ 1181  startvenv 
+ 1182  python3 -m venv .venv
+ 1183  startvenv 
+ 1184  gst
+ 1185  echo ".venv/" >> .gitignore 
+ 1186  echo "**__pycache__/" >> .gitignore 
+ 1187  l
+ 1188  gst
+ 1189  touch dofbot_arm/src/dofbot_arm_lib/__init__.py
+ 1190  touch dofbot_arm/src/dofbot_arm_lib/dofbot_arm_ctrl.py
+ 1191  vim .
+ 1192  gst
+ 1193  git add .gitignore 
+ 1194  git commit -m "Updated gitignore exclusions."
+ 1195  git checkout -b dobot-drv
+ 1196  gst
+ 1197  git add .
+ 1198  gst
+ 1199  git commit -m "Create dobot_arm folder with dofbot_arm_lib folder, __init__ and, dofbot_arm_ctrl scripts."
+ 1200  gst
+ 1201  git checkout main
+ 1202  git push -u origin main
+ 1203  git checkout dobot-drv
+ 1204  git push -u origin dobot-drv 
+ 1205  deactivate 
+ 1206  gst
+ 1207  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.16.1-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.16.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1208  ros2 topic list
+ 1209  ros2 node list
+ 1210  ros2 node info /sys_info_node 
+ 1211  ros2 node topic
+ 1212  ros2 topic list
+ 1213  cd
+ 1214  cd Dev/
+ 1215  cd arrg_utils/
+ 1216  startvenv 
+ 1217  python test_lib.py 
+ 1218  ros2 topic list
+ 1219  ros2 topic echo /sys_info
+ 1220  deactivate 
+ 1221  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.18.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.18.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1222  cd ROS2Dev/
+ 1223  cd tsr_ws/src/
+ 1224  cd ..
+ 1225  srcthis 
+ 1226  cd src/
+ 1227  l
+ 1228  ros2 pkg create sys_info --build-type ament_python --description "ROS2 package for query sys info" --maintainer-name "Felipe Rivas" --maintainer-email rivascf@gmail.com --license MIT
+ 1229  ros2 pkg create sys_interface --build-type ament_python --description "ROS2 package interfaces for query sys info" --maintainer-name "Felipe Rivas" --maintainer-email rivascf@gmail.com --license MIT
+ 1230  l}
+ 1231  l
+ 1232  cd sys_info/
+ 1233  l
+ 1234  cd sys_info/
+ 1235  l
+ 1236  git clone https://github.com/arrg-mx/arrg_utils.git
+ 1237  l
+ 1238  mv arrg_utils/ dltme/
+ 1239  l
+ 1240  cd dltme/
+ 1241  l
+ 1242  mv arrg_utils/ ../
+ 1243  l
+ 1244  cd ../
+ 1245  l
+ 1246  rm -rf dltme/
+ 1247  l
+ 1248  man mv
+ 1249  man cp
+ 1250  l
+ 1251  cd ..
+ 1252  code .
+ 1253  cd ..
+ 1254  colcon build --packages-select sys_info --symlink-install
+ 1255  srcthis
+ 1256  cat ~/.bash_aliases | grep srcthis
+ 1257  ros2 run sys_info sys_info_py 
+ 1258  cd install/
+ 1259  l
+ 1260  cd sys_info/
+ 1261  l
+ 1262  cd lib
+ 1263  l
+ 1264  cd sys_info/
+ 1265  l
+ 1266  cd ..
+ 1267  colcon build
+ 1268  srcthis
+ 1269  cd install/
+ 1270  cd sys_info/lib/
+ 1271  l
+ 1272  cd sys_info/
+ 1273  l
+ 1274  cd ..
+ 1275  cd build/
+ 1276  l
+ 1277  cd sys_info/sys_info
+ 1278  l
+ 1279  ros2 run sys_info sys_info_py 
+ 1280  cd ..
+ 1281  colcon build --packages-select sys_info 
+ 1282  srcthis
+ 1283  ros2 run sys_info sys_info_py 
+ 1284  colcon build --packages-select sys_info
+ 1285  ros2 run sys_info sys_info_py 
+ 1286  colcon build --packages-select sys_info --symlink-install 
+ 1287  srcthis 
+ 1288  ros2 run sys_info sys_info_py 
+ 1289  cd src
+ 1290  l
+ 1291  rm -rf sys_interface/
+ 1292  l
+ 1293  cd ..
+ 1294  ros2 run sys_info sys_info_py 
+ 1295  cd src/
+ 1296  gst
+ 1297  git add sys_info/
+ 1298  git commit -m "Agregue sys_info package. VERSION QUE NO SIRVIO"
+ 1299  GST
+ 1300  gst
+ 1301  git push -u origin driver
+ 1302  ssh arrusr@192.168.0.167
+ 1303  ssh-keygen -f "/home/robousr/.ssh/known_hosts" -R "192.168.0.167"
+ 1304  ssh arrusr@192.168.0.167
+ 1305  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1306  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.18.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.18.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1307  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1308  cd ROS2Dev/
+ 1309  cd tsr_ws/
+ 1310  cd src
+ 1311  gst
+ 1312  ls
+ 1313  ll
+ 1314  code .
+ 1315  ros2 service list
+ 1316  ros2 service list -t 
+ 1317  ros2 service list --show-types
+ 1318  ros2 interface list
+ 1319  ros2 pkg list
+ 1320  ros2 run examples_rclpy_minimal_service 
+ 1321  ros2 run examples_rclpy_minimal_service service
+ 1322  git checkout main
+ 1323  gst
+ 1324  code .
+ 1325  cd sysinfo_pkg/sysinfo_pkg/
+ 1326  l
+ 1327  python3
+ 1328  l
+ 1329  cp ~/Dev/arrg_utils/test_lib.py 
+ 1330  cp ~/Dev/arrg_utils/test_lib.py .
+ 1331  l
+ 1332  python3 test_lib.py 
+ 1333  rm test_lib.py 
+ 1334  ros2 pkg list | grep examples
+ 1335  cd ..
+ 1336  colcon build --packages-select my_interface
+ 1337  srcthis 
+ 1338  colcon build --packages-select my_interface 
+ 1339  colcon build
+ 1340  srcthis 
+ 1341  cd src/
+ 1342  l
+ 1343  cd ..
+ 1344  rm -rf install/ build/
+ 1345  l
+ 1346  rm -rf log/
+ 1347  colcon build
+ 1348  ros2 service list
+ 1349  ros2 service type /add_two_ints 
+ 1350  ros2 interface show example_interfaces/srv/AddTwoInts 
+ 1351  ros2 service call /add_two_ints example_interfaces/srv/AddTwoInts "{a: 100, b: 20}"
+ 1352  ros2 service call /add_two_ints example_interfaces/srv/AddTwoInts "{a: 10.02, b: 2.05}"
+ 1353  ros2 interface list | grep Empty
+ 1354  ros2 interface show std_msgs/msg/Empty 
+ 1355  ros2 interface show std_srvs/srv/Empty 
+ 1356  cd ..
+ 1357  colcon build --packages-select my_interface 
+ 1358  source install/setup.bash
+ 1359  ros2 interface list | grep my_interface
+ 1360  ros2 interface show my_interface/srv/SysInfo 
+ 1361  cd src
+ 1362  ros2 pkg create sysinfo_pkg --build-type ament_python --description "Demo Servicios" --maintainer-name "Felipe Rivas" --maintainer-email rivascf@gmail.com --license MIT
+ 1363  l
+ 1364  rm -rf sys_info/
+ 1365  l
+ 1366  cd sysinfo_pkg/cd sysinfo_pkg/
+ 1367  l
+ 1368  cd sysinfo_pkg/sysinfo_pkg/
+ 1369  l
+ 1370  cp ~/Dev/arrg_utils/arrg_utils/ .
+ 1371  l
+ 1372  cp -rf ~/Dev/arrg_utils/arrg_utils/ .
+ 1373  l
+ 1374  lt arrg_utils/
+ 1375  cd ..
+ 1376  gst
+ 1377  git add my_interface/ 
+ 1378  gst
+ 1379  git add sysinfo_pkg/
+ 1380  git commit -m "Agregue sysinfo_pkg e interface de servicio"
+ 1381  gst
+ 1382  git push -u origin main
+ 1383  git fetch 
+ 1384  git push -u origin main
+ 1385  git pull origin main
+ 1386  git pull origin main -r
+ 1387  git config pull.rebase true
+ 1388  git pull origin main -r
+ 1389  gst
+ 1390  git lg
+ 1391  git commit -d 8ca7a41
+ 1392  git reset HEAD~ 
+ 1393  git pull origin main
+ 1394  git fetch origin main
+ 1395  git lg
+ 1396  git pull origin main --force
+ 1397  git reset --hard HEAD^
+ 1398  git pull origin main
+ 1399  git lg
+ 1400  gst
+ 1401  git branch -l
+ 1402  git add my_interface/
+ 1403  git status
+ 1404  git add my_interface/CMakeLists.txt 
+ 1405  gst
+ 1406  git add -m "Agregue SysInfo.srv y ajuste CMake.txt"
+ 1407  git commit -m "Agregue SysInfo.srv y ajuste CMake.txt"
+ 1408  git push -u origin main
+ 1409  gst
+ 1410  git add sysinfo_pkg/
+ 1411  gst
+ 1412  git commit -m "Agregue sysinfo_pkg"
+ 1413  git push -u origin main
+ 1414  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1415  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1416  cd ROS2Dev/tsr_ws/
+ 1417  rm -rf install/ build/ log/
+ 1418  colcon build
+ 1419  cd src/
+ 1420  l
+ 1421  cd ..
+ 1422  l
+ 1423  rm -rf install/ build/ log/
+ 1424  rosenv 
+ 1425  cd src
+ 1426  l
+ 1427  rm CMakeLists.txt package.xml 
+ 1428  cd ..
+ 1429  cd src/
+ 1430  gst
+ 1431  git add CMakeLists.txt package.xml 
+ 1432  git commit -m "Elimine CMake.txt y package.xml de la raiz del dir src"
+ 1433  git push -u origin main
+ 1434  cd ..
+ 1435  colcon build
+ 1436  srcthis 
+ 1437  ros2 interface list | grep my_interface
+ 1438  ros2 interface list | 
+ 1439  ros2 interface list 
+ 1440  colcon build --packages-select my_interface 
+ 1441  srcthis 
+ 1442  ros2 interface list 
+ 1443  ros2 interface list | grep my_interface
+ 1444  cd src
+ 1445  code .
+ 1446  gst
+ 1447  git add sysinfo_pkg/sysinfo_pkg/sysinfo_server.py 
+ 1448  git commit -m "Agregue sysinfo_server.py script"
+ 1449  git push -u origin main
+ 1450  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1451  srcthis 
+ 1452  ros2 service list
+ 1453  ros2 service type /sysinfo_srv 
+ 1454  ros2 service call /sysinfo_srv my_interface/srv/SysInfo "{modo: 'snapshot'}"
+ 1455  ros2 service call /sysinfo_srv my_interface/srv/SysInfo "{modo: 'full'}"
+ 1456  ros2 service call /sysinfo_srv my_interface/srv/SysInfo "{modo: 'none'}"
+ 1457  cd ROs
+ 1458  cd ROS2Dev/tsr_ws/
+ 1459  cd src/
+ 1460  code .
+ 1461  actapt
+ 1462  upgapt
+ 1463  code .
+ 1464  cd ..
+ 1465  srcthis 
+ 1466  cd src/
+ 1467  code .
+ 1468  cd ..
+ 1469  colcon build
+ 1470  colcon build --packages-select sysinfo_pkg --symlink-install 
+ 1471  srcthis 
+ 1472  ros2 run sysinfo_pkg service_srv 
+ 1473  cd src/
+ 1474  git status
+ 1475  git restore sysinfo_pkg/setup.py sysinfo_pkg/sysinfo_pkg/sysinfo_server.py
+ 1476  gst
+ 1477  code .
+ 1478  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1479  actapt 
+ 1480  upgapt 
+ 1481  sudo apt autoremove
+ 1482  cd ROS2Dev/tsr_ws/
+ 1483  l
+ 1484  cd src/
+ 1485  gst
+ 1486  git branch -l
+ 1487  git fetch -a
+ 1488  git pull origin main
+ 1489  git checkout driver
+ 1490  git fetch -a
+ 1491  git fetch driver
+ 1492  git pullorigin main
+ 1493  git pull origin main
+ 1494  git checkout main
+ 1495  git pkg list | grep examp
+ 1496  run pkg list | grep examp
+ 1497  ros2 pkg list | grep examp
+ 1498  ros2 run examples_rclpy_minimal_action_server server_single_goal 
+ 1499  ros2 run examples_rclpy_minimal_action_server server_single_goal --debug:=True
+ 1500  ros2 pkg list 
+ 1501  ros2 launch gazebo_ros gazebo.launch.py --debug true
+ 1502  ros2 launch gazebo_ros gazebo.launch.py --debug:=True
+ 1503  ros2 launch gazebo_ros gazebo.launch.py --debug True
+ 1504  ros2 launch gazebo_ros gazebo.launch.py --debug
+ 1505  code .
+ 1506  cd ..
+ 1507  colcon build --packages-select sysinfo_pkg 
+ 1508  srcthis 
+ 1509  ros2 run sysinfo_pkg service_srv 
+ 1510  colcon build --packages-select sysinfo_pkg 
+ 1511  srcthis 
+ 1512  ros2 run sysinfo_pkg service_srv 
+ 1513  cd src
+ 1514  gst
+ 1515  git status
+ 1516  apt search net-tools
+ 1517  ip
+ 1518  ip help
+ 1519  sudo apt install net-tools
+ 1520  cd ROS2Dev/tsr_ws/
+ 1521  srcthis
+ 1522  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1523  srcthis 
+ 1524  ros2 service list
+ 1525  ros2 service 
+ 1526  ros2 service type /sysinfo_svc 
+ 1527  ros2 service call /sysinfo_svc  my_interface/srv/SysInfo {modo: full}
+ 1528  ros2 service call /sysinfo_svc  my_interface/srv/SysInfo {modo: 'full'} 
+ 1529  ros2 service call /sysinfo_svc  my_interface/srv/SysInfo modo:\ \'full'\ |
+ 1530  ros2 service call /sysinfo_svc  my_interface/srv/SysInfo modo:\ \'full'\ 
+ 1531  ros2 service call /sysinfo_svc  my_interface/srv/SysInfo modo: 'full' 
+ 1532  histpry | grep ros2 | grep call
+ 1533  histpry | grep "ros2" | grep "call"
+ 1534  history | grep "ros2" | grep "call"
+ 1535  os2 service call /sysinfo_srv my_interface/srv/SysInfo "{modo: 'snapshot'}"
+ 1536  ros2 service call /sysinfo_srv my_interface/srv/SysInfo "{modo: 'snapshot'}"
+ 1537  ros2 service call /sysinfo_svc my_interface/srv/SysInfo "{modo: 'snapshot'}"
+ 1538  ros2 service call /sysinfo_svc my_interface/srv/SysInfo "{modo: 'full'}"
+ 1539  ros2 service call /sysinfo_svc my_interface/srv/SysInfo "{modo: 'partial'}"
+ 1540  ros2 service call /sysinfo_svc my_interface/srv/SysInfo "{modo: 'full'}"
+ 1541  ros2 service call /sysinfo_svc my_interface/srv/SysInfo "{modo: 'snapshot'}"
+ 1542  ros2 service call /sysinfo_svc my_interface/srv/SysInfo "{modo: 'partial'}"
+ 1543  srcthis
+ 1544  ros2 run sysinfo_pkg svc_client 
+ 1545  ros2 service call /sysinfo_svc my_interface/srv/SysInfo "{modo: 'snapshot'}"
+ 1546  ros2 run sysinfo_pkg svc_client 
+ 1547  ros2 run sysinfo_pkg svc_client full
+ 1548  ros2 run sysinfo_pkg svc_client snapshot
+ 1549  ros2 run sysinfo_pkg svc_client felipe
+ 1550  cd ROS2Dev/tsr_ws/src/
+ 1551  git status
+ 1552  git restore sysinfo_pkg/setup.py sysinfo_pkg/sysinfo_pkg/sysinfo_server.py
+ 1553  gs
+ 1554  gst
+ 1555  cd ..
+ 1556  colcon build --packages-select sysinfo_pkg 
+ 1557  srcthis 
+ 1558  cd src/
+ 1559  code .
+ 1560  cd ..
+ 1561  colcon build --packages-select sysinfo_pkg --symlink-install 
+ 1562  srcthis 
+ 1563  ros2 run sysinfo_pkg service_srv 
+ 1564  history | grep "ros2 run sysinfo_pkg"
+ 1565  ros2 run sysinfo_pkg service_srv 
+ 1566  srcthis 
+ 1567  cd src
+ 1568  code .
+ 1569  lt sysinfo_pkg/
+ 1570  ros2 run sysinfo_pkg service_srv 
+ 1571  cd ..
+ 1572  colcon build --packages-select sysinfo_pkg --symlink-install 
+ 1573  srcthis
+ 1574  ros2 run sysinfo_pkg service_srv 
+ 1575  cd src/
+ 1576  gst
+ 1577  git add sysinfo_pkg/setup.py sysinfo_pkg/sysinfo_pkg/sysinfo_server.py sysinfo_pkg/sysinfo_pkg/sysinfo_client.py 
+ 1578  gst
+ 1579  git add sysinfo_pkg/sysinfo_pkg/arrg_utils/
+ 1580  gst
+ 1581  git commit -m "Agregue sysinfo_client y demas scripts modificados"
+ 1582  git push -u origin main
+ 1583  l
+ 1584  history > roboticslab_vm_history_20112024.txt
+ 1585  l
+ 1586  l Documents/
+ 1587  l Documents/dotfiles_2024/
+ 1588  lt Documents/dotfiles_2024/docs
+ 1589  cp roboticslab_vm_history_*.txt ~/Documents/dotfiles_2024/docs/
+ 1590  lt Documents/dotfiles_2024/docs
+ 1591  cd Documents/dotfiles_2024/docs
+ 1592  l
+ 1593  mv roboticslab_vm_history_*.txt rawfiles/
+ 1594  lt rawfiles/
+ 1595  l
+ 1596  cd ..
+ 1597  gst
+ 1598  git add .
+ 1599  git commit -m "Added latest robotics_vm_history files."
+ 1600  git branch -l
+ 1601  git push -u origin main
+ 1602  cd
+ 1603  l
+ 1604  cat .ssh/known_hosts
+ 1605  cat .bash_aliases 
+ 1606  fastping 192.168.1.103
+ 1607  ssh arrusr@192.168.1.103
+ 1608  fastping 192.168.1.103
+ 1609  ssh arrusr@192.168.1.103
+ 1610  fastping 192.168.1.103
+ 1611  ssh arrusr@192.168.1.103
+ 1612  fastping 192.168.1.103
+ 1613  ssh arrusr@192.168.1.103
+ 1614  fastping 192.168.1.103
+ 1615  ssh arrusr@192.168.1.103
+ 1616  fastping 192.168.1.103
+ 1617  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1618  cd ROS2Dev/
+ 1619  l
+ 1620  cd ..
+ 1621  cd Dev/
+ 1622  l
+ 1623  cd dofbot-x/
+ 1624  l
+ 1625  git pull origin main
+ 1626  git pull origin dobot-drv 
+ 1627  git branch -m dofbot-drv
+ 1628  git branch -l
+ 1629  git checkout main
+ 1630  l
+ 1631  cd utilities/
+ 1632  l
+ 1633  git checkout dofbot-drv 
+ 1634  l
+ 1635  cd ..
+ 1636  l
+ 1637  cddoce .
+ 1638  code .
+ 1639  gst
+ 1640  git lg
+ 1641  git checkout main
+ 1642  git lg
+ 1643  git checkout dofbot-drv 
+ 1644  git push -u origin main
+ 1645  git pull 
+ 1646  git fetch -a
+ 1647  git fetch -a -
+ 1648  git fetch -a -v
+ 1649  git push -u origin dofbot-drv 
+ 1650  gst
+ 1651  git add .
+ 1652  git commit -m "Updated test scripts and oled script."
+ 1653  git push -u origin dofbot-drv 
+ 1654  l
+ 1655  git pull -u origin main
+ 1656  git pull origin main
+ 1657  cd
+ 1658  l
+ 1659  ls
+ 1660  fastping 192.168.0.102
+ 1661  ping 192.168.0.102 -t
+ 1662  ping 192.168.0.102 -4
+ 1663  ifconfig
+ 1664  ping 192.168.0.101 -4
+ 1665  ssh arrusr@192.168.0.101
+ 1666  ping 192.168.0.101 -4
+ 1667  ls
+ 1668  l
+ 1669  cd ROS2Dev/tsr_ws/src/
+ 1670  ls
+ 1671  l
+ 1672  gst
+ 1673  git add sysinfo_pkg/sysinfo_pkg/sysinfo_client.py 
+ 1674  l
+ 1675  gst
+ 1676  git commit -m "Updated sysinfo_client script."
+ 1677  git push -u origin main
+ 1678  gst
+ 1679  git branch -l
+ 1680  ls
+ 1681  gst
+ 1682  cd
+ 1683  l
+ 1684  cd ROS2Dev/
+ 1685  l
+ 1686  cd ../Dev/dofbot-x/
+ 1687  l
+ 1688  cd dofbot_arm/
+ 1689  l
+ 1690  vim src/yahboom_arm_lib/Arm_Lib/Arm_Lib.py 
+ 1691  cd ..
+ 1692  l
+ 1693  cd ..
+ 1694  cd ROS2Dev/
+ 1695  l
+ 1696  lt robotics_ws/src/
+ 1697  lt ros2exp_ws/src/
+ 1698  ssh arrusr@192.168.0.101
+ 1699  ping 192.168.0.101
+ 1700  cd ROS2Dev/tsr_ws/src/
+ 1701  l
+ 1702  git checkout -b dofbotx
+ 1703  l
+ 1704  cd ..
+ 1705  srcthis 
+ 1706  cd src
+ 1707  ros2 pkg create dofbotx_ctrl --build-type ament_python --description "DofbotX ROS2 Control implementation." --maintainer-name "Felipe Rivas" --maintainer-email rivascf@gmail.com --license MIT
+ 1708  l
+ 1709  code .
+ 1710  l
+ 1711  cd dofbotx_ctrl/dofbotx_ctrl/
+ 1712  l
+ 1713  cp -rf ~/Dev/dofbot-x/dofbot_arm/src/yahboom_arm_lib/Arm_Lib/ .
+ 1714  l
+ 1715  cp -rf ~/Dev/dofbot-x/dofbot_arm/src/yahboom_arm_lib/test*.py .
+ 1716  l
+ 1717  ssh arrusr@192.168.0.101
+ 1718  ping 192.168.0.101
+ 1719  cd
+ 1720  cd Dev/dofbot-x/dofbot_arm/src/dofbot_arm_lib/
+ 1721  l
+ 1722  vim dofbot_arm_ctrl.py 
+ 1723  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1724  PROMPT_COMMAND='PS1_CMD1=$(__venv_ps1 "\[\e[0;1;35m\]╾─╼[\[\e[0m\]%s\[\e[0;1;35m\]]\[\e[0m\]"); PS1_CMD2=$(__git_ps1 "\[\e[0;1;32m\]╾─╼[\[\e[0m\] %s\[\e[0;1;32m\]]\[\e[0m\]"); PS1_CMD3=$(__ros_ps1 "\[\e[0;36m\][\[\e[0m\]%s\[\e[0;36m\]]")'; PS1='\[\e]0;\u@\h: \w\a\]\[\e[38;5;40;1m\]╭─╼[\[\e[0;38;5;31m\]\u\[\e[38;5;66;1m\]@\[\e[0;38;5;72m\]\H\[\e[38;5;40;1m\]]\[\e[38;5;69m\]╾─╼[\[\e[0;38;5;195m\]\w\[\e[38;5;69;1m\]]\[\e[0m\]${PS1_CMD1}${PS1_CMD2}\n\[\e[38;5;59;1m\]╰─╼\[\e[0m\]${PS1_CMD3} \$ '
+ 1725  cd ROS2Dev/tsr_ws/src/
+ 1726  PROMPT_COMMAND='PS1_CMD1=$(__venv_ps1 "\[\e[0;1;35m\]╾─╼[\[\e[0m\]%s\[\e[0;1;35m\]]\[\e[0m\]"); PS1_CMD2=$(__git_ps1 "\[\e[0;1;32m\]╾─╼[\[\e[0m\] %s\[\e[0;1;32m\]]\[\e[0m\]"); PS1_CMD3=$(__ros_ps1 "\[\e[0;36m\][\[\e[0m\]%s\[\e[0;36m\]]")'; PS1='\[\e]0;\u@\h: \w\a\]\[\e[38;5;40;1m\]╭─╼[\[\e[0;38;5;31m\]\u\[\e[38;5;66;1m\]@\[\e[0;38;5;72m\]\H\[\e[38;5;40;1m\]]\[\e[38;5;69m\]╾─╼[\[\e[0;38;5;195m\]\w\[\e[38;5;69;1m\]]\[\e[0m\]${PS1_CMD1}${PS1_CMD2}\n\[\e[38;5;59;1m\]╰─╼\[\e[0m\]${PS1_CMD3} \$ '
+ 1727  ll
+ 1728  l
+ 1729  PROMPT_COMMAND='PS1_CMD1=$(__venv_ps1 "\[\e[0;1;35m\]╾─╼[\[\e[0m\]%s\[\e[0;1;35m\]]\[\e[0m\]"); PS1_CMD2=$(__git_ps1 "\[\e[0;1;32m\]╾─╼[\[\e[0m\] %s\[\e[0;1;32m\]]\[\e[0m\]"); PS1_CMD3=$(__ros_ps1 "\[\e[0;36m\][\[\e[0m\]%s\[\e[0;36m\]]")'; PS1='\[\e]0;\u@\h: \w\a\]\[\e[38;5;40;1m\]╭─╼[\[\e[0;38;5;31m\]\u\[\e[38;5;66;1m\]@\[\e[0;38;5;72m\]\H\[\e[38;5;40;1m\]]\[\e[38;5;69m\]╾─╼[\[\e[0;38;5;195m\]\w\[\e[38;5;69;1m\]]\[\e[0;38;5;59m\]${PS1_CMD1}\[\e[0m\]${PS1_CMD2}\n\[\e[38;5;59;1m\]╰─╼\[\e[0m\]${PS1_CMD3} \$ '
+ 1730  l
+ 1731  cd ROS2Dev/tsr_ws/src/
+ 1732  cd
+ 1733  cd Dev/dofbot-x/
+ 1734  startvenv 
+ 1735  \[\e[0;1;35m\]╾─╼[\[\e[0m\]%s\[\e[0;1;35m\]]\[\e[0m\]${PS1_CMD2}\n\[\e[38;5;237;1m\]╰─╼\[\e[0m\]${PS1_CMD3} \$ '
+ 1736  actapt 
+ 1737  upgapt 
+ 1738  sudo apt autoremove
+ 1739  echo $PS1
+ 1740  l
+ 1741  history >> roboticslab_vm_history_22112024.txt
+ 1742  l
+ 1743  ls
+ 1744  cd ROS2Dev/tsr_ws/src/
+ 1745  l
+ 1746  gst
+ 1747  echo $PS1
+ 1748  vim ~/.bashrc
+ 1749  PROMPT_COMMAND=
+ 1750  	'PS1_CMD1=$(__venv_ps1 "\[\e[0;1;35m\]╾─╼[\[\e[0m\]%s\[\e[0;1;35m\]]\[\e[0m\]"); 
+ 1751  	 PS1_CMD2=$(__git_ps1 "\[\e[0;1;32m\]╾─╼[\[\e[0m\] %s\[\e[0;1;32m\]]\[\e[0m\]"); 
+ 1752  	 PS1_CMD3=$(__ros_ps1 "\[\e[0;36m\][\[\e[0m\]%s\[\e[0;36m\]]")'; 
+ 1753  PS1='\[\e]0;\u@\h: \w\a\]\[\e[38;5;40;1m\]╭─╼[\[\e[0;38;5;31m\]\u\[\e[38;5;66;1m\]@\[\e[0;38;5;72m\]\H\[\e[38;5;40;1m\]]\[\e[38;5;69m\]╾─╼[\[\e[0;38;5;195m\]\w\[\e[38;5;69;1m\]]\[\e[0;38;5;59m\]${PS1_CMD1}\[\e[0m\]${PS1_CMD2}\n\[\e[38;5;237;1m\]╰─╼\[\e[0m\]${PS1_CMD3} \$ '
+ 1754  PROMPT_COMMAND= /
+ 1755  	'PS1_CMD1=$(__venv_ps1 "\[\e[0;1;35m\]╾─╼[\[\e[0m\]%s\[\e[0;1;35m\]]\[\e[0m\]"); /
+ 1756  	 PS1_CMD2=$(__git_ps1 "\[\e[0;1;32m\]╾─╼[\[\e[0m\] %s\[\e[0;1;32m\]]\[\e[0m\]"); /
+ 1757  	 PS1_CMD3=$(__ros_ps1 "\[\e[0;36m\][\[\e[0m\]%s\[\e[0;36m\]]")'; /
+ 1758  PS1='\[\e]0;\u@\h: \w\a\]\[\e[38;5;40;1m\]╭─╼[\[\e[0;38;5;31m\]\u\[\e[38;5;66;1m\]@\[\e[0;38;5;72m\]\H\[\e[38;5;40;1m\]]\[\e[38;5;69m\]╾─╼[\[\e[0;38;5;195m\]\w\[\e[38;5;69;1m\]]\[\e[0;38;5;59m\]${PS1_CMD1}\[\e[0m\]${PS1_CMD2}\n\[\e[38;5;237;1m\]╰─╼\[\e[0m\]${PS1_CMD3} \$ '
+ 1759  PROMPT_COMMAND=
+ 1760  	'PS1_CMD1=$(__venv_ps1 "[\e[0;1;35m\]╾─╼[\[\e[0m\]%s\[\e[0;1;35m\]]\[\e[0m\]"); 
+ 1761  	 PS1_CMD2=$(__git_ps1 "[\e[0;1;32m\]╾─╼[\[\e[0m\] %s\[\e[0;1;32m\]]\[\e[0m\]"); 
+ 1762  	 PS1_CMD3=$(__ros_ps1 "[\e[0;36m\][\[\e[0m\]%s\[\e[0;36m\]]")'; 
+ 1763  PS1='\[\e]0;\u@\h: \w\a\]\[\e[38;5;40;1m\]╭─╼[\[\e[0;38;5;31m\]\u\[\e[38;5;66;1m\]@\[\e[0;38;5;72m\]\H\[\e[38;5;40;1m\]]\[\e[38;5;69m\]╾─╼[\[\e[0;38;5;195m\]\w\[\e[38;5;69;1m\]]\[\e[0;38;5;59m\]${PS1_CMD1}\[\e[0m\]${PS1_CMD2}\n\[\e[38;5;237;1m\]╰─╼\[\e[0m\]${PS1_CMD3} \$ '
+ 1764  cd ~/Dev/dofbot-x/
+ 1765  startvenv 
+ 1766  PROMPT_COMMAND=
+ 1767  	'PS1_CMD1=$(__venv_ps1 "\[\e[0;1;35m\]╾─╼[\[\e[0m\]%s\[\e[0;1;35m\]]\[\e[0m\]"); 
+ 1768  	 PS1_CMD2=$(__git_ps1 "\[\e[0;1;32m\]╾─╼[\[\e[0m\] %s\[\e[0;1;32m\]]\[\e[0m\]"); 
+ 1769  	 PS1_CMD3=$(__ros_ps1 "\[\e[0;36m\][\[\e[0m\]%s\[\e[0;36m\]]")'; 
+ 1770  PS1='\[\e]0;\u@\h: \w\a\]\[\e[38;5;40;1m\]╭─╼[\[\e[0;38;5;31m\]\u\[\e[38;5;66;1m\]@\[\e[0;38;5;72m\]\H\[\e[38;5;40;1m\]]\[\e[38;5;69m\]╾─╼[\[\e[0;38;5;195m\]\w\[\e[38;5;69;1m\]]\[\e[0;38;5;59m\]${PS1_CMD1}\[\e[0m\]${PS1_CMD2}\n\[\e[38;5;237;1m\]╰─╼\[\e[0m\]${PS1_CMD3} \$ '
+ 1771  PROMPT_COMMAND='PS1_CMD1=$(__venv_ps1 "\[\e[0;1;35m\]╾─╼[\[\e[0m\]%s\[\e[0;1;35m\]]\[\e[0m\]"); PS1_CMD2=$(__git_ps1 "\[\e[0;1;32m\]╾─╼[\[\e[0m\] %s\[\e[0;1;32m\]]\[\e[0m\]"); PS1_CMD3=$(__ros_ps1 "\[\e[0;36m\][\[\e[0m\]%s\[\e[0;36m\]]")'; PS1='\[\e]0;\u@\h: \w\a\]\[\e[38;5;40;1m\]╭─╼[\[\e[0;38;5;31m\]\u\[\e[38;5;66;1m\]@\[\e[0;38;5;72m\]\H\[\e[38;5;40;1m\]]\[\e[38;5;69m\]╾─╼[\[\e[0;38;5;195m\]\w\[\e[38;5;69;1m\]]\[\e[0;38;5;59m\]${PS1_CMD1}\[\e[0m\]${PS1_CMD2}\n\[\e[38;5;237;1m\]╰─╼\[\e[0m\]${PS1_CMD3} \$ '
+ 1772  rsttrm 
+ 1773  PROMPT_COMMAND='PS1_CMD1=$(__venv_ps1 "[\e[0;1;35m\]╾─╼[\[\e[0m\]%s\[\e[0;1;35m\]]\[\e[0m\]"); PS1_CMD2=$(__git_ps1 "[\e[0;1;32m\]╾─╼[\[\e[0m\] %s\[\e[0;1;32m\]]\[\e[0m\]"); PS1_CMD3=$(__ros_ps1 "[\e[0;36m\][\[\e[0m\]%s\[\e[0;36m\]]")'; PS1='[\e]0;\u@\h: \w\a\]\[\e[38;5;40;1m\]╭─╼[\[\e[0;38;5;31m\]\u\[\e[38;5;66;1m\]@\[\e[0;38;5;72m\]\H\[\e[38;5;40;1m\]]\[\e[38;5;69m\]╾─╼[\[\e[0;38;5;195m\]\w\[\e[38;5;69;1m\]]\[\e[0;38;5;59m\]${PS1_CMD1}\[\e[0m\]${PS1_CMD2}\n\[\e[38;5;237;1m\]╰─╼\[\e[0m\]${PS1_CMD3} \$ '
+ 1774  rsttrm 
+ 1775  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1776  cd Dev/dofbot-x/
+ 1777  git checkout main
+ 1778  git pull origin main
+ 1779  git fetch -a
+ 1780  l
+ 1781  git pull origin main
+ 1782  code .
+ 1783  cd ..
+ 1784  cd dofbot-x/
+ 1785  cd config/
+ 1786  l
+ 1787  wget ros:humble-desktop-l4t-r32.7.1
+ 1788  cd
+ 1789  cat .bash_aliases 
+ 1790  cat .config/rosmgmt/ros2_humble_conf.bash 
+ 1791  cd Dev/dofbot-x/
+ 1792  gst
+ 1793  rm config/Dockerfile 
+ 1794  gst
+ 1795  git add config/dofbot-x_docker/Dockerfile 
+ 1796  git commit -m "Updated Dofbot-X Dockerfile"
+ 1797  gst
+ 1798  git add config/dofbot-x_docker/ros2_setup.bash 
+ 1799  git commit -m "Deleted ros2_setup.bash (test configuration file)."
+ 1800  gst
+ 1801  git add .
+ 1802  git commit -m "Added dofbotx_ros2_setup.bash config file"
+ 1803  gst
+ 1804  git push -u origin main
+ 1805  git fetch --all
+ 1806  git pull origin main
+ 1807  ls 
+ 1808  code .
+ 1809  l
+ 1810  docker image list
+ 1811  gst
+ 1812  git add .
+ 1813  g lg
+ 1814  git commit -m "Updated Dockerfile contents (4)"
+ 1815  git push -u origin main
+ 1816  gst
+ 1817  ping 192.168.1.103
+ 1818  ssh arrusr@192.168.1.103
+ 1819  ping 192.168.1.103
+ 1820  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1821  cd Dev/dofbot-x/
+ 1822  code .
+ 1823  cd dofbot_arm/
+ 1824  l
+ 1825  cd src/
+ 1826  l
+ 1827  cd ya
+ 1828  cd yahboom_arm_lib/
+ 1829  l
+ 1830  python3 fake_ctrl_servo.py 
+ 1831  python3 fake_ctrl_all.py 
+ 1832  gst
+ 1833  git checkout -b fake-lib
+ 1834  git add FakeArm_Lib/ fake_ctrl_all.py fake_ctrl_servo.py 
+ 1835  gst
+ 1836  git commit -m "Added FakeArm_Lib folder, FakeArm_Lib.py, fake_ctrl_all and, fake_ctrl_servo scripts."
+ 1837  gst
+ 1838  git branch -l
+ 1839  git checkout dofbot-drv
+ 1840  gst
+ 1841  git add .
+ 1842  git commit -m "Updated dofbot_arm_ctrl.py and Arm_Lib/Arm_Lib.py scripts."
+ 1843  gst
+ 1844  git add .
+ 1845  gst
+ 1846  cd ..
+ 1847  git add .
+ 1848  git commit -m "Updated dofbot_arm_ctrl.py and Arm_Lib/Arm_Lib.py scripts."
+ 1849  gst
+ 1850  git push -u origin dofbot-drv 
+ 1851  git checkout fake-lib 
+ 1852  git push -u origin fake-lib 
+ 1853  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1854  cd Dev/dofbot-x/
+ 1855  code .
+ 1856  python3
+ 1857  l
+ 1858  cd dofbot_arm/
+ 1859  l
+ 1860  cd src/
+ 1861  l
+ 1862  cd yahboom_arm_lib/
+ 1863  l
+ 1864  cp fake_ctrl_*.py ../
+ 1865  cd ..
+ 1866  l
+ 1867  cd dofbot_arm_lib/
+ 1868  l
+ 1869  cd gst
+ 1870  gst
+ 1871  cd ..
+ 1872  gst
+ 1873  l
+ 1874  cp dofbotx_fake_ctrl_servo.py dofbotx_test_lib-py
+ 1875  l
+ 1876  mv dofbotx_test_lib-py dofbotx_test_lib.py 
+ 1877  python3 dofbotx_test_lib.py 
+ 1878  gst
+ 1879  git branch -l
+ 1880  git checkout dofbot-drv 
+ 1881  gst
+ 1882  git statgus
+ 1883  git status
+ 1884  git restore dofbot_arm_lib/__init__.py dofbot_arm_lib/dofbot_arm_ctrl.py
+ 1885  git checkout dofbot-drv 
+ 1886  gst
+ 1887  git add .
+ 1888  git commit -m "Added dofbot_arm test scripts."
+ 1889  git push -u origin dofbot-drv 
+ 1890  ping 192.168.0.101
+ 1891  ssh arrusr@192.168.0.101
+ 1892  ls
+ 1893  ping 192.168.0.101
+ 1894  l
+ 1895  ls /usr/bin
+ 1896  ls /usr/bin/python
+ 1897  ls -l /usr/bin/python
+ 1898  ls -l /usr/bin/pythonexit
+ 1899  ls -l /usr/bin/python
+ 1900  ls -l /usr/bin/
+ 1901  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1902  ls
+ 1903  l
+ 1904  cd ROS2Dev/
+ 1905  l
+ 1906  cd ..
+ 1907  l
+ 1908  cd Dev/
+ 1909  l
+ 1910  cd dofbot-x/
+ 1911  l
+ 1912  git checkout main
+ 1913  git fetch -h
+ 1914  git fetch --all
+ 1915  git pull origin main dofbot-drv
+ 1916  git pull origin main
+ 1917  git checkout dofbot-drv
+ 1918  git pull origin dofbot-drv
+ 1919  git branch -l
+ 1920  git fetch --all
+ 1921  git switch main
+ 1922  git fetch --all
+ 1923  l
+ 1924  code .
+ 1925  actapt
+ 1926  upgapt
+ 1927  sudo apt autoremove
+ 1928  actapt
+ 1929  upgapt
+ 1930  sudo apt autoremove
+ 1931  l
+ 1932  cd Dev
+ 1933  l
+ 1934  rm dofbot-x/
+ 1935  rm -rm dofbot-x/
+ 1936  rm -rf dofbot-x/
+ 1937  l
+ 1938  git clone https://github.com/arrg-mx/dofbot-x.git
+ 1939  l
+ 1940  cd  dofbot-x/
+ 1941  l
+ 1942  git status
+ 1943  git fetch --all
+ 1944  git branch -l
+ 1945  git switch dofbot-drv
+ 1946  git pull origin main
+ 1947  l
+ 1948  git fetch --all
+ 1949  l
+ 1950  git branch -l
+ 1951  git switch main
+ 1952  git pull origin dofbot-drv 
+ 1953  git config pull.ff only
+ 1954  git pull origin dofbot-drv 
+ 1955  git pull origin dofbot-drv --rebase
+ 1956  g lg
+ 1957  l
+ 1958  cd config/
+ 1959  l
+ 1960  cd ..
+ 1961  git switch dofbot-drv 
+ 1962  l
+ 1963  g lg
+ 1964  git checkout main
+ 1965  l
+ 1966  code .
+ 1967  python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1968  l
+ 1969  cd config/dofbot-x_docker/
+ 1970  touch requirements.txt
+ 1971  rm Dockerfile2 Dockerfile3
+ 1972  gst
+ 1973  git add Dockerfile2 Dockerfile3
+ 1974  git commit -m "Deleted Dockerfile2 and Dockerfile3 files"
+ 1975  l
+ 1976  git add requirements.txt 
+ 1977  git commit -m "Added requirements.txt file"
+ 1978  git push -u origin main
+ 1979  git pull origin main
+ 1980  git push -u origin main
+ 1981  history | grep Sauce
+ 1982  l roboticslab_vm_history_*
+ 1983  cat roboticslab_vm_history_07082024.txt | grep Sauce
+ 1984  fc-list | grep "Sauce" | grep mono
+ 1985  fc-list | grep "Sauce"
+ 1986  fc-list | grep "Sauce" | grep Mono
+ 1987  git config --global -e
+ 1988  git config --global -l
+ 1989  git config rebase -l
+ 1990  git config local -l
+ 1991  git config --local -l
+ 1992  cd Dev/dofbot-x/
+ 1993  git config --local -l
+ 1994  git config --local -e
+ 1995  git pull main
+ 1996  git pull origin main
+ 1997  git pull origin main --rebase
+ 1998  git pull origin main --no-rebase 
+ 1999  l
+ 2000  history >> roboticslab_vm_history_061224.txt

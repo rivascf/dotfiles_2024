@@ -1,0 +1,1000 @@
+ 1002  git add .
+ 1003  git commit -m "Updated dofbot_arm_ctrl.py and Arm_Lib/Arm_Lib.py scripts."
+ 1004  gst
+ 1005  git add .
+ 1006  gst
+ 1007  cd ..
+ 1008  git add .
+ 1009  git commit -m "Updated dofbot_arm_ctrl.py and Arm_Lib/Arm_Lib.py scripts."
+ 1010  gst
+ 1011  git push -u origin dofbot-drv 
+ 1012  git checkout fake-lib 
+ 1013  git push -u origin fake-lib 
+ 1014  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1015  cd Dev/dofbot-x/
+ 1016  code .
+ 1017  python3
+ 1018  l
+ 1019  cd dofbot_arm/
+ 1020  l
+ 1021  cd src/
+ 1022  l
+ 1023  cd yahboom_arm_lib/
+ 1024  l
+ 1025  cp fake_ctrl_*.py ../
+ 1026  cd ..
+ 1027  l
+ 1028  cd dofbot_arm_lib/
+ 1029  l
+ 1030  cd gst
+ 1031  gst
+ 1032  cd ..
+ 1033  gst
+ 1034  l
+ 1035  cp dofbotx_fake_ctrl_servo.py dofbotx_test_lib-py
+ 1036  l
+ 1037  mv dofbotx_test_lib-py dofbotx_test_lib.py 
+ 1038  python3 dofbotx_test_lib.py 
+ 1039  gst
+ 1040  git branch -l
+ 1041  git checkout dofbot-drv 
+ 1042  gst
+ 1043  git statgus
+ 1044  git status
+ 1045  git restore dofbot_arm_lib/__init__.py dofbot_arm_lib/dofbot_arm_ctrl.py
+ 1046  git checkout dofbot-drv 
+ 1047  gst
+ 1048  git add .
+ 1049  git commit -m "Added dofbot_arm test scripts."
+ 1050  git push -u origin dofbot-drv 
+ 1051  ping 192.168.0.101
+ 1052  ssh arrusr@192.168.0.101
+ 1053  ls
+ 1054  ping 192.168.0.101
+ 1055  l
+ 1056  ls /usr/bin
+ 1057  ls /usr/bin/python
+ 1058  ls -l /usr/bin/python
+ 1059  ls -l /usr/bin/pythonexit
+ 1060  ls -l /usr/bin/python
+ 1061  ls -l /usr/bin/
+ 1062  /home/robousr/.pyenv/versions/3.10.14/bin/python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1063  ls
+ 1064  l
+ 1065  cd ROS2Dev/
+ 1066  l
+ 1067  cd ..
+ 1068  l
+ 1069  cd Dev/
+ 1070  l
+ 1071  cd dofbot-x/
+ 1072  l
+ 1073  git checkout main
+ 1074  git fetch -h
+ 1075  git fetch --all
+ 1076  git pull origin main dofbot-drv
+ 1077  git pull origin main
+ 1078  git checkout dofbot-drv
+ 1079  git pull origin dofbot-drv
+ 1080  git branch -l
+ 1081  git fetch --all
+ 1082  git switch main
+ 1083  git fetch --all
+ 1084  l
+ 1085  code .
+ 1086  actapt
+ 1087  upgapt
+ 1088  sudo apt autoremove
+ 1089  actapt
+ 1090  upgapt
+ 1091  sudo apt autoremove
+ 1092  l
+ 1093  cd Dev
+ 1094  l
+ 1095  rm dofbot-x/
+ 1096  rm -rm dofbot-x/
+ 1097  rm -rf dofbot-x/
+ 1098  l
+ 1099  git clone https://github.com/arrg-mx/dofbot-x.git
+ 1100  l
+ 1101  cd  dofbot-x/
+ 1102  l
+ 1103  git status
+ 1104  git fetch --all
+ 1105  git branch -l
+ 1106  git switch dofbot-drv
+ 1107  git pull origin main
+ 1108  l
+ 1109  git fetch --all
+ 1110  l
+ 1111  git branch -l
+ 1112  git switch main
+ 1113  git pull origin dofbot-drv 
+ 1114  git config pull.ff only
+ 1115  git pull origin dofbot-drv 
+ 1116  git pull origin dofbot-drv --rebase
+ 1117  g lg
+ 1118  l
+ 1119  cd config/
+ 1120  l
+ 1121  cd ..
+ 1122  git switch dofbot-drv 
+ 1123  l
+ 1124  g lg
+ 1125  git checkout main
+ 1126  l
+ 1127  code .
+ 1128  python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1129  l
+ 1130  cd config/dofbot-x_docker/
+ 1131  touch requirements.txt
+ 1132  rm Dockerfile2 Dockerfile3
+ 1133  gst
+ 1134  git add Dockerfile2 Dockerfile3
+ 1135  git commit -m "Deleted Dockerfile2 and Dockerfile3 files"
+ 1136  l
+ 1137  git add requirements.txt 
+ 1138  git commit -m "Added requirements.txt file"
+ 1139  git push -u origin main
+ 1140  git pull origin main
+ 1141  git push -u origin main
+ 1142  history | grep Sauce
+ 1143  l roboticslab_vm_history_*
+ 1144  cat roboticslab_vm_history_07082024.txt | grep Sauce
+ 1145  fc-list | grep "Sauce" | grep mono
+ 1146  fc-list | grep "Sauce"
+ 1147  fc-list | grep "Sauce" | grep Mono
+ 1148  git config --global -e
+ 1149  git config --global -l
+ 1150  git config rebase -l
+ 1151  git config local -l
+ 1152  git config --local -l
+ 1153  cd Dev/dofbot-x/
+ 1154  git config --local -l
+ 1155  git config --local -e
+ 1156  git pull main
+ 1157  git pull origin main
+ 1158  git pull origin main --rebase
+ 1159  git pull origin main --no-rebase 
+ 1160  ssh arrusr@198.168.1.103
+ 1161  ping 198.168.1.103
+ 1162  ifconfig
+ 1163  ping 192.168.1.103 
+ 1164  ssh arrusr@192.168.1.103
+ 1165  ping 192.168.1.103 
+ 1166  ping 192.168.1.103 -t
+ 1167  ping 192.168.1.103 -t 4
+ 1168  ping 192.168.1.103 
+ 1169  l
+ 1170  git pull origin main
+ 1171  l
+ 1172  rm -rf tools/
+ 1173  gst
+ 1174  git add .
+ 1175  git commit -m "Deleted tools folder and contents"
+ 1176  rm py_install.sh 
+ 1177  git add .
+ 1178  git commit -m "Deleted py_install.sh bash script"
+ 1179  git push -u origin main
+ 1180  gst
+ 1181  git add .
+ 1182  git commit -m "Updated Dockerfile contents"
+ 1183  gst
+ 1184  git push -u origin main
+ 1185  python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1186  l
+ 1187  history >> roboticslab_vm_history_061224.txt
+ 1188  l
+ 1189  mv roboticslab_vm_history_061224.txt roboticslab_vm_history_06122024.txt
+ 1190  l
+ 1191  mv roboticslab_vm_history_011124.txt roboticslab_vm_history_01112024.txt
+ 1192  l
+ 1193  cd Dev/dofbot-x/
+ 1194  l
+ 1195  code .
+ 1196  gst
+ 1197  git add config/dofbot-x_docker/Dockerfile 
+ 1198  git commit -m "Updated Dockerfile."
+ 1199  git add .
+ 1200  git commit -m "Added py_install.sh"
+ 1201  gst
+ 1202  git pull origin main
+ 1203  git lg
+ 1204  git push origin main
+ 1205  lsb_release -a
+ 1206  history | grep pyenv | grep -v grep
+ 1207  pyenv install --list | grep "3.10."
+ 1208  git pull origin main
+ 1209  g lg
+ 1210  ros2 pkg create dofbotx_interfaces --build-type ament_cmake --description "DofbotX ROS2 interfaces package." --license MIT --maintainer-name "Felipe Rivas" --maintainer-email rivascf@gmail.com
+ 1211  cd dofbotx_interfaces/
+ 1212  l
+ 1213  rm -rf include/e src/
+ 1214  mkdir msg/ srv/ action/
+ 1215  l
+ 1216  rm -rf include/
+ 1217  cd ..
+ 1218  colcon build --packages-select dofbotx_interfaces 
+ 1219  colcon build 
+ 1220  srcthis 
+ 1221  colcon build 
+ 1222  python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1223  cd ROS2Dev/tsr_ws/
+ 1224  cd ..
+ 1225  cd ~/ROS2Dev/tsr_ws/
+ 1226  srcthis 
+ 1227  cd src
+ 1228  code .
+ 1229  cd ..
+ 1230  colcon build
+ 1231  srcthis 
+ 1232  colcon build
+ 1233  sudo apt install python3-empy 
+ 1234  colcon build
+ 1235  python 
+ 1236  python3
+ 1237  cd src/
+ 1238  l
+ 1239  cd ..
+ 1240  l
+ 1241  colcon build 
+ 1242  pyenv versions
+ 1243  python3 -V
+ 1244  pyenv global 
+ 1245  history 
+ 1246  sudo shutdown -r now
+ 1247  python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1248  cd ROS2Dev/
+ 1249  cd tsr_ws/
+ 1250  srcthis 
+ 1251  colcon build
+ 1252  colcon build --packages-select dofbotx_interfaces 
+ 1253  vim ~/.bashrc 
+ 1254  vim ~/.bash_aliases 
+ 1255  rosdep update
+ 1256  sudo rosdep init
+ 1257  rosdep update
+ 1258  colcon build --packages-select dofbotx_interfaces 
+ 1259  pyenv versions
+ 1260  pyenv global system
+ 1261  pyenv versions
+ 1262  pyenv install 3.12.4 --remove
+ 1263  pyenv remove 3.12.4
+ 1264  pyenv 
+ 1265  pyenv uninstall 3.12.4
+ 1266  colcon build --packages-select dofbotx_interfaces 
+ 1267  rm -rf install/ build/ 
+ 1268  l
+ 1269  rm -rf log/
+ 1270  colcon build
+ 1271  srcthis 
+ 1272  ros2 interface list | grep dofbotx
+ 1273  cd src
+ 1274  code .
+ 1275  ros2 interface show dofbotx_interfaces/msg/GripperCmd 
+ 1276  cd ROS2Dev/tsr_ws/
+ 1277  srcthis
+ 1278  l
+ 1279  cd src
+ 1280  code .
+ 1281  gst
+ 1282  git add driver_pkg/
+ 1283  git status
+ 1284  git restore --staged driver_pkg/
+ 1285  gst
+ 1286  lt driver_pkg/driver_pkg/
+ 1287  echo "**/Rosboard_Lib" >> .gitignore 
+ 1288  echo "**/Arm_Lib" >> .gitignore 
+ 1289  gst
+ 1290  git checkout main
+ 1291  gst
+ 1292  git checkout dofbotx 
+ 1293  gs
+ 1294  gst
+ 1295  git add .gitignore 
+ 1296  git commit -m "Updated gitignore exclusions."
+ 1297  git add dofbotx_interfaces
+ 1298  git commit -m "Added dofbot_interfaces ROS2 packages."
+ 1299  git lg
+ 1300  git status
+ 1301  git commit --amend
+ 1302  git lg
+ 1303  gst
+ 1304  git add dofbotx_ctrl/
+ 1305  git commit --amend
+ 1306  git status
+ 1307  g lg
+ 1308  gst
+ 1309  git commit --amend
+ 1310  gst
+ 1311  g lg
+ 1312  git push -u origin dofbotx
+ 1313  gst
+ 1314  lt docs/
+ 1315  ping 192.168.0.101
+ 1316  ssh arrusr@192.168.0.101
+ 1317  ping 192.168.0.101
+ 1318  python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1319  cd Dev/dofbot-x/
+ 1320  code .
+ 1321  cd ~/ROS2Dev/tsr_ws/
+ 1322  l
+ 1323  vf src/
+ 1324  l
+ 1325  srcthis 
+ 1326  cd src/
+ 1327  l
+ 1328  git config --local -l
+ 1329  python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1330  python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1331  cd ROS2Dev/tsr_ws/
+ 1332  l
+ 1333  cd src
+ 1334  l
+ 1335  code .
+ 1336  l
+ 1337  git clone https://github.com/arrg-mx/ROSX3_Plus_ROSX3.git
+ 1338  ls
+ 1339  ll
+ 1340  cd ~/ROS2Dev/
+ 1341  l
+ 1342  lt ros2exp_ws/src/
+ 1343  lt robotics_ws/src/
+ 1344  l
+ 1345  rm -rf robotics_ws/
+ 1346  rm -rf ros2exp_ws/
+ 1347  l
+ 1348  mkdir -p arrg_ws/src
+ 1349  cd arrg_ws/
+ 1350  l
+ 1351  colcon build
+ 1352  srcthis
+ 1353  cd src
+ 1354  git clone https://github.com/arrg-mx/ROSX3_Plus_ROSX3.git -b humble
+ 1355  rosdep update
+ 1356  cd ..
+ 1357  colcon build
+ 1358  actapt 
+ 1359  upgapt 
+ 1360  sudo apt ros-humble-gazebo-ros2-control ros-humble-position-controllers ros-humble-velocity-controllers ros-humble-joint-trayectory-controller ros-humble-ros2.control ros-humble-controller-manager ros-humble-ros2-control ros-humble-ros2-controllers
+ 1361  sudo apt install ros-humble-gazebo-ros2-control ros-humble-position-controllers ros-humble-velocity-controllers ros-humble-joint-trayectory-controller ros-humble-ros2.control ros-humble-controller-manager ros-humble-ros2-control ros-humble-ros2-controllers
+ 1362  sudo apt-get install ros-humble-gazebo-ros2-control ros-humble-position-controllers ros-humble-velocity-controllers ros-humble-joint-trayectory-controller ros-humble-ros2.control ros-humble-controller-manager ros-humble-ros2-control ros-humble-ros2-controllers
+ 1363  sudo apt-get install ros-humble-gazebo-ros2-control ros-humble-position-controllers ros-humble-velocity-controllers ros-humble-joint-trayectory-controller ros-humble-ros2-control ros-humble-controller-manager ros-humble-ros2-control ros-humble-ros2-controllers
+ 1364  sudo apt-get install ros-humble-gazebo-ros2-control ros-humble-position-controllers ros-humble-velocity-controllers ros-humble-joint-trayectory-controllers ros-humble-ros2-control ros-humble-controller-manager ros-humble-ros2-control ros-humble-ros2-controllers
+ 1365  sudo apt-get install ros-humble-gazebo-ros2-control ros-humble-position-controllers ros-humble-velocity-controllers ros-humble-joint-trayectory-controller ros-humble-ros2-control ros-humble-controller-manager ros-humble-ros2-control ros-humble-ros2-controllers
+ 1366  sudo apt-get search ros-humble-* | grep control
+ 1367  sudo apt search ros-humble-* | grep control
+ 1368  sudo apt search ros-humble-* | grep controller | grep trajectory
+ 1369  sudo apt-get install ros-humble-gazebo-ros2-control ros-humble-position-controllers ros-humble-velocity-controllers ros-humble-joint-trajectory-controller ros-humble-ros2-control ros-humble-controller-manager ros-humble-ros2-control ros-humble-ros2-controllers
+ 1370  colcon build
+ 1371  cd src/
+ 1372  l
+ 1373  mv ROSX3_Plus_ROSX3/* .
+ 1374  l
+ 1375  rm -rf ROSX3_Plus_ROSX3/
+ 1376  l
+ 1377  cd ..
+ 1378  colcon build
+ 1379  rm -rf install/ build/ log/
+ 1380  colcon build
+ 1381  cd src/
+ 1382  cod 
+ 1383  code .
+ 1384  cd ..
+ 1385  colcon build
+ 1386  rm -rf install/ build/ log/
+ 1387  colcon build
+ 1388  cd src/
+ 1389  code .
+ 1390  cd ..
+ 1391  colcon build
+ 1392  ping 192.168.0.167
+ 1393  ssh arrusr@192.168.0.167
+ 1394  ssh-keygen -f "/home/robousr/.ssh/known_hosts" -R "192.168.0.167"
+ 1395  ssh arrusr@192.168.0.167
+ 1396  ssh-keygen -f "/home/robousr/.ssh/known_hosts" -R "192.168.0.167"
+ 1397  ssh arrusr@192.168.0.167
+ 1398  ping 192.168.0.167 -t
+ 1399  ping 192.168.0.167 -4
+ 1400  exit
+ 1401  cd ROS2Dev/tsr_ws/src/
+ 1402  code .
+ 1403  git checkout main
+ 1404  l
+ 1405  lt driver_pkg/
+ 1406  cat driver_pkg/driver_pkg/Rosboard_Lib/__init__.py 
+ 1407  exit
+ 1408  python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1409  actapt
+ 1410  upgapt 
+ 1411  cd Dev/
+ 1412  l
+ 1413  cd ros2-rosboard/
+ 1414  l
+ 1415  cd RosBoard/
+ 1416  l
+ 1417  vim .
+ 1418  l
+ 1419  cd ..
+ 1420  vim .
+ 1421  l
+ 1422  cd ..
+ 1423  l
+ 1424  cd ros2-rosboard/
+ 1425  lt .
+ 1426  vim .
+ 1427  git config --local -l
+ 1428  vim .
+ 1429  actapt 
+ 1430  upgapt 
+ 1431  dconf 
+ 1432  dconf dump /org/gnome/terminal/legacy/profiles:/
+ 1433  ls 
+ 1434  dconf dump /org/gnome/terminal/legacy/profiles:/ >> ~/Documents/terminal_profiles.txt
+ 1435  cat ~/Documents/terminal_profiles.txt
+ 1436  cd ROS2Dev/tsr_ws/src/
+ 1437  gst
+ 1438  git branch -l
+ 1439  git config --local -l
+ 1440  git push -u origin main
+ 1441  git branch -l
+ 1442  git push -u origin dofbotx
+ 1443  git push -u origin driver
+ 1444  exit
+ 1445  actapt
+ 1446  upgapt
+ 1447  sudo apt autoremove
+ 1448  pip3 install jupyterlab-urdf
+ 1449  jpl
+ 1450  printenv | grep ROS
+ 1451  ros2 pkg list | grep dofbot
+ 1452  cdl
+ 1453  l
+ 1454  pwd
+ 1455  cd dofbot_description/
+ 1456  lt
+ 1457  rm urdf/untitled.urdf urdf/dofbot_base.urdf
+ 1458  mv urdf/untitled.urdf urdf/dofbot_base.urdf
+ 1459  lt
+ 1460  ls
+ 1461  l
+ 1462  cd urdf/
+ 1463  l
+ 1464  cd ..
+ 1465  l
+ 1466  rm untitled.urdf 
+ 1467  l
+ 1468  cd urdf
+ 1469  cd dofbot_description/
+ 1470  ls
+ 1471  cd ..
+ 1472  ls | grep urdf
+ 1473  lt | grep urdf
+ 1474  cd ROS2Dev/
+ 1475  l
+ 1476  cd arrg_ws/
+ 1477  l
+ 1478  ls src/
+ 1479  srcthis 
+ 1480  ros2 pkg list | grep dofbot
+ 1481  cd src/
+ 1482  jpl 
+ 1483  l
+ 1484  cd dofbot_description/
+ 1485  jpl 
+ 1486  cd ..
+ 1487  jpl 
+ 1488  ros2 pkg list | grep dofbot
+ 1489  /usr/bin/python3 /home/robousr/.vscode/extensions/ms-python.python-2025.0.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2025.0.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1490  python /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2024.20.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1491  cd ROS2Dev/arrg_ws/
+ 1492  srcthis 
+ 1493  cd src
+ 1494  jpl &
+ 1495  code .
+ 1496  vim .
+ 1497  vim 
+ 1498  jpl &
+ 1499  ls
+ 1500  l
+ 1501  cd ROS2Dev/
+ 1502  l
+ 1503  git clone https://github.com/Tom0Brien/urdf-visualizer.git
+ 1504  cd urdf-visualizer/
+ 1505  l
+ 1506  npm -V
+ 1507  npm install
+ 1508  npm install -g npm@11.1.0
+ 1509  npm run dev
+ 1510  l
+ 1511  cd src/
+ 1512  l
+ 1513  vim .
+ 1514  npm run dev
+ 1515  vim .
+ 1516  l
+ 1517  lt
+ 1518  cd ..
+ 1519  lt
+ 1520  lt ~/ROS2Dev/arrg_ws/src/dofbot_description/
+ 1521  mkdir -p public/urdf/dofbot
+ 1522  cp ~/ROS2Dev/arrg_ws/src/dofbot_description/urdf/dofbot_base.urdf ./public/urdf/dofbot/
+ 1523  cp ~/ROS2Dev/arrg_ws/src/dofbot_description/meshes/ ./public/urdf/dofbot/
+ 1524  cp -r ~/ROS2Dev/arrg_ws/src/dofbot_description/meshes/ ./public/urdf/dofbot/
+ 1525  lt ./public/urdf/dofbot/
+ 1526  vim ./public/urdf/dofbot/dofbot_base.urdf 
+ 1527  l
+ 1528  cat roboticslab_vm_history_09082024.txt | grep font
+ 1529  fc-list | grep ".fonts" 
+ 1530  fc-list | grep ".fonts" | grep Sauce
+ 1531  cd ROS2Dev/arrg_ws/src/
+ 1532  l
+ 1533  cd ..
+ 1534  cd Dev/
+ 1535  l
+ 1536  cd ros2-rosboard/
+ 1537  l
+ 1538  lt 
+ 1539  actapt
+ 1540  upgapt
+ 1541  history | grep pip3 | grep jupyter
+ 1542  history | grep pip3 | grep lab
+ 1543  l
+ 1544  cat roboticslab_vm_history_05092024.txt | grep pip3 | grep lab
+ 1545  pip3 inatll jupyterlab --update
+ 1546  pip3 install jupyterlab --update
+ 1547  pip3 install jupyterlab --upgrade
+ 1548  cat roboticslab_vm_history_05092024.txt | grep pip3 | grep jupyter
+ 1549  cat roboticslab_vm_history_05092024.txt | grep pip3 | grep notebook
+ 1550  pip3 install notebook --upgrade
+ 1551  pip3 install jupyterlab --upgrade
+ 1552  jpl
+ 1553  python -V
+ 1554  python3 -V
+ 1555  pip3 install mujoco
+ 1556  cd ROS2Dev/
+ 1557  l
+ 1558  mkdir -p ./mujoco/test
+ 1559  cd mujoco/test/
+ 1560  wget https://github.com/pab47/pab47.github.io/blob/master/mujoco/python/template_mujoco_python.zip
+ 1561  l
+ 1562  unzip template_mujoco_python.zip 
+ 1563  l
+ 1564  unzip template_mujoco_python.zip .
+ 1565  rm template_mujoco_python.zip 
+ 1566  cat ~/roboticslab_vm_history_09082024.txt | grep wget
+ 1567  l
+ 1568  wget https://github.com/pab47/pab47.github.io/blob/master/mujoco/python/template_mujoco_python.zip
+ 1569  rm template_mujoco_python.zip 
+ 1570  cd template_mujoco_python/
+ 1571  l
+ 1572  rm -rf __MACOSX/
+ 1573  cd ..
+ 1574  l
+ 1575  rm -rf template_mujoco_python
+ 1576  l
+ 1577  python3 template_mujoco.py 
+ 1578  vim .
+ 1579  python3 template_mujoco.py 
+ 1580  vim .
+ 1581  rsttrm 
+ 1582  vim .
+ 1583  pip3 uninstall mujoco
+ 1584  wget https://github.com/google-deepmind/mujoco/releases/download/3.2.7/mujoco-3.2.7-linux-x86_64.tar.gz -P ~/Downloads/
+ 1585  mkdir ~/.mujoco
+ 1586  cat roboticslab_vm_history_05092024.txt | grep unzip
+ 1587  ls ~/Downloads/
+ 1588  tar -xvzf ~/Downloads/mujoco-3.2.7-linux-x86_64.tar.gz 
+ 1589  ls ~/Downloads/
+ 1590  l
+ 1591  mv mujoco-3.2.7/ ~/.mujoco/mujoco-3.2.7
+ 1592  ls .mujoco/
+ 1593  ls .mujoco/mujoco-3.2.7/
+ 1594  cd .mujoco/mujoco-3.2.7/
+ 1595  l
+ 1596  lt
+ 1597  lt | grep mujoco
+ 1598  cd ..
+ 1599  mv mujoco-3.2.7/ mujoco327/
+ 1600  l
+ 1601  cd mujoco327/
+ 1602  pwd
+ 1603  export MUJOCO_PY_MUJOCO_PATH=$HOME/.mujoco/mujoco327
+ 1604  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$MUJOCO_PY_MUJOCO_PATH/bin
+ 1605  echo MUJOCO_PY_MUJOCO_PATH
+ 1606  echo $MUJOCO_PY_MUJOCO_PATH
+ 1607  echo $LD_LIBRARY_PATH
+ 1608  pip3 install -U 'mujoco-py<2.2,>=2.1
+ 1609  pip3 install -U 'mujoco-py<2.2,>=2.1'
+ 1610  cd ~/ROS2Dev/mujoco/test/
+ 1611  vim test mujoco_py_lib.py
+ 1612  l
+ 1613  vim mujoco_py_lib.py
+ 1614  python3 mujoco_py_lib.py 
+ 1615  pip3 uninstall mujoco-py
+ 1616  echo $LD_LIBRARY_PATH
+ 1617  pip3 install mujoco-py
+ 1618  python3 mujoco_py_lib.py 
+ 1619  pip3 uninstall mujoco-py
+ 1620  rsttrm 
+ 1621  echo $LD_LIBRARY_PATH
+ 1622  pip3 uninstall mujoco
+ 1623  pip3 install mujoco
+ 1624  cd ~/ROS2Dev/mujoco/test/
+ 1625  l
+ 1626  python3 mujoco_py_lib.py 
+ 1627  rm mujoco_py_lib.py 
+ 1628  rm test 
+ 1629  python3 template_mujoco.py 
+ 1630  cd ..
+ 1631  ros2 doctor -r
+ 1632  l ~/.local/lib/python3.10/site-packages
+ 1633  l ~/.local/lib/python3.10/site-packages/mujoco
+ 1634  l ~/.local/lib/python3.10/site-packages | grep mujoco
+ 1635  l ~/.local/lib/python3.10/site-packages/mujoco_py/
+ 1636  l ~/.local/lib/python3.10/site-packages/mujoco
+ 1637  export MUJOCO_DIR=~/.local/lib/python3.10/site-packages/mujoco
+ 1638  https://github.com/moveit/mujoco_ros2_control.git
+ 1639  git clone https://github.com/moveit/mujoco_ros2_control.git
+ 1640  l
+ 1641  git clone https://github.com/moveit/mujoco_ros2_control.git -b humble
+ 1642  git clone https://github.com/moveit/mujoco_ros2_control.git
+ 1643  git clone https://github.com/moveit/mujoco_ros2_control.git -b humble
+ 1644  mv ~/Downloads/mujoco_ros2_control .
+ 1645  l
+ 1646  cd mujoco_ros2_control/
+ 1647  colcon build
+ 1648  ll ~
+ 1649  ll ~\.mujoco
+ 1650  ll ~/mujoco
+ 1651  ll ~/.mujoco
+ 1652  export MUJOCO_DIR=~/.mujoco/mujoco327/
+ 1653  export MUJOCO_DIR=~/.mujoco/mujoco327
+ 1654  colcon build
+ 1655  l
+ 1656  cd mujoco_ros2_control
+ 1657  l
+ 1658  colcon build
+ 1659  cd ..
+ 1660  rm -rf mujoco_ros2_control/
+ 1661  l
+ 1662  cd ROS2Dev/mujoco/
+ 1663  l
+ 1664  cd test/
+ 1665  l
+ 1666  vim template_mujoco.py 
+ 1667  python3 template_mujoco.py 
+ 1668  cd
+ 1669  cat roboticslab_vm_history_05092024.txt | grep dkpg
+ 1670  cat roboticslab_vm_history_05092024.txt | grep dpkg
+ 1671  sudo dpkg -i ~/Downloads/webots_2025a_amd64.deb 
+ 1672  sudo apt install ffmpeg libssh-dev libxcb-cursor0
+ 1673  sudo dpkg -i ~/Downloads/webots_2025a_amd64.deb 
+ 1674  webots 
+ 1675  cd ROS2Dev/mujoco/
+ 1676  cd test/
+ 1677  python3 template_mujoco.py 
+ 1678  pip3 uninstall mujoco
+ 1679  sudo shutdown -r now
+ 1680  ll
+ 1681  ls ~/Downloads/
+ 1682  wget https://mujoco.org/download/mujoco210-linux-x86_64.tar.gz -P ~/Downloads
+ 1683  ls Downloads/
+ 1684  cd Downloads/
+ 1685  tar -xvzf mujoco210-linux-x86_64.tar.gz 
+ 1686  L
+ 1687  l
+ 1688  mv mujoco ~/.mujoco/
+ 1689  mv mujoco210 ~/.mujoco/
+ 1690  ls ~/.mujoco/
+ 1691  cd ~/.mujoco/
+ 1692  l
+ 1693  pip3 install -U 'mujoco-py<2.2,>=2.1
+ 1694  '
+ 1695  cd
+ 1696  pwd
+ 1697  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/robotusr/.mujoco/mujoco210/bin
+ 1698  echo $LD_LIBRARY_PATH
+ 1699  cd ROS2Dev/mujoco/test/
+ 1700  vim test_mujoco_local.py
+ 1701  pithon3 test_mujoco_local.py 
+ 1702  python3 test_mujoco_local.py 
+ 1703  echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/robousr/.mujoco/mujoco210/bin" >> ~/.bashrc 
+ 1704  rsttrm 
+ 1705  python3 test_mujoco_local.py 
+ 1706  sudo apt-get install libosmesa6-dev
+ 1707  python3 test_mujoco_local.py 
+ 1708  sudo apt-get install patchelf
+ 1709  python3 test_mujoco_local.py 
+ 1710  pip install "cython<3"
+ 1711  pip3 install "cython<3"
+ 1712  python3 test_mujoco_local.py 
+ 1713  ls ~/.mujoco/mujoco210/
+ 1714  ls ~/.mujoco/mujoco210/bin/
+ 1715  . ~/.mujoco/mujoco210/bin/simulate 
+ 1716  ll ~/.mujoco/mujoco210/bin/
+ 1717  cd ..
+ 1718  l ~/Downloads/
+ 1719  cd ~/Downloads/
+ 1720  unzip mujoco_ros2_control-humble.zip 
+ 1721  l
+ 1722  cd mujoco_ros2_control-humble/
+ 1723  l
+ 1724  ls mujoco_ros2_control
+ 1725  cp mujoco_ros2_control/  ~/ROS2Dev/mujoco/
+ 1726  cp mujoco_ros2_control_demos/  ~/ROS2Dev/mujoco/
+ 1727  mv mujoco_ros2_control/  ~/ROS2Dev/mujoco/
+ 1728  mv mujoco_ros2_control_demos/  ~/ROS2Dev/mujoco/
+ 1729  l  ~/ROS2Dev/mujoco/
+ 1730  cd  ~/ROS2Dev/mujoco/
+ 1731  l
+ 1732  vim ~/.bashrc 
+ 1733  rsttrm 
+ 1734  python3 ./test/test_mujoco_local.py 
+ 1735  ls
+ 1736  cd ~/.mujoco/
+ 1737  l
+ 1738  cd mujoco210/
+ 1739  pwd
+ 1740  export MUJOCO_DIR=/home/robousr/.mujoco/mujoco210
+ 1741  cd ~/ROS2Dev/mujoco/mujoco_ros2_control
+ 1742  l
+ 1743  colcon build
+ 1744  cd..
+ 1745  git clone https://github.com/glfw/glfw.git
+ 1746  cd glfw/
+ 1747  l
+ 1748  cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -S . -B build
+ 1749  ls dpkg -L glfw
+ 1750  dpkg -L glfw
+ 1751  ls ~/.mujoco/mujoco210/
+ 1752  lt ~/.mujoco/mujoco210/
+ 1753  dpkg -L glfw3
+ 1754  find ~ -name 'glfw3*.cmake'
+ 1755  find /usr -name 'glfw3*.cmake'
+ 1756  find /opt -name 'glfw3*.cmake'
+ 1757  find /usr/ -name 'glfw3*.cmake'
+ 1758  find /usr/ -name 'glfw*.cmake'
+ 1759  ldconfig -p | grep libjpeg
+ 1760  ldconfig -p | grep glfw
+ 1761  l
+ 1762  cd ..
+ 1763  l
+ 1764  colcon build
+ 1765  vim CMakeLists.txt 
+ 1766  vim package.xml 
+ 1767  l glfw/
+ 1768  cd glfw/
+ 1769  cmake  -DCMAKE_BUILD_TYPE=Release -S . -B build
+ 1770  colcon build
+ 1771  l
+ 1772  . install/setup.bash 
+ 1773  cd ..
+ 1774  colcon build
+ 1775  . install/setup.bash 
+ 1776  cd ..
+ 1777  cd mujoco_ros2_control_demos/
+ 1778  l
+ 1779  colcon build 
+ 1780  . install/setup.bash 
+ 1781  ros2 launch mujoco_ros2_control_demos cart_example_position.launch.py 
+ 1782  ros2 launch mujoco_ros2_control_demos cart_example_position.launch.py --debug True
+ 1783  ros2 launch mujoco_ros2_control_demos cart_example_position.launch.py --debug 
+ 1784  ros2 launch mujoco_ros2_control_demos cart_example_position.launch.py 
+ 1785  ros2 launch mujoco_ros2_control_demos cart_example_effort.launch.py 
+ 1786  sudo apt-get update
+ 1787  sudo apt install ros-humble-xacro
+ 1788  ros2 launch mujoco_ros2_control_demos cart_example_position.launch.py 
+ 1789  cd ..
+ 1790  cd mujoco_ros2_control
+ 1791  source install/setup.bash 
+ 1792  cd ../mujoco_ros2_control_demos/
+ 1793  source install/setup.bash
+ 1794  ros2 launch mujoco_ros2_control_demos cart_example_position.launch.py 
+ 1795  ros2 pkg list | grep mujoco
+ 1796  cd ../mujoco_ros2_control
+ 1797  colcon build
+ 1798  l
+ 1799  history | grep MUJOCO_LIB
+ 1800  export MUJOCO_LIB=$MUJOCO_DIR/bin
+ 1801  echo $MUJOCO_LIB
+ 1802  colcon build
+ 1803  cd ROS2Dev/mujoco/
+ 1804  l
+ 1805  cd mujoco_ros2_control
+ 1806  l
+ 1807  source ./install/setup.bash
+ 1808  cd ../mujoco_ros2_control_demos/
+ 1809  source ./install/setup.bash
+ 1810  ros2 launch mujoco_ros2_control_demos cart_example_position.launch.py 
+ 1811  l
+ 1812  rm -rf build/ install/ log/
+ 1813  cd ..
+ 1814  cd mujoco_ros2_control
+ 1815  rm -rf build/ install/ log/
+ 1816  l
+ 1817  cd glfw/
+ 1818  l
+ 1819  vim README.md 
+ 1820  l
+ 1821  rm -rf build/ install/ log/
+ 1822  cmake
+ 1823  cmake --build build -j 12
+ 1824  l
+ 1825  mkdir build
+ 1826  cmake --build build -j 12
+ 1827  cd ..
+ 1828  l
+ 1829  rm -rf mujoco_ros2_control mujoco_ros2_control_demos/
+ 1830  l
+ 1831  cd ..
+ 1832  l
+ 1833  cd ..
+ 1834  l
+ 1835  rm untitled.urdf 
+ 1836  rm hello.txt 
+ 1837  l
+ 1838  vim .bashrc 
+ 1839  cd ../mujoco_ros2_control
+ 1840  source install/setup.bash 
+ 1841  cd ../mujoco_ros2_control_demos/
+ 1842  source install/setup.bash 
+ 1843  rviz2 
+ 1844  rqt
+ 1845  ros2 topic list 
+ 1846  apt search ros-humble
+ 1847  apt search ros-humble | grep rqt
+ 1848  sudo apt install ros-humble-rqt
+ 1849  rqt
+ 1850  apt search ros-humble | grep rqt | robot
+ 1851  apt search ros-humble | grep rqt | grep robot
+ 1852  apt search ros-humble | grep robot_plugins
+ 1853  sudo apt install ros-humble-rqt*
+ 1854  rqt
+ 1855  ros2 run rqt
+ 1856  ros2 run rqt_gui rqt_gui 
+ 1857  ros2 run rqt_gui_py rqt_gui
+ 1858  rqt
+ 1859  ros2 pkg list |grep mujoco
+ 1860  ros2 pkg list |grep rqt
+ 1861  rqt
+ 1862  rviz2 
+ 1863  rqt
+ 1864  ros2 run rqt_py_console rqt_py_console
+ 1865  ros2 run mujoco_ros2_control_demos example_position 
+ 1866  ros2 run mujoco_ros2_control_demos example_effort 
+ 1867  ros2 run mujoco_ros2_control_demos example_velocity 
+ 1868  ros2 run mujoco_ros2_control_demos example_gripper 
+ 1869  ros2 run mujoco_ros2_control_demos example_diff_drive 
+ 1870  ros2 topic list
+ 1871  l ~/Downloads/
+ 1872  l ~/Downloads/mujoco_ros2_control-humble
+ 1873  rm -rf ~/Downloads/mujoco_ros2_control-humble
+ 1874  unzip ~/Downloads/mujoco_ros2_control-humble.zip 
+ 1875  l ~/Downloads/mujoco_ros2_control-humble
+ 1876  l ~/mujoco_ros2_control-humble/
+ 1877  rm -rf ~/mujoco_ros2_control-humble
+ 1878  l ~/mujoco_ros2_control-humble/
+ 1879  unzip ~/Downloads/mujoco_ros2_control-humble.zip ~/Downloads/
+ 1880  l
+ 1881  l ~/Downloads/
+ 1882  unzip ~/Downloads/mujoco_ros2_control-humble.zip ~/Downloads/mujoco_ros2_control-humble
+ 1883  cd Downloads/
+ 1884  unzip ~/Downloads/mujoco_ros2_control-humble.zip 
+ 1885  l
+ 1886  mv mujoco_ros2_control-humble/mujoco_ros2_control ~/ROS2Dev/mujoco/
+ 1887  mv mujoco_ros2_control-humble/mujoco_ros2_control_demos/ ~/ROS2Dev/mujoco/
+ 1888  cd ~/ROS2Dev/mujoco/
+ 1889  l
+ 1890  cd mujoco_ros2_control
+ 1891  l
+ 1892  colcon build
+ 1893  history | tail -n 150
+ 1894  cd ..
+ 1895  git clone https://github.com/glfw/glfw.git
+ 1896  cd glfw/
+ 1897  l
+ 1898  sudo apt install libglfw3-dev
+ 1899  cd ../mujoco_ros2_control
+ 1900  colcon build
+ 1901  history | grep "export MUJOCO"
+ 1902  export MUJOCO_LIB=$MUJOCO_DIR/bin
+ 1903  colcon build
+ 1904  echo $MUJOCO_LIB
+ 1905  echo MUJOCO_DIR
+ 1906  echo $MUJOCO_DIR
+ 1907  cat ~/.bashrc | tail -n 10
+ 1908  export MUJOCO_DIR=/home/robousr/.mujoco/mujoco210
+ 1909  colcon build
+ 1910  export MUJOCO_LIB=$MUJOCO_DIR/bin
+ 1911  echo $MUJOCO_LIB
+ 1912  colcon build
+ 1913  vim package.xml 
+ 1914  echo $MUJOCO_DIR
+ 1915  ls $MUJOCO_DIR
+ 1916  ls ../$MUJOCO_DIR
+ 1917  ls ~/.mujoco/mujoco327/
+ 1918  export MUJOCO_DIR=/home/robousr/.mujoco/mujoco327
+ 1919  colcon build
+ 1920  cd ..
+ 1921  cd mujoco_ros2_control_
+ 1922  cd mujoco_ros2_control_demos/
+ 1923  colcon build
+ 1924  cd ../mujoco_ros2_control
+ 1925  source install/setup.bash 
+ 1926  cd ../mujoco_ros2_control_demos/
+ 1927  colcon build
+ 1928  source install/setup.bash 
+ 1929  ros2 launch mujoco_ros2_control_demos cart_example_position.launch.py 
+ 1930  ros2 launch mujoco_ros2_control_demos 
+ 1931  ros2 launch mujoco_ros2_control_demos cart_example_velocity.launch.py 
+ 1932  ros2 launch mujoco_ros2_control_demos gripper_controller.yaml 
+ 1933  ros2 launch mujoco_ros2_control_demos gripper_mimic_joint_example.launch.py 
+ 1934  ros2 launch mujoco_ros2_control_demos diff_drive.launch.py 
+ 1935  htop
+ 1936  sudo apt install htop
+ 1937  htop
+ 1938  history | tail -n 150
+ 1939  cd ~/ROS2Dev/mujoco/
+ 1940  ll
+ 1941  cd mujoco_ros2_control
+ 1942  source install/setup.bash
+ 1943  cd ../mujoco_ros2_control_demos/
+ 1944  source install/setup.bash
+ 1945  history | tail -n 150export MUJOCO_DIR=/home/robousr/.mujoco/mujoco327
+ 1946  export MUJOCO_LIB=$MUJOCO_DIR/bin
+ 1947  ros2 launch mujoco_ros2_control_demos cart_example_position.launch.py 
+ 1948  ros2 launch mujoco_ros2_control_demos cart_example_velocity.launch.py 
+ 1949  ros2 launch mujoco_ros2_control_demos gripper_controller.yaml 
+ 1950  ros2 launch mujoco_ros2_control_demos gripper_mimic_joint_example.launch.py 
+ 1951  ros2 launch mujoco_ros2_control_demos diff_drive.launch.py 
+ 1952  cd ../mujoco_ros2_control
+ 1953  source install/setup.bash 
+ 1954  cd ../mujoco_ros2_control_demos/
+ 1955  source install/setup.bash 
+ 1956  ros2 topic list
+ 1957  ros2 topic echo /diff_drive_base_controller/odom 
+ 1958  ros2 topic echo /diff_drive_base_controller/odom --once 
+ 1959  rviz2
+ 1960  cd ../mujoco_ros2_control
+ 1961  source install/setup.bash 
+ 1962  cd ../mujoco_ros2_control_demos/
+ 1963  source install/setup.bash 
+ 1964  ros2 run mujoco_ros2_control mujoco_ros2_control 
+ 1965  ros2 run mujoco_ros2_control_demos example_position 
+ 1966  ros2 run mujoco_ros2_control_demos example_velocity 
+ 1967  ros2 topic lis
+ 1968  ros2 run mujoco_ros2_control_demos example_gripper 
+ 1969  ros2 run mujoco_ros2_control_demos example_diff_drive 
+ 1970  cd Dev/
+ 1971  l
+ 1972  mkdir xterm_test
+ 1973  cd xterm_test/
+ 1974  npm -V
+ 1975  npm version
+ 1976  npm install @xterm/xterm
+ 1977  npm install -g npm@11.1.0
+ 1978  vim index.html
+ 1979  firefox index.html 
+ 1980  ls
+ 1981  l
+ 1982  cat roboticslab_vm_history_09082024.txt | grep pip3 | grep jupyter
+ 1983  cat roboticslab_vm_history_09082024.txt | grep pip3 | grep notebook
+ 1984  cat roboticslab_vm_history_09082024.txt | grep pip3 | grep pyyaml
+ 1985  python3 -m pip install bqplot pyyaml ipywidgets
+ 1986  jupyter nbextension enable --py --sys-prefix ipywidgets
+ 1987  python3 -m pip install jupyros
+ 1988  jupyter nbextension enable --py --sys-prefix ipywidgets
+ 1989  jupyter nbextension 
+ 1990  pip install jupyter_contrib_nbextensions
+ 1991  jupyter contrib nbextension install --user
+ 1992  jupyter nbextension enable --py --sys-prefix ipywidgets
+ 1993  jupyter contrib nbextension
+ 1994  pip3 install jupyter_contrib_nbextensions
+ 1995  pip uninstall jupyter_contrib_nbextensions
+ 1996  pip3 install jupyter_contrib_nbextensions
+ 1997  jupyter nbextension enable --py --sys-prefix ipywidgets
+ 1998  jupyter contrib nbextension install --user
+ 1999  jupyter nbextension
+ 2000  l
+ 2001  history >> roboticslab_vm_history_21022024.txt
