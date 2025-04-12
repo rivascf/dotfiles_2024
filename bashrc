@@ -262,3 +262,8 @@ export NVM_DIR="$HOME/.nvm"
 if [ -f ~/.config/rosmgmt/ros2_humble_conf.bash ]; then
     . ~/.config/rosmgmt/ros2_humble_conf.bash
 fi
+
+##########################
+## Mujoco configuration ##
+##########################
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/robousr/.mujoco/mujoco210/bin
