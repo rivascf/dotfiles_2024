@@ -1,0 +1,1000 @@
+ 1016  sudo apt install ros-humble-rqt
+ 1017  rqt
+ 1018  apt search ros-humble | grep rqt | robot
+ 1019  apt search ros-humble | grep rqt | grep robot
+ 1020  apt search ros-humble | grep robot_plugins
+ 1021  sudo apt install ros-humble-rqt*
+ 1022  rqt
+ 1023  ros2 run rqt
+ 1024  ros2 run rqt_gui rqt_gui 
+ 1025  ros2 run rqt_gui_py rqt_gui
+ 1026  rqt
+ 1027  ros2 pkg list |grep mujoco
+ 1028  ros2 pkg list |grep rqt
+ 1029  rqt
+ 1030  rviz2 
+ 1031  rqt
+ 1032  ros2 run rqt_py_console rqt_py_console
+ 1033  ros2 run mujoco_ros2_control_demos example_position 
+ 1034  ros2 run mujoco_ros2_control_demos example_effort 
+ 1035  ros2 run mujoco_ros2_control_demos example_velocity 
+ 1036  ros2 run mujoco_ros2_control_demos example_gripper 
+ 1037  ros2 run mujoco_ros2_control_demos example_diff_drive 
+ 1038  ros2 topic list
+ 1039  l ~/Downloads/
+ 1040  l ~/Downloads/mujoco_ros2_control-humble
+ 1041  rm -rf ~/Downloads/mujoco_ros2_control-humble
+ 1042  unzip ~/Downloads/mujoco_ros2_control-humble.zip 
+ 1043  l ~/Downloads/mujoco_ros2_control-humble
+ 1044  l ~/mujoco_ros2_control-humble/
+ 1045  rm -rf ~/mujoco_ros2_control-humble
+ 1046  l ~/mujoco_ros2_control-humble/
+ 1047  unzip ~/Downloads/mujoco_ros2_control-humble.zip ~/Downloads/
+ 1048  l
+ 1049  l ~/Downloads/
+ 1050  unzip ~/Downloads/mujoco_ros2_control-humble.zip ~/Downloads/mujoco_ros2_control-humble
+ 1051  cd Downloads/
+ 1052  unzip ~/Downloads/mujoco_ros2_control-humble.zip 
+ 1053  l
+ 1054  mv mujoco_ros2_control-humble/mujoco_ros2_control ~/ROS2Dev/mujoco/
+ 1055  mv mujoco_ros2_control-humble/mujoco_ros2_control_demos/ ~/ROS2Dev/mujoco/
+ 1056  cd ~/ROS2Dev/mujoco/
+ 1057  l
+ 1058  cd mujoco_ros2_control
+ 1059  l
+ 1060  colcon build
+ 1061  history | tail -n 150
+ 1062  cd ..
+ 1063  git clone https://github.com/glfw/glfw.git
+ 1064  cd glfw/
+ 1065  l
+ 1066  sudo apt install libglfw3-dev
+ 1067  cd ../mujoco_ros2_control
+ 1068  colcon build
+ 1069  history | grep "export MUJOCO"
+ 1070  export MUJOCO_LIB=$MUJOCO_DIR/bin
+ 1071  colcon build
+ 1072  echo $MUJOCO_LIB
+ 1073  echo MUJOCO_DIR
+ 1074  echo $MUJOCO_DIR
+ 1075  cat ~/.bashrc | tail -n 10
+ 1076  export MUJOCO_DIR=/home/robousr/.mujoco/mujoco210
+ 1077  colcon build
+ 1078  export MUJOCO_LIB=$MUJOCO_DIR/bin
+ 1079  echo $MUJOCO_LIB
+ 1080  colcon build
+ 1081  vim package.xml 
+ 1082  echo $MUJOCO_DIR
+ 1083  ls $MUJOCO_DIR
+ 1084  ls ../$MUJOCO_DIR
+ 1085  ls ~/.mujoco/mujoco327/
+ 1086  export MUJOCO_DIR=/home/robousr/.mujoco/mujoco327
+ 1087  colcon build
+ 1088  cd ..
+ 1089  cd mujoco_ros2_control_
+ 1090  cd mujoco_ros2_control_demos/
+ 1091  colcon build
+ 1092  cd ../mujoco_ros2_control
+ 1093  source install/setup.bash 
+ 1094  cd ../mujoco_ros2_control_demos/
+ 1095  colcon build
+ 1096  source install/setup.bash 
+ 1097  ros2 launch mujoco_ros2_control_demos cart_example_position.launch.py 
+ 1098  ros2 launch mujoco_ros2_control_demos 
+ 1099  ros2 launch mujoco_ros2_control_demos cart_example_velocity.launch.py 
+ 1100  ros2 launch mujoco_ros2_control_demos gripper_controller.yaml 
+ 1101  ros2 launch mujoco_ros2_control_demos gripper_mimic_joint_example.launch.py 
+ 1102  ros2 launch mujoco_ros2_control_demos diff_drive.launch.py 
+ 1103  htop
+ 1104  sudo apt install htop
+ 1105  htop
+ 1106  history | tail -n 150
+ 1107  cd ~/ROS2Dev/mujoco/
+ 1108  ll
+ 1109  cd mujoco_ros2_control
+ 1110  source install/setup.bash
+ 1111  cd ../mujoco_ros2_control_demos/
+ 1112  source install/setup.bash
+ 1113  history | tail -n 150export MUJOCO_DIR=/home/robousr/.mujoco/mujoco327
+ 1114  export MUJOCO_LIB=$MUJOCO_DIR/bin
+ 1115  ros2 launch mujoco_ros2_control_demos cart_example_position.launch.py 
+ 1116  ros2 launch mujoco_ros2_control_demos cart_example_velocity.launch.py 
+ 1117  ros2 launch mujoco_ros2_control_demos gripper_controller.yaml 
+ 1118  ros2 launch mujoco_ros2_control_demos gripper_mimic_joint_example.launch.py 
+ 1119  ros2 launch mujoco_ros2_control_demos diff_drive.launch.py 
+ 1120  cd ../mujoco_ros2_control
+ 1121  source install/setup.bash 
+ 1122  cd ../mujoco_ros2_control_demos/
+ 1123  source install/setup.bash 
+ 1124  ros2 topic list
+ 1125  ros2 topic echo /diff_drive_base_controller/odom 
+ 1126  ros2 topic echo /diff_drive_base_controller/odom --once 
+ 1127  rviz2
+ 1128  cd ../mujoco_ros2_control
+ 1129  source install/setup.bash 
+ 1130  cd ../mujoco_ros2_control_demos/
+ 1131  source install/setup.bash 
+ 1132  ros2 run mujoco_ros2_control mujoco_ros2_control 
+ 1133  ros2 run mujoco_ros2_control_demos example_position 
+ 1134  ros2 run mujoco_ros2_control_demos example_velocity 
+ 1135  ros2 topic lis
+ 1136  ros2 run mujoco_ros2_control_demos example_gripper 
+ 1137  ros2 run mujoco_ros2_control_demos example_diff_drive 
+ 1138  cd Dev/
+ 1139  l
+ 1140  mkdir xterm_test
+ 1141  cd xterm_test/
+ 1142  npm -V
+ 1143  npm version
+ 1144  npm install @xterm/xterm
+ 1145  npm install -g npm@11.1.0
+ 1146  vim index.html
+ 1147  firefox index.html 
+ 1148  ls
+ 1149  l
+ 1150  cat roboticslab_vm_history_09082024.txt | grep pip3 | grep jupyter
+ 1151  cat roboticslab_vm_history_09082024.txt | grep pip3 | grep notebook
+ 1152  cat roboticslab_vm_history_09082024.txt | grep pip3 | grep pyyaml
+ 1153  python3 -m pip install bqplot pyyaml ipywidgets
+ 1154  jupyter nbextension enable --py --sys-prefix ipywidgets
+ 1155  python3 -m pip install jupyros
+ 1156  jupyter nbextension enable --py --sys-prefix ipywidgets
+ 1157  jupyter nbextension 
+ 1158  pip install jupyter_contrib_nbextensions
+ 1159  jupyter contrib nbextension install --user
+ 1160  jupyter nbextension enable --py --sys-prefix ipywidgets
+ 1161  jupyter contrib nbextension
+ 1162  pip3 install jupyter_contrib_nbextensions
+ 1163  pip uninstall jupyter_contrib_nbextensions
+ 1164  pip3 install jupyter_contrib_nbextensions
+ 1165  jupyter nbextension enable --py --sys-prefix ipywidgets
+ 1166  jupyter contrib nbextension install --user
+ 1167  jupyter nbextension
+ 1168  l
+ 1169  history >> roboticslab_vm_history_21022024.txt
+ 1170  l
+ 1171  mv roboticslab_vm_history_21022024.txt roboticslab_vm_history_21022025.txt 
+ 1172  l
+ 1173  cd Documents/
+ 1174  l
+ 1175  cd dotfiles_2024/
+ 1176  l
+ 1177  cd docs/
+ 1178  l
+ 1179  cd rawfiles/
+ 1180  l
+ 1181  mv ~/roboticslab_vm_history_*.txt .
+ 1182  l
+ 1183  cd ..
+ 1184  gst
+ 1185  git add .
+ 1186  git commit -m "Added latest history files."
+ 1187  git push -u origin main
+ 1188  l
+ 1189  vim .
+ 1190  git add .
+ 1191  git commit -m "Added terminal_themes.json"
+ 1192  git push -u origin main
+ 1193  ls
+ 1194  l
+ 1195  cd ..
+ 1196  cd dotfiles_2024/
+ 1197  lt
+ 1198  actapt 
+ 1199  upgapt 
+ 1200  sudo apt autoremove
+ 1201  vim
+ 1202  python /home/robousr/.vscode/extensions/ms-python.python-2025.0.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2025.0.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1203  ping 192.168.1.101
+ 1204  ssh jetsun@192.168.1.101
+ 1205  ssh jetson@192.168.1.101
+ 1206  ssh-keygen -f "/home/robousr/.ssh/known_hosts" -R "192.168.1.101"
+ 1207  ssh jetson@192.168.1.101
+ 1208  ssh arrusr@192.168.1.101
+ 1209  cd Dev
+ 1210  l
+ 1211  git clone https://github.com/arrg-mx/ros2board.git
+ 1212  cd ros2board/
+ 1213  git pull origin dev-v1 
+ 1214  git checkout dev-v1 
+ 1215  git pull origin
+ 1216  l
+ 1217  Dcode .
+ 1218  code .}
+ 1219  code .
+ 1220  gst
+ 1221  git add .
+ 1222  git commit -m "Adding testing in a main funcion."
+ 1223  git push -u origin
+ 1224  code .
+ 1225  git add .
+ 1226  git commit -m "Updating testing in a main funcion(1)."
+ 1227  git push -u origin
+ 1228  git add .
+ 1229  git commit -m "Updating testing in a main funcion(2)."
+ 1230  git push -u origin
+ 1231  ssh jetson@192.168.1.101
+ 1232  ssh arrusr@192.168.1.101
+ 1233  ssh jetson@192.168.1.101
+ 1234  ssh arrusr@192.168.1.101
+ 1235  python /home/robousr/.vscode/extensions/ms-python.python-2025.0.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2025.0.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1236  cd Dev/
+ 1237  l
+ 1238  cd ros2board/
+ 1239  l
+ 1240  git pull origin
+ 1241  code .
+ 1242  gst
+ 1243  git add src/rosboard_lib/rosboard_drv/rosboard_drv.py 
+ 1244  git commit -m "Change code to raw version for debug and differences."
+ 1245  git add src/rosboard_lib/rosboard_drv/rosboard_drv_old.py 
+ 1246  git commit -m "Old driver version."
+ 1247  g gl
+ 1248  g lg
+ 1249  git push -u origin main
+ 1250  git push -u origin 
+ 1251  gst
+ 1252  git add src/rosboard_lib/rosboard_drv/rosboard_drv.py 
+ 1253  git commit -m "Updated rosboard_drv: get_version func."
+ 1254  git push -u origin 
+ 1255  git add src/rosboard_lib/rosboard_drv/rosboard_drv.py 
+ 1256  git commit -m "Updated rosboard_drv: get_version func(1)."
+ 1257  git push -u origin 
+ 1258  gst
+ 1259  git add src/rosboard_lib/rosboard_drv/rosboard_drv.py 
+ 1260  git commit -m "Updated rosboard_drv: get_version func(2)."
+ 1261  git push -u origin 
+ 1262  cat ../ros2-rosboard/RosBoard/Rosboard_Lib/Rosboard_Lib.py 
+ 1263  cat ../ros2-rosboard/RosBoard/test_pwm_servo.py 
+ 1264  cat ../ros2-rosboard/RosBoard/test.py 
+ 1265  gst
+ 1266  git add src/rosboard_lib/rosboard_drv/rosboard_drv.py 
+ 1267  git commit -m "Updated rosboard_drv: Added servo functions, constants and variables."
+ 1268  git push -u origin 
+ 1269  git add src/rosboard_lib/rosboard_drv/rosboard_drv.py 
+ 1270  git commit -m "Updated rosboard_drv: Added servo functions, constants and variables. (2)"
+ 1271  git push -u origin 
+ 1272  gst
+ 1273  git add src/rosboard_lib/rosboard_drv/rosboard_drv.py 
+ 1274  git commit -m "Updated rosboard_drv: Updated servo functions and tests."
+ 1275  git push -u origin 
+ 1276  cd Dev/ros2board/src/rosboard_lib/rosboard_drv/
+ 1277  l
+ 1278  gst
+ 1279  git add rosboard_drv.py 
+ 1280  git commit -m "Updated rosboard_drv: Updated servo functions and tests. (2)"
+ 1281  git push -u origin 
+ 1282  g lg
+ 1283  git diff 5a50e1d
+ 1284  cd ..
+ 1285  code .
+ 1286  mv src/rosboard_lib/rosboard_drv/rosboard_drv.py src/rosboard_lib/rosboard_drv/rosboard_drv_old2.py
+ 1287  touch src/rosboard_lib/rosboard_drv/rosboard_drv.py
+ 1288  code .
+ 1289  git diff
+ 1290  gst
+ 1291  git add src/rosboard_lib/rosboard_drv/rosboard_drv_old2.py 
+ 1292  git commit -m "Rolling back rosboard_drv to original: rename rosboard_drv to rosboard_drv_old2"
+ 1293  gst
+ 1294  git add .
+ 1295  git commit -m "Rolling back rosboard_drv to original: extracting full code from original driver to begin test on board."
+ 1296  gst
+ 1297  git lg
+ 1298  git push -u origin 
+ 1299  python /home/robousr/.vscode/extensions/ms-python.python-2025.0.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2025.0.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1300  ssh arrusr@192.168.1.101
+ 1301  cd ~/Dev/ros2board/src/rosboard_lib/rosboard_drv/
+ 1302  cd ~/Dev/ros2board/
+ 1303  gst
+ 1304  git lg
+ 1305  cd ~/Dev/ros2board/src/rosboard_lib/rosboard_drv/
+ 1306  l
+ 1307  git config --local -l
+ 1308  history | grep "git add" | grep remote
+ 1309  history | grep "git origin" | grep remote
+ 1310  history | grep "git
+ 1311  "
+ 1312  cd ..
+ 1313  code .
+ 1314  gst
+ 1315  git add .
+ 1316  git commit -m "Rolling back rosboard_drv to original: extracting full code from original driver to begin test on board. (2)"
+ 1317  git push -u origin 
+ 1318  cat ~/Dev/ros2-rosboard/RosBoard/test.py 
+ 1319  git commit -m "Rolling back rosboard_drv to original: extracting full code from original driver to begin test on board. (3)"
+ 1320  git add .
+ 1321  git commit -m "Rolling back rosboard_drv to original: extracting full code from original driver to begin test on board. (3)"
+ 1322  git push -u origin 
+ 1323  cat ~/Dev/ros2-rosboard/RosBoard/Rosboard_Lib/__init__.py 
+ 1324  python /home/robousr/.vscode/extensions/ms-python.python-2025.0.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2025.0.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1325  cd Dev/ros2board/
+ 1326  gst
+ 1327  cat ../ros2-rosboard/RosBoard/test.py 
+ 1328  cat ../ros2-rosboard/RosBoard/test_pwm_servo.py 
+ 1329  cat ../ros2-rosboard/RosBoard/test_dcmotor.py 
+ 1330  code .
+ 1331  cd src/rosboard_lib/
+ 1332  l
+ 1333  rm -rf test/
+ 1334  l
+ 1335  gst
+ 1336  git add test/
+ 1337  git add test
+ 1338  git add rosboard_drv/__init__.py rosboard_drv/rosboard_drv.py 
+ 1339  git commit -m "Rolling back rosboard_drv to original: extracting full code from original driver to begin test on board. (4)"
+ 1340  gst
+ 1341  git add test_rosboard_drv_raw.py 
+ 1342  git commit -m "Added test_rosboard_drv_raw, temporary test file."
+ 1343  gst
+ 1344  g lg
+ 1345  git push -u origin 
+ 1346  python /home/robousr/.vscode/extensions/ms-python.python-2025.0.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2025.0.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1347  cd Dev/ros2board/src/
+ 1348  code .
+ 1349  cd ..
+ 1350  l
+ 1351  cd src/
+ 1352  l
+ 1353  ll
+ 1354  cd rosboard_lib/
+ 1355  l
+ 1356  cd ..
+ 1357  l
+ 1358  cd ..
+ 1359  l
+ 1360  cd ros2board/
+ 1361  lt .
+ 1362  l
+ 1363  mujoco
+ 1364  l .local/bin/
+ 1365  vim .bashrc 
+ 1366  echo $PATH
+ 1367  cd .mujoco/
+ 1368  l
+ 1369  cd mujoco327/
+ 1370  l
+ 1371  cd model
+ 1372  l
+ 1373  cd ..
+ 1374  cd bin 
+ 1375  simulate
+ 1376  l
+ 1377  ls -la
+ 1378  . simulate 
+ 1379  cd ..
+ 1380  cls
+ 1381  l
+ 1382  ls simulate/
+ 1383  history | grep ssh
+ 1384  ping -t 192.168.1.101
+ 1385  ping 192.168.1.101
+ 1386  ssh arrusr@192.168.1.101
+ 1387  cat ../ros2-rosboard/.gitignore 
+ 1388  cd Dev/ros2board/
+ 1389  code .
+ 1390  gst
+ 1391  git add .
+ 1392  git commit -m "Rolling back rosboard_drv to original: Updated __parse_data function, unnecessary 'else' (5)"
+ 1393  g lg 
+ 1394  git diff
+ 1395  git diff d99c729
+ 1396  git push origin 
+ 1397  gst
+ 1398  ls
+ 1399  ls src/
+ 1400  lt .
+ 1401  cat ../ros2-rosboard/RosBoard/test_dcmotor.py 
+ 1402  gst
+ 1403  git add src/rosboard_lib/rosboard_drv/rosboard_drv.py 
+ 1404  g lg
+ 1405  git diff --staged
+ 1406  git commit -m "Rolling back rosboard_drv to original: Updated set_motor function, print to log.debug (6)"
+ 1407  gst
+ 1408  git add .
+ 1409  git commit -m "Rolling back rosboard_drv to original: Updated test script"
+ 1410  git push -u origin
+ 1411  gst
+ 1412  git add .
+ 1413  git commit -m "Rolling back rosboard_drv to original: Updated test and init scripts (7)"
+ 1414  git push -u origin
+ 1415  git add .
+ 1416  git commit -m "Rolling back rosboard_drv to original: Updated test and init scripts (8)"
+ 1417  gst
+ 1418  git push origin 
+ 1419  git add .
+ 1420  git commit -m "Rolling back rosboard_drv to original: Updated test script (8)"
+ 1421  git push origin 
+ 1422  gst
+ 1423  git add .
+ 1424  git commit -m "Rolling back rosboard_drv to original: Updated test script (9)"
+ 1425  git push origin 
+ 1426  git pull origin 
+ 1427  gst
+ 1428  git add .
+ 1429  g lg
+ 1430  git commit -m "Rolling back rosboard_drv to original: Updated test script (12)"
+ 1431  gst
+ 1432  git push -u origin
+ 1433  git pull -u origin
+ 1434  git pull origin
+ 1435  ls
+ 1436  git pull origin
+ 1437  gst
+ 1438  git pull origin
+ 1439  gst
+ 1440  git add .
+ 1441  git commit -m "Rolling back rosboard_drv to original: Updated test script (14)"
+ 1442  g lg
+ 1443  git commit --amend 
+ 1444  g lg
+ 1445  gst
+ 1446  git push -u origin
+ 1447  g lg
+ 1448  git pull origin
+ 1449  git pull origin dev-v1 
+ 1450  l
+ 1451  ll
+ 1452  echo "**/__pycache__" >> .gitignore
+ 1453  gst
+ 1454  git add .
+ 1455  git commit -m "Added gitignore file and exclusions."
+ 1456  /bin/python3 /home/robousr/.vscode/extensions/ms-python.python-2025.0.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2025.0.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1457  history | grep ssh
+ 1458  ssh arrusr@192.168.1.101
+ 1459  /usr/bin/python3 /home/robousr/.vscode/extensions/ms-python.python-2025.0.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2025.0.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1460  cd Dev/ros2board/
+ 1461  git pull origin dev-v1 
+ 1462  code .
+ 1463  gst
+ 1464  git add .
+ 1465  git commit -m "Rolling back rosboard_drv to original: Updated test script (16)"
+ 1466  git push -u origin dev-v1 
+ 1467  gst
+ 1468  git add .
+ 1469  git commit -m "Rolling back rosboard_drv to original: Updated rosboard_drv script (18)"
+ 1470  gst
+ 1471  git push -u origin dev-v1 
+ 1472  git pull origin dev-v1 
+ 1473  gst
+ 1474  git add .
+ 1475  g lg
+ 1476  git commit -m "Rolling back rosboard_drv to original: Updated rosboard_drv script (19)"
+ 1477  g lg
+ 1478  gst
+ 1479  git add .
+ 1480  git commit -m "Rolling back rosboard_drv to original: Splitted test scripts with and without PWM Servo (21)"
+ 1481  g lg
+ 1482  git push -u origin dev-v1 
+ 1483  gst
+ 1484  git add .
+ 1485  git commit -m "Rolling back rosboard_drv to original: Updated rosboard_drv script, trying to adjust serial reading time (21)"
+ 1486  gst
+ 1487  git push -u origin dev-v1 
+ 1488  python /home/robousr/.vscode/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1489  python /home/robousr/.vscode/extensions/ms-python.python-2025.0.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2025.0.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1490  cd Dev/ros2board/
+ 1491  git pull origin dev-v1 
+ 1492  code .
+ 1493  cd src/
+ 1494  l
+ 1495  mv rosboard_lib/rosboard_drv/ .
+ 1496  l
+ 1497  mv rosboard_drv/rosboard_lib.py ./rosboard_lib/
+ 1498  touch rosboard_lib/__init__.py
+ 1499  gst
+ 1500  lt
+ 1501  l
+ 1502  git add rosboard_lib/rosboard_drv/
+ 1503  gst
+ 1504  git add rosboard_drv/
+ 1505  gst
+ 1506  git commit -m "Re-organizing rosboard_drv package."
+ 1507  gst
+ 1508  git add rosboard_lib/
+ 1509  git commit -m "Adding rosboard_lib package."
+ 1510  gst
+ 1511  lt
+ 1512  rm rosboard_lib/rosboard_lib.py 
+ 1513  mv rosboard_lib/rosboard_drv/rosboard_lib.py rosboard_lib/
+ 1514  lt
+ 1515  rm -rf rosboard_lib/rosboard_drv/
+ 1516  lt
+ 1517  mv rosboard_lib/test_rosboard_drv_raw*.py .
+ 1518  l
+ 1519  gst
+ 1520  git add rosboard_lib/rosboard_lib.py 
+ 1521  git commit -m "Updated rosboard_lib script."
+ 1522  gs
+ 1523  gst
+ 1524  git add .
+ 1525  git commit -m "Re-locating test_rosboard_drv scripts."
+ 1526  gsr
+ 1527  gst
+ 1528  g lg
+ 1529  git push -u origin dev-v1 
+ 1530  l
+ 1531  actapt 
+ 1532  upgapt 
+ 1533  sudo apt autoremove
+ 1534  cd Dev/ros2board/
+ 1535  l
+ 1536  git pull origin
+ 1537  g lg
+ 1538  l
+ 1539  cd src
+ 1540  lt .
+ 1541  l
+ 1542  cp rosboard_drv/rosboard_errors.py rosboard_lib/
+ 1543  lt
+ 1544  vim .
+ 1545  vim ~/.config/nvim/
+ 1546  vim .
+ 1547  ip a
+ 1548  cd Dev/
+ 1549  vim get_ip_address.bash
+ 1550  . get_ip_address.bash 
+ 1551  . get_ip_address_2.bash 
+ 1552  vim get_ip_address_2.bash
+ 1553  . get_ip_address_2.bash 
+ 1554  ipconfig
+ 1555  ifconfig
+ 1556  vim get_ip_address.bash
+ 1557  ip -4 a
+ 1558  vim get_ip_address_3.bash
+ 1559  . get_ip_address_3.bash
+ 1560  vim get_ip_address_4.bash
+ 1561  . get_ip_address_4.bash
+ 1562  actapt 
+ 1563  upgapt 
+ 1564  sudo apt autoremove 
+ 1565  sudo apt install nmap
+ 1566  . get_ip_address_4.bash
+ 1567  nmap -sP 192.168.200.1/24
+ 1568  nmap -h
+ 1569  nmap -sL 192.168.200.1/24
+ 1570  sudo wireshark
+ 1571  sudo apt install wireshark
+ 1572  wireshark 
+ 1573  vim ros2_discovery.py
+ 1574  python3 ros2_discovery.py 
+ 1575  cd ~/ROS2Dev/
+ 1576  l
+ 1577  ls tsr_ws/src/
+ 1578  l
+ 1579  ls /dev/
+ 1580  ls /media/robousr/
+ 1581  ls /media/robousr/66181078-3393-4d65-bae1-8e21a434c5b5/
+ 1582  cd /media/robousr/66181078-3393-4d65-bae1-8e21a434c5b5/
+ 1583  l
+ 1584  vim boot/extlinux/
+ 1585  exit
+ 1586  history | grep sudo | grep apt | grep install
+ 1587  l
+ 1588  lt Documents/dotfiles_2024/
+ 1589  cat Documents/dotfiles_2024/docs/rawfiles/
+ 1590  cat Documents/dotfiles_2024/docs/rawfiles/roboticslab_vm_history_07082024.txt | grep sudo | grep apt | grep install
+ 1591  cat Documents/dotfiles_2024/docs/rawfiles/roboticslab_vm_history_20092024.txt | grep sudo | grep apt | grep install
+ 1592  history | grep ssh
+ 1593  ssh arrusr@192.168.1.101
+ 1594  ip a
+ 1595  nmap -sP 192.168.1.1/24
+ 1596  ssh arrusr@192.168.1.101
+ 1597  cd ~/Documents/ros2-docs/
+ 1598  gst
+ 1599  git add .
+ 1600  git commit -m "Added terminal images"
+ 1601  git push -u origin main
+ 1602  cd Documents/
+ 1603  l
+ 1604  git clone https://github.com/arrg-mx/ros2-docs.git
+ 1605  cd ../Dev/
+ 1606  l
+ 1607  cd ros2board/
+ 1608  l
+ 1609  git pull origin 
+ 1610  nmap -sP 192.168.1.1/24
+ 1611  ip a
+ 1612  nmap -sP 192.168.1.1/24
+ 1613  cd src/
+ 1614  code .
+ 1615  cd ..
+ 1616  code .
+ 1617  gst
+ 1618  git add .
+ 1619  git lg
+ 1620  git commit -m "Updated rosboard_lib scripts"
+ 1621  git push -u origin main
+ 1622  gst
+ 1623  ip a
+ 1624  python /home/robousr/.vscode/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1625  nmap -sP 192.168.1.1/24
+ 1626  ip a
+ 1627  nmap -sP 192.168.1.1/24
+ 1628  ping 192.168.1.101
+ 1629  nc -l 8888
+ 1630  ssh arrusr@192.168.1.101
+ 1631  l
+ 1632  touch data.txt
+ 1633  vim data.txt 
+ 1634  scp data.txt arrusr@192.168.1.101:/home/arrusr/
+ 1635  l
+ 1636  rm data.txt 
+ 1637  l
+ 1638  scp arrusr@192.168.1.101:/home/arrusr/data.txt .
+ 1639  l
+ 1640  cd Documents/ros2-docs/
+ 1641  git pull origin main
+ 1642  l
+ 1643  gst
+ 1644  git add .
+ 1645  git commit -m "Added new images."
+ 1646  git push -u origin main
+ 1647  ssh arrusr@192.168.1.101
+ 1648  ip a
+ 1649  nmap -sP 172.16.10.108/24
+ 1650  nmap
+ 1651  ssh arrusr@192.168.1.101
+ 1652  nmap -sP 172.16.10.101/24
+ 1653  nmap -sP 172.16.10.1/24
+ 1654  ssh arrusr@172.16.10.109
+ 1655  nmap -V
+ 1656  nmap -v -sn 172.16.10.*/24 |grep "scan report"|grep --invert-match "host.down"|awk '{print $5}'
+ 1657  ssh arrusr@172.16.10.109
+ 1658  nmap -sn 172.16.10.1/24
+ 1659  nmap -sn 172.16.10.0/24
+ 1660  nmap -v -sn 172.16.10.0/24
+ 1661  nmap -v -sn 172.16.10.0/24 |grep "scan report"|grep --invert-match "host.down"
+ 1662  l
+ 1663  rm data.txt 
+ 1664  l
+ 1665  cd Dev/
+ 1666  l
+ 1667  .  get_ip_address_4.bash 
+ 1668  cat get_ip_address_4.bash 
+ 1669  nmap -v -sn 172.16.10.0/24 |grep "scan report"|grep --invert-match "host.down"|awk '{print $5}'
+ 1670  cd ~/Documents/ros2-docs/
+ 1671  gst
+ 1672  git pull origin main
+ 1673  gst
+ 1674  git add .
+ 1675  git commit -m "Added ssh_first_conn.png file to images folder"
+ 1676  git push -u origin main
+ 1677  cd /media/robousr/
+ 1678  l
+ 1679  cd 66181078-3393-4d65-bae1-8e21a434c5b5/
+ 1680  l
+ 1681  cd boot
+ 1682  cd extlinux/
+ 1683  l
+ 1684  cp extlinux.conf extlinux.conf.me-200325-backup
+ 1685  l
+ 1686  sudo cp extlinux.conf extlinux.conf.me-200325-backup
+ 1687  l
+ 1688  vim extlinux.conf
+ 1689  sudo vim extlinux.conf
+ 1690  sudo nvim extlinux.conf
+ 1691  cat extlinux.conf
+ 1692  cd
+ 1693  nmap -v -sn 172.16.10.0/24 |grep "scan report"|grep --invert-match "host.down"|awk '{print $5}'
+ 1694  ssh arrusr@172.16.10.110
+ 1695  ssh arrusr@172.16.10.111
+ 1696  ssh arrusr@172.16.10.112
+ 1697  cd /media/robousr/66181078-3393-4d65-bae1-8e21a434c5b5/
+ 1698  sudo cp extlinux.conf extlinux.conf.me-200325-extboot
+ 1699  cd /media/robousr/66181078-3393-4d65-bae1-8e21a434c5b5/boot/extlinux/
+ 1700  sudo cp extlinux.conf extlinux.conf.me-200325-extboot
+ 1701  l
+ 1702  sudo rm extlinux.conf
+ 1703  mv extlinux.conf.me-200325-backup extlinux.conf
+ 1704  sudo mv extlinux.conf.me-200325-backup extlinux.conf
+ 1705  l
+ 1706  cd
+ 1707  ls /media/robousr/66181078-3393-4d65-bae1-8e21a434c5b5/
+ 1708  cd /media/robousr/66181078-3393-4d65-bae1-8e21a434c5b5/boot/extlinux/
+ 1709  l
+ 1710  sudo mv extlinux.conf extlinux.conf.yo-bk-new
+ 1711  l
+ 1712  sudo mv extlinux.conf.me-200325-backup extlinux.conf
+ 1713  l
+ 1714  cat extlinux.conf
+ 1715  cd
+ 1716  nmap -v -sn 172.16.10.0/24 |grep "scan report"|grep --invert-match "host.down"|awk '{print $5}'
+ 1717  ls /media/robousr/66181078-3393-4d65-bae1-8e21a434c5b5/
+ 1718  cd /media/robousr/66181078-3393-4d65-bae1-8e21a434c5b5/boot/extlinux/
+ 1719  l
+ 1720  cat extlinux.conf
+ 1721  cd
+ 1722  nmap -v -sn 172.16.10.0/24 |grep "scan report"|grep --invert-match "host.down"|awk '{print $5}'
+ 1723  ls
+ 1724  ll
+ 1725  cd /media/robousr/66181078-3393-4d65-bae1-8e21a434c5b5/
+ 1726  l
+ 1727  cd boot/extlinux/
+ 1728  l
+ 1729  sudo cp extlinux.conf extlinux.conf.me-210325-backup
+ 1730  l
+ 1731  sudo nvim extlinux.conf
+ 1732  l
+ 1733  cat extlinux.conf
+ 1734  cd
+ 1735  cd /media/robousr/66181078-3393-4d65-bae1-8e21a434c5b5/
+ 1736  l
+ 1737  cd
+ 1738  cd /media/robousr/66181078-3393-4d65-bae1-8e21a434c5b5/
+ 1739  l
+ 1740  cd boot/extlinux/
+ 1741  sudo cp extlinux.conf extlinux.conf.me-210325-backup
+ 1742  sudo nvim extlinux.conf
+ 1743  cat extlinux.conf
+ 1744  l
+ 1745  cd
+ 1746  cd /media/robousr/66181078-3393-4d65-bae1-8e21a434c5b5/
+ 1747  sudo nvim extlinux.conf
+ 1748  cd boot/extlinux/
+ 1749  l
+ 1750  cat extlinux.conf
+ 1751  sudo nvim extlinux.conf
+ 1752  cat extlinux.conf}
+ 1753  cat extlinux.conf
+ 1754  cd
+ 1755  sudo snap install hugo
+ 1756  hugo -V
+ 1757  hugo -v
+ 1758  hugo version
+ 1759  sudo snap remove hugo
+ 1760  hugo version
+ 1761  sudo apt install hugo
+ 1762  hugo version
+ 1763  rsttrm 
+ 1764  hugo version
+ 1765  actapt
+ 1766  upgapt 
+ 1767  sudo apt autoremove
+ 1768  sudo shutdown -r now
+ 1769  l
+ 1770  sudo apt remove hugo
+ 1771  l
+ 1772  hugo version
+ 1773  ls 
+ 1774  ll
+ 1775  cd /media/robousr/66181078-3393-4d65-bae1-8e21a434c5b5/
+ 1776  cd boot/extlinux/
+ 1777  cat extlinux.conf
+ 1778  l
+ 1779  cat extlinux.conf.me-200325-backup 
+ 1780  l
+ 1781  cat extlinux.conf.me-200325-extboot 
+ 1782  sudo rm extlinux.conf
+ 1783  sudo cp extlinux.conf.me-200325-backup extlinux.conf
+ 1784  l
+ 1785  cat extlinux.conf
+ 1786  cd
+ 1787  nmap -v -sn 172.16.10.0/24 |grep "scan report"|grep --invert-match "host.down"|awk '{print $5}'
+ 1788  ip a
+ 1789  ssh arrusr@172.16.10.118
+ 1790  cd /media/robousr/66181078-3393-4d65-bae1-8e21a434c5b5/
+ 1791  cd boot/extlinux/
+ 1792  l
+ 1793  sudo cp extlinux.conf extlinux.conf.me-210325-backup
+ 1794  l
+ 1795  sudo nvim extlinux.conf
+ 1796  cat extlinux.conf
+ 1797  cd
+ 1798  ls
+ 1799  ll
+ 1800  ssh arrusr@172.16.10.142
+ 1801  ip a
+ 1802  nmap -v -sn 172.16.10.0/24 |grep "scan report"|grep --invert-match "host.down"|awk '{print $5}'
+ 1803  sudo nmap -v -sn 172.16.10.0/24 |grep "scan report"|grep --invert-match "host.down"|awk '{print $5}'
+ 1804  pig 172.16.10.119
+ 1805  ping 172.16.10.119
+ 1806  ssh arrusr@172.16.10.119
+ 1807  ssh arrusr@172.16.10.132
+ 1808  nmap -v -sn 172.16.10.0/24 |grep "scan report"|grep --invert-match "host.down"|awk '{print $5}'
+ 1809  ssh arrusr@172.16.10.142
+ 1810  ping 172.16.10.142
+ 1811  ping 172.16.10.142 -t
+ 1812  ssh arrusr@172.16.10.142
+ 1813  ping 172.16.10.142
+ 1814  ssh arrusr@172.16.10.142
+ 1815  ping 172.16.10.142
+ 1816  cd Dev/
+ 1817  cd ros2board/
+ 1818  git fetch all
+ 1819  git fetch --all
+ 1820  git pull origin dev-v1 
+ 1821  gst
+ 1822  git pull origin dev-v1 --merge
+ 1823  git pull origin dev-v1 --force
+ 1824  git pull origin dev-v1 --rebse
+ 1825  git pull origin dev-v1 --rebase
+ 1826  gst
+ 1827  g lg
+ 1828  gst
+ 1829  cd src/
+ 1830  code .
+ 1831  cd  ..
+ 1832  code .
+ 1833  python3
+ 1834  vim ../test_parse.py
+ 1835  cd ..
+ 1836  l
+ 1837  python test_parse.py 
+ 1838  python3 test_parse.py 
+ 1839  python3 test_parse.py --servos 1,2,4,7
+ 1840  python3 test_parse.py --servos 1
+ 1841  vim test_parse.py
+ 1842  python3 test_parse.py --servos 1,3,5,6
+ 1843  python3 test_parse.py
+ 1844  cat test_parse.py 
+ 1845  nmap -v -sn 172.16.10.0/24 |grep "scan report"|grep --invert-match "host.down"|awk '{print $5}'
+ 1846  ping 172.16.10.143
+ 1847  ssh arrusr@172.16.10.143
+ 1848  l
+ 1849  python3 test_parse.py 
+ 1850  python3 test_parse.py --servos 1,3,5,6
+ 1851  python /home/robousr/.vscode/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1852  cd Dev/ros2board/
+ 1853  gst
+ 1854  git add .
+ 1855  git commit -m "Update diagnose_servos_uart.py script."
+ 1856  code .
+ 1857  gst
+ 1858  git add .
+ 1859  git commit -m "Update diagnose_servos_uart.py script(2)."
+ 1860  gst
+ 1861  git push -u origin dev-v1 
+ 1862  cd
+ 1863  cat .bash_aliases 
+ 1864  actapt 
+ 1865  upgapt 
+ 1866  cleanapt 
+ 1867  sudo shutdown -r now
+ 1868  cd
+ 1869  cd -
+ 1870  ip a
+ 1871  nmap -v -sn 172.16.10.0/24 |grep "scan report"|grep --invert-match "host.down"|awk '{print $5}'
+ 1872  ping 172.16.10.142
+ 1873  ssh arrusr@172.16.10.142
+ 1874  ping 172.16.10.142
+ 1875  ssh arrusr@172.16.10.142
+ 1876  lt .
+ 1877  cd ..
+ 1878  cd dofbot-x/
+ 1879  l
+ 1880  cd dofbot_arm/
+ 1881  l
+ 1882  cd src/
+ 1883  l
+ 1884  cd dofbotx_arm_lib/
+ 1885  l
+ 1886  cd ..
+ 1887  cd yahboom_arm_lib/
+ 1888  l
+ 1889  python /home/robousr/.vscode/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariablesToFile.py /home/robousr/.vscode/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1890  cd Dev/ros2board/
+ 1891  code .
+ 1892  gst
+ 1893  git add .
+ 1894  git commit -m "Updated diagnose_servos_uart script(3)."
+ 1895  git push origin dev-v1 
+ 1896  git add .
+ 1897  git commit -m "Updated diagnose_servos_uart script(4)."
+ 1898  git push origin dev-v1 
+ 1899  git add .
+ 1900  git commit -m "Updated diagnose_servos_uart script(5)."
+ 1901  git push origin dev-v1 
+ 1902  git add .
+ 1903  git commit -m "Updated diagnose_servos_uart script(5)."
+ 1904  git push origin dev-v1 
+ 1905  git add .
+ 1906  git commit -m "Updated diagnose_servos_uart script(7)."
+ 1907  git push origin dev-v1 
+ 1908  git add .
+ 1909  git commit -m "Updated diagnose_servos_uart script(8)."
+ 1910  git push origin dev-v1 
+ 1911  git add .
+ 1912  git commit -m "Updated diagnose_servos_uart script(9)."
+ 1913  git push origin dev-v1 
+ 1914  git add .
+ 1915  git commit -m "Updated diagnose_servos_uart script(10)."
+ 1916  git push origin dev-v1 
+ 1917  git add .
+ 1918  git commit -m "Updated diagnose_servos_uart script(11)."
+ 1919  git push origin dev-v1 
+ 1920  git add .
+ 1921  git commit -m "Updated diagnose_servos_uart script(12)."
+ 1922  git push origin dev-v1 
+ 1923  git add .
+ 1924  git commit -m "Updated diagnose_servos_uart script(13)."
+ 1925  git push origin dev-v1 
+ 1926  git add .
+ 1927  git commit -m "Updated diagnose_servos_uart script(15)."
+ 1928  git push origin dev-v1 
+ 1929  cd ..
+ 1930  l
+ 1931  cd dofbot-x/
+ 1932  git branch -l
+ 1933  git checkout dofbot-drv 
+ 1934  git pull origin dofbot-drv 
+ 1935  cd ..
+ 1936  l
+ 1937  mkdir temp
+ 1938  cd temp/
+ 1939  cp ../ros2board/src/rosboard_drv/ .
+ 1940  cp -r ../ros2board/src/rosboard_drv/ .
+ 1941  l
+ 1942  cp ../ros2board/src/test_rosboard_drv_raw.py .
+ 1943  l
+ 1944  vim test_rosboard_drv_raw.py 
+ 1945  l
+ 1946  git init
+ 1947  git add .
+ 1948  git commit -m "Initial commit."
+ 1949  rm -rf .git
+ 1950  git init
+ 1951  git add README.md 
+ 1952  git commit -m "Initial commit."
+ 1953  git remote add origin https://github.com/arrg-mx/rx3-p-drv.git
+ 1954  git push -u origin main
+ 1955  git add .
+ 1956  gst
+ 1957  git status
+ 1958  git restore --staged .
+ 1959  gst
+ 1960  rm rosboard_drv/rosboard_drv_old.py 
+ 1961  rm rosboard_drv/rosboard_drv_old2.py 
+ 1962  lt .
+ 1963  git add .
+ 1964  gst
+ 1965  git commit -m "Added driver files."
+ 1966  gst
+ 1967  git push -u origin main
+ 1968  l
+ 1969  rm -rf .
+ 1970  rm -rf *
+ 1971  l
+ 1972  ll
+ 1973  rm -rf .git
+ 1974  l
+ 1975  ll
+ 1976  cd -r ~/Dev/dofbot-x/dofbot_arm/src/yahboom_arm_lib/ .
+ 1977  l
+ 1978  cp -r ~/Dev/dofbot-x/dofbot_arm/src/yahboom_arm_lib/ .
+ 1979  l
+ 1980  mv yahboom_arm_lib/ dofbot_arm_lib
+ 1981  l
+ 1982  mv -r dofbot_arm_lib/* .
+ 1983  mv dofbot_arm_lib/* .
+ 1984  l
+ 1985  rm -rf dofbot_arm_lib/
+ 1986  l
+ 1987  lt .
+ 1988  git init
+ 1989  echo "# Dofbot Arm Driver" >> README.md
+ 1990  git add README.md 
+ 1991  git commit -m "Initial commit."
+ 1992  git remote add origin https://github.com/arrg-mx/dofbot_drv.git
+ 1993  git push -u origin main
+ 1994  gst
+ 1995  rm test_led_rgb.py 
+ 1996  git add .
+ 1997  gst
+ 1998  git commit -m "Added driver files."
+ 1999  git push -u origin main
+ 2000  cd Dev/dofbot-x/
+ 2001  l
+ 2002  cd dofbot_arm/
+ 2003  cd src/
+ 2004  l
+ 2005  vim .
+ 2006  python3 dofbotx_fake_ctrl_servo.py 
+ 2007  l
+ 2008  cd
+ 2009  l
+ 2010  ll
+ 2011  cd Documents/
+ 2012  l
+ 2013  cd dotfiles_2024/docs/rawfiles/
+ 2014  l
+ 2015  history >> roboticslab_vm_history_03042025.txt
