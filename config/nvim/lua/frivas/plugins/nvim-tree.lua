@@ -39,7 +39,7 @@ return {
 				},
 			},
 			filters = {
-				custom = { "^.git$", "^node_modules$", "^.venv$" }, --".DS_Store"
+				custom = { "^.git$", "^node_modules$", "^.venv$", "^.vscode$" }, --".DS_Store"
 			},
 			git = {
 				ignore = false,

@@ -137,7 +137,7 @@ return {
 						separator = { left = "", right = "" },
 					},
 				},
-				lualine_x = { { "encoding" }, { "fileformat" }, { "filetype", icon_only = true } },
+				lualine_x = { { "encoding" }, { "filetype", icon_only = true } },
 				lualine_y = { { get_venv }, { get_ros_distro } },
 				lualine_z = {
 					{ place, padding = { left = 1, right = 1 } },

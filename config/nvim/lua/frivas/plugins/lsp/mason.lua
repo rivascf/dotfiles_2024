@@ -59,7 +59,7 @@ return {
 				-- Linter
 				"pylint",
 				"eslint_d",
-				-- "ruff_format",
+				--"ruff_lsp",
 			},
 		})
 	end,
